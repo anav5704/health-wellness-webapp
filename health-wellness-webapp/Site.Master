@@ -1,0 +1,34 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.Master.vb" Inherits="health_wellness_webapp.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="styles/globals.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <nav>
+                <ul>
+                    <li><a>Link</a></li>
+                     <li><a>Link</a></li>
+                     <li><a>Link</a></li>
+                     <li><a>Link</a></li>
+                     <li><a>Link</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+        <footer>
+            Footer content
+        </footer>
+    </form>
+</body>
+</html>
