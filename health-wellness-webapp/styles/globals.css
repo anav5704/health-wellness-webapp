@@ -54,14 +54,14 @@ header {
     padding: 0px 50px;
     background-color: white;
     border-bottom: 1px solid var(--primary);
-
-    ul {
+}
+ header ul {
         display: flex;
         gap: 50px;
         list-style: none;
     }
 
-     a  {
+header  a  {
         color: rgba(0, 0, 0, 0.5);
     }
 
@@ -69,7 +69,6 @@ header {
         color: black;
         text-decoration: underline;
     }
-}
 
 h1,
 h2 {
@@ -110,17 +109,16 @@ footer {
     align-items: center;
     padding: 50px;
     gap: 25px;
-
-    ul {
+}
+    footer ul {
         display: flex;
         gap: 50px;
         list-style: none;
-
-       a {
+    }
+ footer a {
             color: black;
         }
-}
-    
+  
 .primary-button {
     background-color: var(--accent);
     border: 1px solid var(--primary);
