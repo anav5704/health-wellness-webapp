@@ -18,7 +18,7 @@
                     <li><a href="Home.aspx">Home</a></li>
                     <li><a href="Therapists.aspx">Therapists</a></li>
                     <li><a href="Booking.aspx">Booking</a></li>
-                    <li><a href="Quiz.asox">Quiz</a></li>
+                    <li><a href="Quiz.aspx">Quiz</a></li>
                     <li><a href="Blogs.aspx">Blogs</a></li>
                      <li><a href="Contact.aspx">Contact</a></li>
                 </ul>
