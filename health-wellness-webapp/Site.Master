@@ -23,7 +23,7 @@
                      <li><a href="Contact.aspx">Contact</a></li>
                 </ul>
             </nav>
-            <button class=".primary-button">Create Account</button>
+            <button class="primary-button">Create Account</button>
         </header>
         <main>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
