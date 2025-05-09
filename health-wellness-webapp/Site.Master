@@ -12,24 +12,38 @@
 <body>
     <form id="form1" runat="server">
         <header>
-            <nav>
+             <img src="images/logo.png" alt="Best Health Logo" title="Best Health Logo" height="45" width="200" />
+            <nav>    
                 <ul>
-
-                    <li><a>Vishant</a></li>
-                     <li><a>Aryan</a></li>
-                     <li><a>Link</a></li>
-                     <li><a>Link</a></li>
-                     <li><a>Link</a></li>
+                    <li><a href="Home.aspx">Home</a></li>
+                    <li><a href="Therapists.aspx">Therapists</a></li>
+                    <li><a href="Booking.aspx">Booking</a></li>
+                    <li><a href="Quiz.asox">Quiz</a></li>
+                    <li><a href="Blogs.aspx">Blogs</a></li>
+                     <li><a href="Contact.aspx">Contact</a></li>
                 </ul>
             </nav>
+            <button class=".primary-button">Create Account</button>
         </header>
         <main>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </main>
-        <footer>
-            Footer content
+             <footer>
+            <img src="images/logo.png" alt="Best Health Logo" title="Best Health Logo" height="45" width="200" />
+            <ul>
+				<li><a href="Mailto:info@best.health">Email</a></li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">YouTube</a></li>
+            </ul>
+            <p>&copy; <span id="year"></span> Best Health. All rights reserved.</p>
         </footer>
+
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
     </form>
 </body>
 </html>
