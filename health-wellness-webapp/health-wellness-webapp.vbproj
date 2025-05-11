@@ -97,6 +97,7 @@
     <Content Include="images\logo.png" />
     <Content Include="images\og.png" />
     <Content Include="My Project\About Us.aspx" />
+    <Content Include="Signup.aspx" />
     <Content Include="styles\globals.css" />
     <Content Include="Web.config" />
     <Content Include="Home.aspx" />
@@ -138,6 +139,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Signup.aspx.designer.vb">
+      <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.aspx.vb">
+      <DependentUpon>Signup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Site.Master.designer.vb">
       <DependentUpon>Site.Master</DependentUpon>
