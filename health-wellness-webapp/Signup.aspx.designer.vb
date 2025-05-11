@@ -23,6 +23,15 @@ Partial Public Class Signup
     Protected WithEvents txtEmail As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''rfvSignupEmail control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents rfvSignupEmail As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
     '''txtPassword control.
     '''</summary>
     '''<remarks>
@@ -30,6 +39,15 @@ Partial Public Class Signup
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtPassword As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''rfvSignupPasswrd control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents rfvSignupPasswrd As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
     '''btnSignup control.
@@ -48,6 +66,15 @@ Partial Public Class Signup
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblMessage As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''hlLogin control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hlLogin As Global.System.Web.UI.WebControls.HyperLink
 
     '''<summary>
     '''adsUsers control.

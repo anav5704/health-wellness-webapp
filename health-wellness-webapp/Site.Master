@@ -8,6 +8,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link href="styles/globals.css" rel="stylesheet" type="text/css" />
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -19,12 +20,13 @@
                     <li><a href="Therapists.aspx">Therapists</a></li>
                     <li><a href="Booking.aspx">Booking</a></li>
                     <li><a href="Quiz.aspx">Quiz</a></li>
-                    <li><a href="Blogs.aspx">Blogs</a></li>
+                    <li><a href="Blogs.aspx">Blogs</a></li> 
+                    <li><a href ="About.aspx">About</a></li>
                     <li><a href="Contact.aspx">Contact</a></li>
-                    <li><a href ="About.aspx">About Us</a></li>
+                  
                 </ul>
             </nav>
-            <button class="primary-button">Create Account</button>
+            <a href="Signup.aspx" class="primary-link">Create Account</a>
         </header>
         <main>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

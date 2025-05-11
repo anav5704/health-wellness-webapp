@@ -5,7 +5,7 @@
 
     End Sub
 
-    Protected Sub btnLogin_Click(sender As Object, e As EventArgs)
+    Protected Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         Dim email As String = txtEmail.Text.Trim()
         Dim password As String = txtPassword.Text.Trim()
 
@@ -17,8 +17,8 @@
         adsUsers.SelectParameters("User_Email").DefaultValue = email
         adsUsers.SelectParameters("User_Password").DefaultValue = password
 
-        Dim userData As DataView = adsUsers.Select(DataSourceSelectArguments.Empty
-                                                   )
+        Dim userData As DataView = adsUsers.Select(DataSourceSelectArguments.Empty)
+
         If userData.Count > 0 Then
             Session("User_Email") = email
             Session("User_Role") = userData(0)("User_Role").ToString()

@@ -2,10 +2,24 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:TextBox ID="txtEmail" runat="server" />
-    <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" />
-    <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />
-    <asp:Label ID="lblMessage" runat="server"  />
+    <fieldset>
+         <legend>Credientials.</legend>
+
+         <label for="txtEmail">Email:</label>
+        <asp:TextBox ID="txtEmail" runat="server" />
+        <asp:RequiredFieldValidator ID="rfvLoginEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email is required." />
+
+         <label for="txtPassword">Password:</label>
+        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" />
+        <asp:RequiredFieldValidator ID="rfvLoginPasswrd" runat="server" ControlToValidate="txtPassword" ErrorMessage="Password is required." />
+
+        <asp:Button ID="btnLogin" runat="server" Text="Login" />
+
+        <asp:Label ID="lblMessage" runat="server" />
+
+        <p>Don't have an account? <asp:HyperLink ID="hlSignup" runat="server" NavigateUrl="Signup.aspx">Sign Up</asp:HyperLink></p>
+    </fieldset>
+
     <asp:AccessDataSource ID="adsUsers" runat="server" DataFile="~/App_Data/Webapp.accdb"  
         SelectCommand="SELECT [User_Id], [User_Email], [User_Role] FROM [User] WHERE [User_Email] = ? AND [User_Password] = ?"
     >

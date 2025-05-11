@@ -25,24 +25,10 @@
 }
 
 body {
-    text-underline-offset: 3px;
-}
-
-p,
-a,
-h3,
-button,
-table {
-    font-family: "Geist";
-}
-
-p,
-a,
-tr,
-caption {
+    text-underline-offset: 3px; 
+    font-family: "Geist"; 
     font-size: 1.125rem;
 }
-
 
 header {
     top: 0;
@@ -118,8 +104,13 @@ footer {
  footer a {
             color: black;
         }
-  
-.primary-button {
+ }
+
+.primary-link {
     background-color: var(--accent);
     border: 1px solid var(--primary);
+    padding: 15px 30px;
+    border-radius: calc(infinity * 1px);
+    font-size: 1rem;
+    cursor: pointer;
 }

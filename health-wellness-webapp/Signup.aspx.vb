@@ -5,7 +5,7 @@
 
     End Sub
 
-    Protected Sub btnSignup_Click(sender As Object, e As EventArgs)
+    Protected Sub btnSignup_Click(sender As Object, e As EventArgs) Handles btnSignup.Click
         Dim email As String = txtEmail.Text.Trim()
         Dim password As String = txtPassword.Text.Trim()
 
