@@ -30,4 +30,8 @@
         adsUsers.Insert()
         Response.Redirect("Dashboard.aspx")
     End Sub
+
+    Protected Sub adsUsers_Selecting(sender As Object, e As SqlDataSourceSelectingEventArgs) Handles adsUsers.Selecting
+
+    End Sub
 End Class

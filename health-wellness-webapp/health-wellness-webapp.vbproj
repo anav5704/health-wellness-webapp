@@ -92,6 +92,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="App_Data\Webapp.accdb" />
+    <Content Include="Contact.aspx" />
     <Content Include="Global.asax" />
     <Content Include="images\favicon.ico" />
     <Content Include="images\logo.png" />
@@ -109,6 +110,13 @@
     </Compile>
     <Compile Include="About.aspx.vb">
       <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.vb">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.vb">
+      <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Global.asax.vb">

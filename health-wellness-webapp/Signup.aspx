@@ -22,8 +22,7 @@
 
      <asp:AccessDataSource ID="adsUsers" runat="server" DataFile="~/App_Data/Webapp.accdb"
          SelectCommand="SELECT [User_Id], [User_Email], [User_Role] FROM [User] WHERE [User_Email] = ?"
-         InsertCommand="INSERT INTO [User] ([User_Email], [User_Password], [User_Role]) VALUES (?, ?, ?)"
-    >
+         InsertCommand="INSERT INTO [User] ([User_Email], [User_Password], [User_Role]) VALUES (?, ?, ?)">
         <SelectParameters>
             <asp:Parameter Name="User_Email" Type="String" />
         </SelectParameters>
