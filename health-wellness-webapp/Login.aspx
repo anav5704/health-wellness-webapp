@@ -21,11 +21,10 @@
     </fieldset>
 
     <asp:AccessDataSource ID="adsUsers" runat="server" DataFile="~/App_Data/Webapp.accdb"  
-        SelectCommand="SELECT [User_Id], [User_Email], [User_Role] FROM [User] WHERE [User_Email] = ? AND [User_Password] = ?"
+        SelectCommand="SELECT [User_Email], [User_Password], [User_Role] FROM [User] WHERE [User_Email] = ?"
     >
        <SelectParameters>
-            <asp:ControlParameter Name="User_Email" ControlID="txtEmail" PropertyName="Text" />
-            <asp:ControlParameter Name="User_Password" ControlID="txtPassword" PropertyName="Text" />
+           <asp:Parameter Name="User_Email" Type="String" />
         </SelectParameters>
     </asp:AccessDataSource>
 </asp:Content>

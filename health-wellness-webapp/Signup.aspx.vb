@@ -24,7 +24,7 @@
         End If
 
         adsUsers.InsertParameters("User_Email").DefaultValue = email
-        adsUsers.InsertParameters("User_Password").DefaultValue = password
+        adsUsers.InsertParameters("User_Password").DefaultValue = Utils.Password.Hash(password)
         adsUsers.InsertParameters("User_Role").DefaultValue = "Member"
 
         adsUsers.Insert()

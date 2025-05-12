@@ -140,12 +140,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Password.vb" />
     <Compile Include="Signup.aspx.designer.vb">
       <DependentUpon>Signup.aspx</DependentUpon>
     </Compile>
     <Compile Include="Signup.aspx.vb">
       <DependentUpon>Signup.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site.Master.designer.vb">
       <DependentUpon>Site.Master</DependentUpon>

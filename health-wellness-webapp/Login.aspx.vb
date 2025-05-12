@@ -15,16 +15,23 @@
         End If
 
         adsUsers.SelectParameters("User_Email").DefaultValue = email
-        adsUsers.SelectParameters("User_Password").DefaultValue = password
 
         Dim userData As DataView = adsUsers.Select(DataSourceSelectArguments.Empty)
 
         If userData.Count > 0 Then
-            Session("User_Email") = email
-            Session("User_Role") = userData(0)("User_Role").ToString()
-            Response.Redirect("Dashboard.aspx")
+            Dim storedHash As String = userData(0)("User_Password").ToString()
+            Dim inputHash As String = Utils.Password.Hash(password)
+
+            If storedHash = inputHash Then
+                Session("User_Email") = email
+                Session("User_Role") = userData(0)("User_Role").ToString()
+                Response.Redirect("Dashboard.aspx")
+            Else
+                lblMessage.Text = "Invalid password."
+            End If
+
         Else
-            lblMessage.Text = "Invalid email or password."
+            lblMessage.Text = "Invalid email."
         End If
     End Sub
 End Class
