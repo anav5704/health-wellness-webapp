@@ -94,9 +94,14 @@
     <Content Include="App_Data\Webapp.accdb" />
     <Content Include="Contact.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="images\anav.jpg" />
+    <Content Include="images\aryan.jpg" />
     <Content Include="images\favicon.ico" />
     <Content Include="images\logo.png" />
     <Content Include="images\og.png" />
+    <Content Include="images\rohan.jpg" />
+    <Content Include="images\vishant.jpg" />
+    <Content Include="images\zhixian.jpg" />
     <Content Include="My Project\About Us.aspx" />
     <Content Include="Signup.aspx" />
     <Content Include="styles\globals.css" />
