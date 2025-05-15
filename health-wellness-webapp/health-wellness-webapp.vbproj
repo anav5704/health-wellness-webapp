@@ -91,7 +91,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="App_Data\app_data\Webapp.accdb" />
     <Content Include="App_Data\Webapp.accdb" />
+    <Content Include="Blogs.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Global.asax" />
     <Content Include="images\anav.jpg" />
@@ -103,6 +105,7 @@
     <Content Include="images\vishant.jpg" />
     <Content Include="images\zhixian.jpg" />
     <Content Include="My Project\About Us.aspx" />
+    <Content Include="ResourcePage.aspx" />
     <Content Include="Signup.aspx" />
     <Content Include="styles\globals.css" />
     <Content Include="Web.config" />
@@ -115,6 +118,13 @@
     </Compile>
     <Compile Include="About.aspx.vb">
       <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Blogs.aspx.designer.vb">
+      <DependentUpon>Blogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blogs.aspx.vb">
+      <DependentUpon>Blogs.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Contact.aspx.designer.vb">
@@ -154,6 +164,13 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Password.vb" />
+    <Compile Include="ResourcePage.aspx.designer.vb">
+      <DependentUpon>ResourcePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResourcePage.aspx.vb">
+      <DependentUpon>ResourcePage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Signup.aspx.designer.vb">
       <DependentUpon>Signup.aspx</DependentUpon>
     </Compile>
