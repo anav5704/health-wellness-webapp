@@ -1,6 +1,5 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Contact.aspx.vb" Inherits="health_wellness_webapp.Contact" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="styles/contact.css" rel="stylesheet" type="text/css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Contact Us</h1>
