@@ -109,6 +109,7 @@
     <Content Include="My Project\About Us.aspx" />
     <Content Include="ResourcePage.aspx" />
     <Content Include="Signup.aspx" />
+    <Content Include="styles\contact.css" />
     <Content Include="styles\globals.css" />
     <Content Include="Web.config" />
     <Content Include="Home.aspx" />

@@ -23,6 +23,15 @@ Partial Public Class Login
     Protected WithEvents pnlLogin As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
+    '''lblEmail control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblEmail As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''txtEmail control.
     '''</summary>
     '''<remarks>
@@ -39,6 +48,15 @@ Partial Public Class Login
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents rfvLoginEmail As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
+    '''lblPassword control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblPassword As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''txtPassword control.

@@ -5,11 +5,11 @@
         <h1>Account Login</h1>
 
          <asp:Panel ID="pnlLogin" CssClass="authForm" runat="server">
-             <label for="txtEmail">Email</label>
+            <asp:Label ID ="lblEmail" runat ="server" Text ="Email"></asp:Label>
             <asp:TextBox ID="txtEmail" runat="server" />
             <asp:RequiredFieldValidator Display="Dynamic"  ID="rfvLoginEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email is required." CssClass="error" />
 
-             <label for="txtPassword">Password</label>
+             <asp:Label ID ="lblPassword" runat ="server" Text ="Password"></asp:Label>
             <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" />
             <asp:RequiredFieldValidator Display="Dynamic"  ID="rfvLoginPasswrd" runat="server" ControlToValidate="txtPassword" ErrorMessage="Passowrd is required." CssClass="error" />
 
