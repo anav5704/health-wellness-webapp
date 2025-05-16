@@ -15,10 +15,10 @@
             <section class ="tech-skills">
                 <h4>Technology Skills</h4>
                 <ul>
-                    <li>React</li>
-                    <li>Node js</li>
-                    <li>Typescript</li>
-                    <li>Nginx</li>
+                    <li>Next js
+                    <li>TypeScript
+                    <li>PostgreSQL
+                    <li>Docker
                 </ul>
             </section>
         </section>
