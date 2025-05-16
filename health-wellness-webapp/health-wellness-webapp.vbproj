@@ -93,6 +93,7 @@
     <Content Include="About.aspx" />
     <Content Include="App_Data\app_data\Webapp.accdb" />
     <Content Include="App_Data\Webapp.accdb" />
+    <Content Include="Self-Assessment.aspx" />
     <Content Include="styles\about.css" />
     <Content Include="styles\auth.css" />
     <Content Include="Blogs.aspx" />
@@ -111,6 +112,7 @@
     <Content Include="Signup.aspx" />
     <Content Include="styles\contact.css" />
     <Content Include="styles\globals.css" />
+    <Content Include="styles\self-assessment.css" />
     <Content Include="Web.config" />
     <Content Include="Home.aspx" />
     <Content Include="Login.aspx" />
@@ -172,6 +174,13 @@
     </Compile>
     <Compile Include="ResourcePage.aspx.vb">
       <DependentUpon>ResourcePage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Self-Assessment.aspx.designer.vb">
+      <DependentUpon>Self-Assessment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Self-Assessment.aspx.vb">
+      <DependentUpon>Self-Assessment.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Signup.aspx.designer.vb">

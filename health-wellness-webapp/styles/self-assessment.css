@@ -1,0 +1,51 @@
+﻿
+.evaluation-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+    .evaluation-item h4 {
+        margin: 0;
+        margin-right: 16px;
+        font-size: 16px;
+    }
+
+    .evaluation-item .opt-text {
+        font-size: 14px;
+        color: #333;
+        white-space: nowrap;
+    }
+
+
+    .evaluation-item .options {
+        display: inline-flex;
+        align-items: center;
+        margin: 0 12px; 
+        gap: 12px;
+    }
+
+
+        .evaluation-item .options input[type="radio"] {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+
+        .evaluation-item .options label {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #ccc;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color .2s, border-color .2s;
+        }
+
+
+        .evaluation-item .options input[type="radio"]:checked + label {
+            background-color: #49AF85;
+            border-color: #49AF85;
+        }
