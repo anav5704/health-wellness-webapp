@@ -30,6 +30,12 @@ body {
     font-size: 1.125rem;
 }
 
+main {
+    width: 70%;
+    margin: auto;
+    padding: 50px 0px;
+}
+
 header {
     top: 0;
     position: sticky;
@@ -59,11 +65,13 @@ header  a  {
 h1,
 h2 {
     font-family: "Merriweather";
+    margin-bottom: 50px;
 }
 
 h1 {
-    font-size: 4.5rem;
+    font-size: 3rem;
     line-height: 100%;
+    text-align: center;
 }
 
 h2 {
@@ -113,4 +121,18 @@ footer {
     border-radius: calc(infinity * 1px);
     font-size: 1rem;
     cursor: pointer;
+}
+
+/*Tablet screen*/
+@media screen and (max-width: 900px) {
+    main {
+        width: 80%;
+    }
+}
+
+/*Mobile Screen*/
+@media screen and (max-width: 600px) {
+    main {
+        width: 90%;
+    }
 }

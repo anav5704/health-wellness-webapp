@@ -12,4 +12,49 @@ Option Explicit On
 
 
 Partial Public Class About
+
+    '''<summary>
+    '''imgAnav control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents imgAnav As Global.System.Web.UI.WebControls.Image
+
+    '''<summary>
+    '''imgVishant control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents imgVishant As Global.System.Web.UI.WebControls.Image
+
+    '''<summary>
+    '''imgAryan control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents imgAryan As Global.System.Web.UI.WebControls.Image
+
+    '''<summary>
+    '''imgZhixian control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents imgZhixian As Global.System.Web.UI.WebControls.Image
+
+    '''<summary>
+    '''imgRohan control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents imgRohan As Global.System.Web.UI.WebControls.Image
 End Class
