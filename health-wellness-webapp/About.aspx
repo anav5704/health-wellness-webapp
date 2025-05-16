@@ -12,14 +12,13 @@
                 <figcaption>Anav Chand</figcaption>
             </figure>
             <section class ="bio">
-                <p>An aspiring DevOps engineer, self-taught web developer, second-year software engineering student, and award-winning peer mentor @ USP.</p>
+                <p>An aspiring DevOps engineer, self-taught web developer, and second-year software engineering student @ USP.</p>
             </section>
             <section class ="tech-skills">
                 <h4>Technology Skills</h4>
                 <ul>
                     <li>React</li>
                     <li>Node js</li>
-                    <li>C++</li>
                     <li>Typescript</li>
                     <li>Nginx</li>
                 </ul>
