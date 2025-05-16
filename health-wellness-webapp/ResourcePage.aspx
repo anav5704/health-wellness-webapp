@@ -39,7 +39,6 @@
     <section class="embedded-media">
         <h2>Embed Media will go here</h2>
         <p>Recommended:</p>
-       
     </section>
 </asp:Content>
 
