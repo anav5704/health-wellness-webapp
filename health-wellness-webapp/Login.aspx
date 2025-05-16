@@ -2,23 +2,23 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <fieldset>
-         <legend>Credientials.</legend>
+        <h1>Account Login</h1>
 
-         <label for="txtEmail">Email:</label>
-        <asp:TextBox ID="txtEmail" runat="server" />
-        <asp:RequiredFieldValidator ID="rfvLoginEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email is required." />
+         <asp:Panel ID="pnlLogin" CssClass="authForm" runat="server">
+             <label for="txtEmail">Email</label>
+            <asp:TextBox ID="txtEmail" runat="server" />
+            <asp:RequiredFieldValidator Display="Dynamic"  ID="rfvLoginEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email is required." CssClass="error" />
 
-         <label for="txtPassword">Password:</label>
-        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" />
-        <asp:RequiredFieldValidator ID="rfvLoginPasswrd" runat="server" ControlToValidate="txtPassword" ErrorMessage="Password is required." />
+             <label for="txtPassword">Password</label>
+            <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" />
+            <asp:RequiredFieldValidator Display="Dynamic"  ID="rfvLoginPasswrd" runat="server" ControlToValidate="txtPassword" ErrorMessage="Passowrd is required." CssClass="error" />
 
-        <asp:Button ID="btnLogin" runat="server" Text="Login" />
+            <asp:Button ID="btnLogin" runat="server" Text="Login" />
 
-        <asp:Label ID="lblMessage" runat="server" />
+            <asp:Label CssClass="error" ID="lblMessage" runat="server" />
+        </asp:Panel>
 
-        <p>Don't have an account? <asp:HyperLink ID="hlSignup" runat="server" NavigateUrl="Signup.aspx">Sign Up</asp:HyperLink></p>
-    </fieldset>
+        <p class="authInfo">Don't have an account? <asp:HyperLink ID="hlSignup" runat="server" NavigateUrl="Signup.aspx">Sign Up</asp:HyperLink></p>
 
     <asp:AccessDataSource ID="adsUsers" runat="server" DataFile="~/App_Data/Webapp.accdb"  
         SelectCommand="SELECT [User_Email], [User_Password], [User_Role] FROM [User] WHERE [User_Email] = ?"

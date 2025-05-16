@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class Login
 
     '''<summary>
+    '''pnlLogin control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlLogin As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
     '''txtEmail control.
     '''</summary>
     '''<remarks>

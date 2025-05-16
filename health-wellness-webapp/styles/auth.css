@@ -1,0 +1,46 @@
+﻿.authForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 50%;
+    border: 1px solid #ccc;
+}
+
+.authForm input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.authForm label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+}
+
+.authInfo {
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+/*Tablet screen*/
+@media screen and (max-width: 900px) {
+    .authForm {
+        width: 100%
+    }
+}
+
+/*Mobile Screen*/
+@media screen and (max-width: 600px) {
+}
