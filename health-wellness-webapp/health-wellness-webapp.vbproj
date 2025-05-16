@@ -93,7 +93,7 @@
     <Content Include="About.aspx" />
     <Content Include="App_Data\app_data\Webapp.accdb" />
     <Content Include="App_Data\Webapp.accdb" />
-    <Content Include="Self-Assessment.aspx" />
+    <Content Include="Quiz.aspx" />
     <Content Include="styles\about.css" />
     <Content Include="styles\auth.css" />
     <Content Include="Blogs.aspx" />
@@ -108,11 +108,11 @@
     <Content Include="images\vishant.jpg" />
     <Content Include="images\zhixian.jpg" />
     <Content Include="My Project\About Us.aspx" />
-    <Content Include="ResourcePage.aspx" />
+    <Content Include="Resources.aspx" />
     <Content Include="Signup.aspx" />
     <Content Include="styles\contact.css" />
     <Content Include="styles\globals.css" />
-    <Content Include="styles\self-assessment.css" />
+    <Content Include="styles\quiz.css" />
     <Content Include="Web.config" />
     <Content Include="Home.aspx" />
     <Content Include="Login.aspx" />
@@ -169,18 +169,18 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Password.vb" />
-    <Compile Include="ResourcePage.aspx.designer.vb">
-      <DependentUpon>ResourcePage.aspx</DependentUpon>
+    <Compile Include="Resources.aspx.designer.vb">
+      <DependentUpon>Resources.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ResourcePage.aspx.vb">
-      <DependentUpon>ResourcePage.aspx</DependentUpon>
+    <Compile Include="Resources.aspx.vb">
+      <DependentUpon>Resources.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Self-Assessment.aspx.designer.vb">
-      <DependentUpon>Self-Assessment.aspx</DependentUpon>
+    <Compile Include="Quiz.aspx.designer.vb">
+      <DependentUpon>Quiz.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Self-Assessment.aspx.vb">
-      <DependentUpon>Self-Assessment.aspx</DependentUpon>
+    <Compile Include="Quiz.aspx.vb">
+      <DependentUpon>Quiz.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Signup.aspx.designer.vb">

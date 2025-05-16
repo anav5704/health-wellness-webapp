@@ -1,8 +1,6 @@
-﻿<%@ Page Title="Resources" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="ResourcePage.aspx.vb" Inherits="health_wellness_webapp.Resources" %>
+﻿<%@ Page Title="Resources" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Resources.aspx.vb" Inherits="health_wellness_webapp.Resources" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="styles/globals.css" rel="stylesheet" type="text/css" />
-    <link href="styles/resource.css" rel="stylesheet" type="text/css" />
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
