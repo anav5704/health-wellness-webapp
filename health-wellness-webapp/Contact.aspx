@@ -15,7 +15,7 @@
         <br />
         <br />
         <asp:Button ID="btnMessage" runat="server" Text="Send Message" />
-        <asp:Label ID="lblMssg" runat="server" CssClass="error" />
+        <asp:Label ID="lblMssg" runat="server" />
     </asp:Panel>
     <asp:AccessDataSource ID="adsContact" runat="server" DataFile="~/App_Data/Webapp.accdb"
         InsertCommand="INSERT INTO Contact ([contact_Email], [Contact_Message]) VALUES (?, ?)">
