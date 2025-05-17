@@ -1,0 +1,157 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+    header h1 {
+        font-size: 2.5em;
+        color: #333;
+    }
+
+    header p {
+        font-size: 1.2em;
+        color: #666;
+    }
+
+nav.aria-label {
+    margin-top: 20px;
+}
+
+.button-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(81, 203, 238, 0.5); /* Light green box shadow */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover */
+}
+
+    .button-primary:hover {
+        background-color: #0056b3;
+        box-shadow: 0 2px 10px rgba(81, 203, 238, 0.7); /* Enhanced shadow on hover */
+    }
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+article {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+    article img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+figcaption {
+    padding: 15px;
+}
+
+    figcaption header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+        figcaption header h3 {
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        figcaption header p {
+            font-size: 1em;
+            color: #666;
+        }
+
+    figcaption p {
+        font-size: 1em;
+        color: #333;
+    }
+
+    figcaption footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+        figcaption footer ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+        }
+
+            figcaption footer ul li {
+                font-size: 0.9em;
+                color: #666;
+            }
+
+.read-more {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+    .read-more:hover {
+        background-color: #0056b3;
+    }
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+    footer button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        footer button:hover {
+            background-color: #0056b3;
+        }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}

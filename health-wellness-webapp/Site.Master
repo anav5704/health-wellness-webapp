@@ -8,8 +8,8 @@
     </asp:ContentPlaceHolder>
     <link href="styles/globals.css" rel="stylesheet" type="text/css" />
     <link href="styles/auth.css" rel="stylesheet" type="text/css" />
-     <link href="styles/blogs.css" rel="stylesheet" type="text/css" />
-     <link href="styles/about.css" rel="stylesheet" type="text/css" />
+    <link href="styles/blogs.css" rel="stylesheet" type="text/css" />
+    <link href="styles/about.css" rel="stylesheet" type="text/css" />
     <link href="styles/contact.css" rel="stylesheet" type="text/css" />
     <link href="styles/resource.css" rel="stylesheet" type="text/css" />
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -27,10 +27,9 @@
                     <li><a href="Home.aspx">Home</a></li>
                     <li><a href="Therapists.aspx">Therapists</a></li>
                     <li><a href="Booking.aspx">Booking</a></li>
-                    <li><a href="Quiz.aspx">Quiz</a></li>
                     <li><a href="Resources.aspx">Resources</a></li>
                     <li><a href="Blogs.aspx">Blogs</a></li> 
-                    <li><a href ="About.aspx">About</a></li>
+                    <li><a href="About.aspx">About</a></li>
                     <li><a href="Contact.aspx">Contact</a></li>
                 </ul>
             </nav>
