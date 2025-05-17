@@ -13,7 +13,7 @@
          <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" />
          <asp:RequiredFieldValidator Display="Dynamic" ID="rfvSignupPasswrd" runat="server" ControlToValidate="txtPassword" ErrorMessage="Password is required." CssClass="error" />
 
-         <asp:Button ID="btnSignup" runat="server" Text="Sign Up" />
+         <asp:Button CssClass="primary-button" ID="btnSignup" runat="server" Text="Sign Up" />
 
          <asp:Label CssClass="error" ID="lblMessage" runat="server"></asp:Label>
       </asp:Panel>

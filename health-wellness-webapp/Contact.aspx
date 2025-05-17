@@ -7,14 +7,10 @@
         <asp:Label ID="lblEmail" runat="server" Text="Email"></asp:Label>
         <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator Display="Dynamic" ID="rfvEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email is required." CssClass="error" />
-        <br />
-        <br />
         <asp:Label ID="lblMessage" runat="server" Text="Message"></asp:Label>
         <asp:TextBox ID="txtMessage" runat="server" Rows="6" TextMode="MultiLine"></asp:TextBox>
         <asp:RequiredFieldValidator Display="Dynamic" ID="rfvMessage" runat="server" ControlToValidate="txtMessage" ErrorMessage="Message is required." CssClass="error" />
-        <br />
-        <br />
-        <asp:Button ID="btnMessage" runat="server" Text="Send Message" />
+        <asp:Button CssClass="primary-button" ID="btnMessage" runat="server" Text="Send Message" />
         <asp:Label ID="lblMssg" runat="server" />
     </asp:Panel>
     <asp:AccessDataSource ID="adsContact" runat="server" DataFile="~/App_Data/Webapp.accdb"
