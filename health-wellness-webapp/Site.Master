@@ -32,7 +32,7 @@
                   
                 </ul>
             </nav>
-            <a href="Signup.aspx" class="primary-link">Create Account</a>
+            <asp:PlaceHolder ID="phAuthLinks" runat="server" />
         </header>
         <main>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

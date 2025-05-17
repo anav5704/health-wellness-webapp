@@ -93,6 +93,7 @@
     <Content Include="About.aspx" />
     <Content Include="App_Data\app_data\Webapp.accdb" />
     <Content Include="App_Data\Webapp.accdb" />
+    <Content Include="Logout.aspx" />
     <Content Include="Quiz.aspx" />
     <Content Include="styles\about.css" />
     <Content Include="styles\auth.css" />
@@ -141,6 +142,13 @@
     </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.vb">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.vb">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\About Us.aspx.designer.vb">
       <DependentUpon>About Us.aspx</DependentUpon>
