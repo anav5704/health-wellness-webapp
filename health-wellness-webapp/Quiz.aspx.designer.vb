@@ -201,4 +201,31 @@ Partial Public Class Quiz
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents RadioButtonList20 As Global.System.Web.UI.WebControls.RadioButtonList
+
+    '''<summary>
+    '''btnSubmit control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnSubmit As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''pnlResultCard control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlResultCard As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''lblResult control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblResult As Global.System.Web.UI.WebControls.Label
 End Class
