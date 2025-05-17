@@ -18,9 +18,12 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <header>
+        <header id="nav-header">
              <img src="images/logo.png" alt="Best Health Logo" title="Best Health Logo" height="45" width="200" />
-            <nav>    
+             <div class="menu-toggle" onclick="toggleMenu()">
+               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
+            </div>
+            <nav id="navbar">    
                 <ul>
                     <li><a href="Home.aspx">Home</a></li>
                     <li><a href="Therapists.aspx">Therapists</a></li>
@@ -29,7 +32,6 @@
                     <li><a href="Blogs.aspx">Blogs</a></li> 
                     <li><a href ="About.aspx">About</a></li>
                     <li><a href="Contact.aspx">Contact</a></li>
-                  
                 </ul>
             </nav>
             <asp:PlaceHolder ID="phAuthLinks" runat="server" />
@@ -40,7 +42,7 @@
         </main>
              <footer>
             <img src="images/logo.png" alt="Best Health Logo" title="Best Health Logo" height="45" width="200" />
-            <ul>
+            <ul id="footer-links">
 				<li><a href="Mailto:info@best.health">Email</a></li>
                 <li><a href="">Facebook</a></li>
                 <li><a href="">Instagram</a></li>
@@ -51,6 +53,12 @@
         </footer>
 
         <script>
+            const toggleMenu = () => {
+                document.getElementById('nav-header').classList.toggle('open');
+                document.getElementById('navbar').classList.toggle('open');
+                document.getElementById('auth-links').classList.toggle('open');
+             
+            }
             document.getElementById("year").textContent = new Date().getFullYear();
         </script>
     </form>
