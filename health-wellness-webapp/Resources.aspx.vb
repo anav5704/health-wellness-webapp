@@ -3,9 +3,9 @@
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         'User Authentication'
-        'If Not User.Identity.IsAuthenticated Then
-        'Response.Redirect("~/Login.aspx")
-        'End If
+        If Session("User_Email") Is Nothing Then
+            Response.Redirect("Login.aspx?ReturnUrl=" & Server.UrlEncode(Request.RawUrl))
+        End If
     End Sub
 
     Protected Sub btnDownload_Click(ByVal sender As Object, ByVal e As EventArgs)

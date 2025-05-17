@@ -33,7 +33,7 @@ body {
 main {
     width: 70%;
     margin: auto;
-    padding: 50px 0px;
+    padding: 100px 0px;
 }
 
 header {
@@ -126,6 +126,9 @@ footer ul {
     color: black;
 }
 
+.primary-button {
+    background-color: var(--accent);
+}
 
 .primary-link {
     background-color: var(--accent);

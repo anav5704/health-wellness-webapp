@@ -21,11 +21,10 @@
 .authForm label {
     display: block;
     margin-bottom: 0.25rem;
-    font-weight: bold;
 }
 
 .error {
-    color: red;
+    color: #f43f5e;
 }
 
 .authInfo {

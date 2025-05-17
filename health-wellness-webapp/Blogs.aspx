@@ -9,7 +9,6 @@
     <main>
         <header>
             <h1>Mental Health & Wellness Blogs</h1>
-            <p>Insightful articles written by our licensed therapists to support your mental health journey</p>
             <nav aria-label="Create blog navigation">
                 <asp:HyperLink NavigateUrl="~/CreateBlog.aspx" CssClass="button-primary" runat="server">
                     Create New Blog

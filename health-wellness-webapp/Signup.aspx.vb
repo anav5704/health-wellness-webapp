@@ -28,7 +28,7 @@
         adsUsers.InsertParameters("User_Role").DefaultValue = "Member"
 
         adsUsers.Insert()
-        Response.Redirect("Dashboard.aspx")
+        Response.Redirect("Home.aspx")
     End Sub
 
     Protected Sub adsUsers_Selecting(sender As Object, e As SqlDataSourceSelectingEventArgs) Handles adsUsers.Selecting

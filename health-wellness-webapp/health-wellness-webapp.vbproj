@@ -112,6 +112,8 @@
     <Content Include="Signup.aspx" />
     <Content Include="styles\contact.css" />
     <Content Include="styles\globals.css" />
+    <Content Include="styles\quiz.css" />
+    <Content Include="styles\resource.css" />
     <Content Include="Therapists.aspx" />
     <Content Include="Web.config" />
     <Content Include="Home.aspx" />
