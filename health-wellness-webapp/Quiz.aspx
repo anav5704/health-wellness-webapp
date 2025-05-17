@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <h2>Depression Anxiety Stress Scale-21</h2>
-    <br />
+    
     <h4>1. I found it hard to wind down</h4>
     <div class="evaluation-item">
         <div class="options-line">
@@ -19,6 +19,7 @@
             <span class="opt-text">Disagree</span>
         </div>
     </div>
+    
 
     <h4>2. I was aware of dryness of my mouth</h4>
     <div class="evaluation-item">
@@ -33,6 +34,7 @@
             <span class="opt-text">Disagree</span>
         </div>
     </div>
+    
 
     <h4>3. I couldn’t seem to experience any positive feeling at all</h4>
     <div class="evaluation-item">
@@ -47,6 +49,7 @@
             <span class="opt-text">Disagree</span>
         </div>
     </div>
+    
 
     <h4>4. I experienced breathing difficulty (e.g. excessively rapid breathing, breathlessness in the absence of physical exertion)</h4>
     <div class="evaluation-item">
@@ -300,6 +303,14 @@
         </div>
     </div>
 
+    <div class="button-container">
+    <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" CssClass="btn-submit" />
+    </div>
+
+    <asp:Label
+        ID="lblResult"
+        runat="server"
+        CssClass="result-label" />
 
 
 </asp:Content>
