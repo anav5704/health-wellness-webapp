@@ -23,8 +23,25 @@
         Dim lvlAnx = ClassifyAnxiety(scoreAnx)
         Dim lvlStr = ClassifyStress(scoreStr)
 
+        Dim suggestionDep = GetSuggestion("Depression", lvlDep)
+        Dim suggestionAnx = GetSuggestion("Anxiety", lvlAnx)
+        Dim suggestionStr = GetSuggestion("Stress", lvlStr)
 
-        lblResult.Text = $"Depression：{scoreDep} （{lvlDep}）；Anxiety：{scoreAnx} （{lvlAnx}）；Stress：{scoreStr} （{lvlStr}）"
+        Dim resultText As New System.Text.StringBuilder()
+        resultText.AppendLine($"Your scores and recommodation are as follows:")
+        resultText.AppendLine()
+        resultText.AppendLine($"Depression: {scoreDep} ({lvlDep})")
+        resultText.AppendLine(suggestionDep)
+        resultText.AppendLine()
+        resultText.AppendLine($"Anxiety: {scoreAnx} ({lvlAnx})")
+        resultText.AppendLine(suggestionAnx)
+        resultText.AppendLine()
+        resultText.AppendLine($"Stress: {scoreStr} ({lvlStr})")
+        resultText.AppendLine(suggestionStr)
+
+        lblResult.Text = resultText.ToString().Replace(vbCrLf, "<br />")
+        pnlResultCard.Visible = True
+
     End Sub
 
 
@@ -76,6 +93,23 @@
             Case <= 25 : Return "Moderate"
             Case <= 33 : Return "Severe"
             Case Else : Return "Extremely Severe"
+        End Select
+    End Function
+
+    Private Function GetSuggestion(scale As String, level As String) As String
+        Select Case level
+            Case "Normal"
+                Return $"{scale}: Your score is within the normal range. Keep up your healthy habits and maintain your current self-care routines."
+            Case "Mild"
+                Return $"{scale}: You are experiencing mild symptoms. Consider trying relaxation exercises, mindfulness or light physical activity to help manage your feelings."
+            Case "Moderate"
+                Return $"{scale}: You have moderate symptoms. It may be helpful to talk to a trusted friend or family member, or seek guidance from a mental health professional."
+            Case "Severe"
+                Return $"{scale}: You are showing significant symptoms. We recommend contacting a qualified counselor or therapist to discuss your concerns."
+            Case "Extremely Severe"
+                Return $"{scale}: Your symptoms are very high. Please reach out immediately to a mental health professional or crisis hotline for support."
+            Case Else
+                Return String.Empty
         End Select
     End Function
 

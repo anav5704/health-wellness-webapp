@@ -307,10 +307,11 @@
     <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" CssClass="btn-submit" />
     </div>
 
-    <asp:Label
-        ID="lblResult"
-        runat="server"
-        CssClass="result-label" />
+    <asp:Panel ID="pnlResultCard" runat="server" Visible="False" CssClass="result-card">
+        <h2>Evaluation Summary</h2>
+        <asp:Label ID="lblResult" runat="server" CssClass="result-text" />
+
+    </asp:Panel>
 
 
 </asp:Content>
