@@ -94,7 +94,6 @@
     <Content Include="App_Data\app_data\Webapp.accdb" />
     <Content Include="App_Data\Webapp.accdb" />
     <Content Include="Logout.aspx" />
-    <Content Include="Quiz.aspx" />
     <Content Include="styles\about.css" />
     <Content Include="styles\auth.css" />
     <Content Include="Blogs.aspx" />
@@ -113,7 +112,7 @@
     <Content Include="Signup.aspx" />
     <Content Include="styles\contact.css" />
     <Content Include="styles\globals.css" />
-    <Content Include="styles\quiz.css" />
+    <Content Include="Therapists.aspx" />
     <Content Include="Web.config" />
     <Content Include="Home.aspx" />
     <Content Include="Login.aspx" />
@@ -184,13 +183,6 @@
       <DependentUpon>Resources.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Quiz.aspx.designer.vb">
-      <DependentUpon>Quiz.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Quiz.aspx.vb">
-      <DependentUpon>Quiz.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="Signup.aspx.designer.vb">
       <DependentUpon>Signup.aspx</DependentUpon>
     </Compile>
@@ -217,6 +209,13 @@
     </Compile>
     <Compile Include="Login.aspx.vb">
       <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Therapists.aspx.designer.vb">
+      <DependentUpon>Therapists.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Therapists.aspx.vb">
+      <DependentUpon>Therapists.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
