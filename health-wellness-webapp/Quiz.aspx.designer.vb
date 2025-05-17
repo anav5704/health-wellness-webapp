@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Self_Assessment
+Partial Public Class Quiz
 
     '''<summary>
     '''rblFreq control.

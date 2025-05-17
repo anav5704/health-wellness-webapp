@@ -1,7 +1,5 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="About.aspx.vb" Inherits="health_wellness_webapp.About" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="styles/globals.css" rel="stylesheet" type="text/css" />
-    <link href="styles/about.css" rel="stylesheet" type="text/css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Meet Our Developers</h1>
@@ -17,10 +15,10 @@
             <section class ="tech-skills">
                 <h4>Technology Skills</h4>
                 <ul>
-                    <li>React</li>
-                    <li>Node js</li>
-                    <li>Typescript</li>
-                    <li>Nginx</li>
+                    <li>Next js
+                    <li>TypeScript
+                    <li>PostgreSQL
+                    <li>Docker
                 </ul>
             </section>
         </section>

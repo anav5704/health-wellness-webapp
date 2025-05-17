@@ -9,6 +9,11 @@
     </asp:ContentPlaceHolder>
     <link href="styles/globals.css" rel="stylesheet" type="text/css" />
     <link href="styles/auth.css" rel="stylesheet" type="text/css" />
+    <link href="styles/quiz.css" rel="stylesheet" type="text/css" />
+     <link href="styles/blogs.css" rel="stylesheet" type="text/css" />
+     <link href="styles/about.css" rel="stylesheet" type="text/css" />
+    <link href="styles/contact.css" rel="stylesheet" type="text/css" />
+    <link href="styles/resrouces.css" rel="stylesheet" type="text/css" />
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
