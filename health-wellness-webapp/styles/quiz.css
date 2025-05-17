@@ -1,6 +1,6 @@
 ﻿
-h2{
-    text-align:center;
+h2 {
+    text-align: center;
 }
 
 h4 {
@@ -8,12 +8,12 @@ h4 {
     font-size: 16px;
 }
 
-}
 .evaluation-item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: 20px 0;
+    padding: 0 16px;
 }
 
 
@@ -59,10 +59,12 @@ h4 {
             width: 27px;
             height: 27px;
         }
-            .options input[type="radio"]:nth-child(3) {
+
+        .options input[type="radio"]:nth-child(3) {
             width: 27px;
             height: 27px;
         }
+
         .options input[type="radio"]:nth-child(4) {
             width: 32px;
             height: 32px;
@@ -81,10 +83,11 @@ h4 {
         .options input[type="radio"]:checked::before {
             background-color: var(--accent);
         }
+
 .button-container {
     width: 100%;
-    text-align: center; 
-    margin-top: 24px; 
+    text-align: center;
+    margin-top: 24px;
 }
 
 
@@ -107,3 +110,28 @@ h4 {
     .btn-submit:focus {
         background-color: #005a3e;
     }
+
+.result-card {
+    background-color: #fff;
+    border-radius: 8px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 24px auto;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+
+    .result-card h2 {
+        margin-top: 0; 
+        font-size: 20px;
+        color: #000;
+    }
+
+.result-text {
+    margin: 16px 0 0 0; 
+    color: #333;
+    font-size: 14px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
