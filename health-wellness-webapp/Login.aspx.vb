@@ -25,7 +25,13 @@
             If storedHash = inputHash Then
                 Session("User_Email") = email
                 Session("User_Role") = userData(0)("User_Role").ToString()
-                Response.Redirect("Dashboard.aspx")
+
+                Dim returnUrl As String = Request.QueryString("ReturnUrl")
+                If Not String.IsNullOrEmpty(returnUrl) Then
+                    Response.Redirect(returnUrl)
+                Else
+                    Response.Redirect("Home.aspx")
+                End If
             Else
                 lblMessage.Text = "Invalid password."
             End If
