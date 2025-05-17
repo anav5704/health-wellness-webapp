@@ -13,34 +13,31 @@
     margin: 20px auto;
 }
 
-figcaption {
+.developer figcaption {
     margin: 0;
-}
-
-figcaption {
     font-size: 1.2rem;
     font-weight: bold;
     margin-top: 1rem;
 }
 
-.bio {
+.developer bio {
     font-size: 0.95rem;
     color: #444;
     margin: 1rem 0;
 }
 
-h4 {
+.developer h4 {
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
     color: #333;
 }
 
-ul {
+.developer ul {
     list-style-type: none;
     padding: 0;
 }
 
-li {
+.developer li {
     background-color: #f0f0f0;
     margin: 0.3rem 0;
     padding :0.75rem;
