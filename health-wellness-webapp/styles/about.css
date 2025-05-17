@@ -5,10 +5,11 @@
 
 .developer {
     background-color: #ffffff;
-    border-radius: 16px;
+    border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     padding: 1.5rem;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     margin: 20px auto;
 }
 
@@ -22,24 +23,24 @@ figcaption {
     margin-top: 1rem;
 }
 
-.bio p {
+.bio {
     font-size: 0.95rem;
     color: #444;
     margin: 1rem 0;
 }
 
-.tech-skills h4 {
+h4 {
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
     color: #333;
 }
 
-.tech-skills ul {
+ul {
     list-style-type: none;
     padding: 0;
 }
 
-.tech-skills li {
+li {
     background-color: #f0f0f0;
     margin: 0.3rem 0;
     padding :0.75rem;
@@ -48,10 +49,11 @@ figcaption {
     font-size: 0.9rem;
 }
 
-.team img {
+.developer img {
     width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto;
+    max-width: 100%;
+    object-fit: cover;
     border-radius: 15px;
+    display: block;
 }
