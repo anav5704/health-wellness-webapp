@@ -1,5 +1,4 @@
 ﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.Master.vb" Inherits="health_wellness_webapp.Site1" %>
-
 <!DOCTYPE html>
 
 <html>
@@ -9,13 +8,13 @@
     </asp:ContentPlaceHolder>
     <link href="styles/globals.css" rel="stylesheet" type="text/css" />
     <link href="styles/auth.css" rel="stylesheet" type="text/css" />
-    <link href="styles/quiz.css" rel="stylesheet" type="text/css" />
      <link href="styles/blogs.css" rel="stylesheet" type="text/css" />
      <link href="styles/about.css" rel="stylesheet" type="text/css" />
     <link href="styles/contact.css" rel="stylesheet" type="text/css" />
     <link href="styles/resource.css" rel="stylesheet" type="text/css" />
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
     <form id="form1" runat="server">
         <header id="nav-header">
