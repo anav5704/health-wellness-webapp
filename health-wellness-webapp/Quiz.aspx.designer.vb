@@ -23,13 +23,22 @@ Partial Public Class Quiz
     Protected WithEvents rblFreq As Global.System.Web.UI.WebControls.RadioButtonList
 
     '''<summary>
-    '''Label1 control.
+    '''RadioButtonList2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents RadioButtonList2 As Global.System.Web.UI.WebControls.RadioButtonList
+
+    '''<summary>
+    '''RadioButtonList3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RadioButtonList3 As Global.System.Web.UI.WebControls.RadioButtonList
 
     '''<summary>
     '''RadioButtonList1 control.
@@ -41,33 +50,6 @@ Partial Public Class Quiz
     Protected WithEvents RadioButtonList1 As Global.System.Web.UI.WebControls.RadioButtonList
 
     '''<summary>
-    '''Label2 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''RadioButtonList2 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents RadioButtonList2 As Global.System.Web.UI.WebControls.RadioButtonList
-
-    '''<summary>
-    '''Label4 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
     '''RadioButtonList4 control.
     '''</summary>
     '''<remarks>
@@ -75,15 +57,6 @@ Partial Public Class Quiz
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents RadioButtonList4 As Global.System.Web.UI.WebControls.RadioButtonList
-
-    '''<summary>
-    '''Label5 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''RadioButtonList5 control.
@@ -95,15 +68,6 @@ Partial Public Class Quiz
     Protected WithEvents RadioButtonList5 As Global.System.Web.UI.WebControls.RadioButtonList
 
     '''<summary>
-    '''Label6 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label6 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
     '''RadioButtonList6 control.
     '''</summary>
     '''<remarks>
@@ -111,15 +75,6 @@ Partial Public Class Quiz
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents RadioButtonList6 As Global.System.Web.UI.WebControls.RadioButtonList
-
-    '''<summary>
-    '''Label7 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label7 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''RadioButtonList7 control.
@@ -131,15 +86,6 @@ Partial Public Class Quiz
     Protected WithEvents RadioButtonList7 As Global.System.Web.UI.WebControls.RadioButtonList
 
     '''<summary>
-    '''Label8 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label8 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
     '''RadioButtonList8 control.
     '''</summary>
     '''<remarks>
@@ -147,15 +93,6 @@ Partial Public Class Quiz
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents RadioButtonList8 As Global.System.Web.UI.WebControls.RadioButtonList
-
-    '''<summary>
-    '''Label9 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label9 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''RadioButtonList9 control.
@@ -167,15 +104,6 @@ Partial Public Class Quiz
     Protected WithEvents RadioButtonList9 As Global.System.Web.UI.WebControls.RadioButtonList
 
     '''<summary>
-    '''Label10 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label10 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
     '''RadioButtonList10 control.
     '''</summary>
     '''<remarks>
@@ -183,15 +111,6 @@ Partial Public Class Quiz
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents RadioButtonList10 As Global.System.Web.UI.WebControls.RadioButtonList
-
-    '''<summary>
-    '''Label11 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label11 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''RadioButtonList11 control.
@@ -203,15 +122,6 @@ Partial Public Class Quiz
     Protected WithEvents RadioButtonList11 As Global.System.Web.UI.WebControls.RadioButtonList
 
     '''<summary>
-    '''Label12 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label12 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
     '''RadioButtonList12 control.
     '''</summary>
     '''<remarks>
@@ -219,15 +129,6 @@ Partial Public Class Quiz
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents RadioButtonList12 As Global.System.Web.UI.WebControls.RadioButtonList
-
-    '''<summary>
-    '''Label13 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label13 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''RadioButtonList13 control.
@@ -239,15 +140,6 @@ Partial Public Class Quiz
     Protected WithEvents RadioButtonList13 As Global.System.Web.UI.WebControls.RadioButtonList
 
     '''<summary>
-    '''Label14 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label14 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
     '''RadioButtonList14 control.
     '''</summary>
     '''<remarks>
@@ -255,15 +147,6 @@ Partial Public Class Quiz
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents RadioButtonList14 As Global.System.Web.UI.WebControls.RadioButtonList
-
-    '''<summary>
-    '''Label15 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label15 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''RadioButtonList15 control.
@@ -275,15 +158,6 @@ Partial Public Class Quiz
     Protected WithEvents RadioButtonList15 As Global.System.Web.UI.WebControls.RadioButtonList
 
     '''<summary>
-    '''Label16 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label16 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
     '''RadioButtonList16 control.
     '''</summary>
     '''<remarks>
@@ -291,15 +165,6 @@ Partial Public Class Quiz
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents RadioButtonList16 As Global.System.Web.UI.WebControls.RadioButtonList
-
-    '''<summary>
-    '''Label17 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label17 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''RadioButtonList17 control.
@@ -311,15 +176,6 @@ Partial Public Class Quiz
     Protected WithEvents RadioButtonList17 As Global.System.Web.UI.WebControls.RadioButtonList
 
     '''<summary>
-    '''Label18 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label18 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
     '''RadioButtonList18 control.
     '''</summary>
     '''<remarks>
@@ -327,15 +183,6 @@ Partial Public Class Quiz
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents RadioButtonList18 As Global.System.Web.UI.WebControls.RadioButtonList
-
-    '''<summary>
-    '''Label19 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label19 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''RadioButtonList19 control.
@@ -347,15 +194,6 @@ Partial Public Class Quiz
     Protected WithEvents RadioButtonList19 As Global.System.Web.UI.WebControls.RadioButtonList
 
     '''<summary>
-    '''Label20 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label20 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
     '''RadioButtonList20 control.
     '''</summary>
     '''<remarks>
@@ -363,22 +201,4 @@ Partial Public Class Quiz
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents RadioButtonList20 As Global.System.Web.UI.WebControls.RadioButtonList
-
-    '''<summary>
-    '''Label21 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label21 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''RadioButtonList21 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents RadioButtonList21 As Global.System.Web.UI.WebControls.RadioButtonList
 End Class
