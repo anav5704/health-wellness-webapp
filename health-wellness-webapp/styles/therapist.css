@@ -1,49 +1,49 @@
-﻿.card {
+﻿.therapist-card {
     width: 100%;
     margin-bottom: 30px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
-    .card:hover {
+    .therapist-card:hover {
         transform: translateY(-5px);
     }
 
-.image {
-    width: 200px;
-    height: 200px;
-    text-align: center;
-}
+    .image-cell {
+        width: 200px;
+        height: 200px;
+        text-align: center;
+    }
 
-.content {
-    padding: 10px;
-    vertical-align: top;
-}
+    .content-cell {
+        padding: 10px;
+        vertical-align: top;
+    }
 
-.name {
-    margin: 0;
-    font-size: 20px;
-}
+    .therapist-name {
+        margin: 0;
+        font-size: 20px;
+    }
 
-.description {
-    margin: 5px 0;
-    line-height: 1.5;
-}
+    .therapist-description {
+        margin: 5px 0;
+        line-height: 1.5;
+    }
 
-.tags {
+.therapist-tags {
     list-style: none;
     padding: 0;
     margin: 10px 0;
 }
 
-    .tags li {
-        display: inline-block;
-        background-color: #ddd;
-        padding: 5px 10px;
-        margin: 5px;
-        border-radius: 10px;
-    }
+.therapist-tags li {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
 
-.price {
+.therapist-price {
     margin-top: 5px;
     font-weight: bold;
 }
