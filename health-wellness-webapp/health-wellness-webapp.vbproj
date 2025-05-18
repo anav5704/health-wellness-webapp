@@ -91,7 +91,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="App_Data\app_data\Webapp.accdb" />
     <Content Include="App_Data\Webapp.accdb" />
     <Content Include="images\blogs.png" />
     <Content Include="images\resources.png" />
@@ -236,6 +235,7 @@
   <ItemGroup>
     <Content Include="fonts\Geist.ttf" />
     <Content Include="fonts\Merriweather.ttf" />
+    <Content Include="App_Data\Healthy Habits &amp; Routines.pdf" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
