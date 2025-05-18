@@ -5,28 +5,28 @@
     margin-bottom: 30px;
 }
 
-article {
+.resources-grid article {
     background-color: #ffffff;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
 }
 
-    article h3 {
+    .article h3 {
         color: #000000;
         font-size: 1.3rem;
         margin-top: 0;
     }
 
-    article p {
+    .article p {
         margin-bottom: 15px;
         line-height: 1.5;
     }
 
-a {
+.a {
     color: #000000;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 300;
     display: inline-block;
     transition: color 0.2s;
 }
