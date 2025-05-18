@@ -100,6 +100,7 @@
     <Content Include="images\therapist3.jpg" />
     <Content Include="images\therapist4.jpg" />
     <Content Include="images\therapy.png" />
+    <Content Include="styles\Booking.css" />
     <Content Include="styles\home.css" />
     <Content Include="Logout.aspx" />
     <Content Include="styles\about.css" />
@@ -120,7 +121,6 @@
     <Content Include="Signup.aspx" />
     <Content Include="styles\contact.css" />
     <Content Include="styles\globals.css" />
-    <Content Include="styles\quiz.css" />
     <Content Include="styles\resource.css" />
     <Content Include="styles\therapist.css" />
     <Content Include="Therapists.aspx" />
