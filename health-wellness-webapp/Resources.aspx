@@ -6,7 +6,6 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <main>
         <section aria-labelledby="documents-heading">
             <h2 id="documents-heading">Documents & Sites</h2>
             <section class="resources-grid">
@@ -72,5 +71,4 @@
                 </article>
             </section>
         </section>
-    </main>
 </asp:Content>
