@@ -9,7 +9,6 @@
     <main>
         <section aria-labelledby="documents-heading">
             <h2 id="documents-heading">Documents & Sites</h2>
-            
             <section class="resources-grid">
                 <article>
                     <h3>Wellness Routine Guide</h3>
@@ -59,14 +58,14 @@
             <h2>Video Resources</h2>
             <section class="video-container">
                 <article>
-                    <h3>Mental Health Wellness Tips</h3>
+                    <h3 style="text-align:center"> Mental Health Wellness Tips </h3>
                     <section class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/NQcYZplTXnQ" title="Mental Health Wellness Tips" allowfullscreen></iframe>
                     </section>
                 </article>
 
                 <article>
-                    <h3>What is Anxiety?</h3>
+                    <h3 style="text-align:center"> What is Anxiety? </h3>
                     <section class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/BVJkf8IuRjE" title="What is Anxiety?" allowfullscreen></iframe>
                     </section>
