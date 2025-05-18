@@ -4,6 +4,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+    <h1>Therapists</h1>
+
     <a href="Booking.aspx?therapist=JohnDoe">
         <table class="therapist-card">
             <tr>

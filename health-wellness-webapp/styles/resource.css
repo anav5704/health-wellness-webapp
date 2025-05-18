@@ -31,10 +31,6 @@
     transition: color 0.2s;
 }
 
-    a:hover {
-        color: #1abc9c;
-    }
-
 .video-container {
     display: flex;
     flex-direction: column;
