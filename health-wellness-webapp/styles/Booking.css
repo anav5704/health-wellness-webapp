@@ -1,19 +1,18 @@
-﻿/*.therapist-list {
+﻿.therapist {
+    width: 25%;
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center; 
     margin-bottom: 30px;
-}
-
-.therapist {
-    text-align: center;
     cursor: pointer;
+    float: left;
+    text-align: left;
 }
 
     .therapist img {
         width: 100px;
         height: 100px;
-        border-radius: 50%;
-        border: 2px solid transparent;
+        border: 2px solid #fff;
         transition: border-color 0.3s;
     }
 
@@ -21,6 +20,14 @@
         border-color: #007BFF;
     }
 
+    .therapist label {
+        display: inline-block;
+        margin-top: 5px;
+    }
+    .timeselect{
+        display:inline-block;
+        text-align:center;
+    }
 .time-slots {
     display: flex;
     flex-wrap: wrap;
@@ -54,9 +61,4 @@
 .actions button {
     padding: 10px 20px;
     margin-right: 10px;
-}
-*/
-input[type="radio"]:checked + img {
-    border: 3px solid #007BFF;
-    border-radius: 8px;
 }

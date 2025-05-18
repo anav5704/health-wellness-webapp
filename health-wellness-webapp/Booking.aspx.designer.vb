@@ -14,11 +14,119 @@ Option Explicit On
 Partial Public Class Booking
 
     '''<summary>
-    '''rblTherapists control.
+    '''TherapistJohnDoe control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents rblTherapists As Global.System.Web.UI.WebControls.RadioButtonList
+    Protected WithEvents TherapistJohnDoe As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''ImgJohnDoe control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ImgJohnDoe As Global.System.Web.UI.WebControls.Image
+
+    '''<summary>
+    '''LblJohnDoe control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblJohnDoe As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''LblPrice control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblPrice As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''TherapistJameSmith control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TherapistJameSmith As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''ImageJameSmith control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ImageJameSmith As Global.System.Web.UI.WebControls.Image
+
+    '''<summary>
+    '''LblJameSmith control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblJameSmith As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''TherapistCharlesDow control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TherapistCharlesDow As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''ImageCharlesDow control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ImageCharlesDow As Global.System.Web.UI.WebControls.Image
+
+    '''<summary>
+    '''LblCharlesDow control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblCharlesDow As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''TherapistEmilyJones control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TherapistEmilyJones As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''ImageEmilyJones control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ImageEmilyJones As Global.System.Web.UI.WebControls.Image
+
+    '''<summary>
+    '''LblEmilyJones control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblEmilyJones As Global.System.Web.UI.WebControls.Label
 End Class
