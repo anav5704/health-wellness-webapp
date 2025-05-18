@@ -33,6 +33,10 @@
     margin-top: 25px;
 }
 
+textarea {
+    font-family: Geist;
+}
+
 
 /*Tablet screen*/
 @media screen and (max-width: 900px) {
