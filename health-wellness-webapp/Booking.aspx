@@ -25,23 +25,9 @@
         <asp:Label ID="LblEmilyJones" Text="Emily Jones" runat="server" />
     </asp:Panel>
 
-
-
-
-    <!-- 时间段选择区域 -->
-    <h2 class="timeselect">Time Slot</h2>
+    <h2 class="center-title">Time Slot</h2>
     <div class="time-slots" id="timeSlots">
         <!-- 时间段按钮将通过 JavaScript 动态生成 -->
-    </div>
-
-    <!-- 金额输入和操作按钮 -->
-    <div class="payment-section">
-        <label for="amount">金额：</label>
-        <input type="number" id="amount" placeholder="输入金额" />
-    </div>
-    <div class="actions">
-        <button onclick="submitBooking('pay')">支付</button>
-        <button onclick="submitBooking('gift')">赠送</button>
     </div>
 
     <script>
