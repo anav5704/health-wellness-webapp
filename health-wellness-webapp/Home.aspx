@@ -30,7 +30,7 @@
                         <img src="images/therapy.png" alt="Therapy Sessions" title="Therapy Sessions" height="300" width="300" />
                         <h3>Therapy Sessions</h3>
                         <p>Private sessions with licensed therapists to discuss emotions, challenges, and personal growth.</p>
-                        <a href="Booking.aaspx">Book Session -></a>
+                        <a href="Booking.aspx">Book Session -></a>
                     </article>
                     <article class="card">
                         <img src="images/resources.png" alt="Health Resources" title="Health Resrouces" height="300" width="300" />
