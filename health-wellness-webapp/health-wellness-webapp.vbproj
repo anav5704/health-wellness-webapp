@@ -92,6 +92,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="App_Data\Webapp.accdb" />
+    <Content Include="Booking.aspx" />
     <Content Include="images\blogs.png" />
     <Content Include="images\resources.png" />
     <Content Include="images\Therapist1.jpg" />
@@ -140,6 +141,13 @@
     </Compile>
     <Compile Include="Blogs.aspx.vb">
       <DependentUpon>Blogs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Booking.aspx.designer.vb">
+      <DependentUpon>Booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Booking.aspx.vb">
+      <DependentUpon>Booking.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Contact.aspx.designer.vb">

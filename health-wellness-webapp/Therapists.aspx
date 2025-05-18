@@ -1,14 +1,14 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Therapists.aspx.vb" Inherits="health_wellness_webapp.Therapists" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="therapist-cards.aspx.vb" Inherits="health_wellness_webapp.therapist-cards" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <a href="Booking.aspx?therapist=JohnDoe">
-        <table class="card">
+    <a href="Booking.aspx?therapist-card=JohnDoe">
+        <table class="therapist-card">
             <tr>
                 <td class="image">
-                    <img src="/images/Therapist1.jpg" alt="Therapist" width="200" height="200">
+                    <img src="/images/therapist-card1.jpg" alt="therapist-card" width="200" height="200">
                 </td>
                 <td class="content">
                     <h3 class="name">John Doe</h3>
@@ -26,11 +26,11 @@
         </table>
     </a>
 
-    <a href="Booking.aspx?therapist=JameSmith">
-        <table class="card">
+    <a href="Booking.aspx?therapist-card=JameSmith">
+        <table class="therapist-card">
             <tr>
                 <td class="image">
-                    <img src="/images/therapist2.jpg" alt="Therapist" width="200" height="200">
+                    <img src="/images/therapist-card2.jpg" alt="therapist-card" width="200" height="200">
                 </td>
                 <td class="content">
                     <h3 class="name">Jame Smith</h3>
@@ -48,11 +48,11 @@
         </table>
     </a>
 
-    <a href="Booking.aspx?therapist=CharlesDow">
-        <table class="card">
+    <a href="Booking.aspx?therapist-card=CharlesDow">
+        <table class="therapist-card">
             <tr>
                 <td class="image">
-                    <img src="/images/therapist3.jpg" alt="Therapist" width="200" height="200">
+                    <img src="/images/therapist-card3.jpg" alt="therapist-card" width="200" height="200">
                 </td>
                 <td class="content">
                     <h3 class="name">Charles Dow</h3>
@@ -70,11 +70,11 @@
         </table>
     </a>
 
-    <a href="Booking.aspx?therapist=EmilyJones">
-        <table class="card">
+    <a href="Booking.aspx?therapist-card=EmilyJones">
+        <table class="therapist-card">
             <tr>
                 <td class="image">
-                    <img src="/images/therapist4.jpg" alt="Therapist" width="200" height="200">
+                    <img src="/images/therapist-card4.jpg" alt="therapist-card" width="200" height="200">
                 </td>
                 <td class="content">
                     <h3 class="name">Emily Jones</h3>
