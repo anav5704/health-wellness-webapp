@@ -8,34 +8,34 @@
         transform: translateY(-5px);
     }
 
-    .therapist-card image {
+    .image-cell {
         width: 200px;
         height: 200px;
         text-align: center;
     }
 
-    .therapist-card content {
+    .content-cell {
         padding: 10px;
         vertical-align: top;
     }
 
-    .therapist-card name {
+    .therapist-name {
         margin: 0;
         font-size: 20px;
     }
 
-    .therapist-card description {
+    .therapist-description {
         margin: 5px 0;
         line-height: 1.5;
     }
 
-.therapist-card tags {
+.therapist-tags {
     list-style: none;
     padding: 0;
     margin: 10px 0;
 }
 
-.therapist-card tags li {
+.therapist-tags li {
     display: inline-block;
     background-color: #ddd;
     padding: 5px 10px;
@@ -43,7 +43,7 @@
     border-radius: 10px;
 }
 
-.therapist-card price {
+.therapist-price {
     margin-top: 5px;
     font-weight: bold;
 }

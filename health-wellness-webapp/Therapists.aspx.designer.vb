@@ -11,5 +11,5 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class therapist-cards
+Partial Public Class Therapists
 End Class
