@@ -31,7 +31,7 @@
                         <asp:HyperLink NavigateUrl="https://aitherapist.io/resources/blog/posts/mindfulness-techniques-stress-relief" runat="server"> Continue Reading → </asp:HyperLink>
                     </footer>
                 </div>
-            </article>
+            </article> <br/>
 
             <article class="blog-card">
                 <img src="\images\Blogs_2.jpg" alt="Two people holding hands" class="blog-image" />
@@ -53,7 +53,7 @@
                         <asp:HyperLink NavigateUrl="https://blendofbites.com/foods-to-boost-mental-clarity-and-concentration/" runat="server"> Continue Reading → </asp:HyperLink>
                     </footer>
                 </div>
-            </article>
+            </article> <br/>
 
             <article class="blog-card">
                 <img src="\images\Blogs_3.jpg" alt="Two people journaling in notebooks" class="blog-image" />
@@ -75,7 +75,7 @@
                         <asp:HyperLink NavigateUrl="https://dhwblog.dukehealth.org/the-power-of-journaling-for-well-being-a-path-to-self-discovery-and-healing/" runat="server"> Continue Reading → </asp:HyperLink>
                     </footer>
                 </div>
-            </article>
+            </article> <br/>
 
             <article class="blog-card">
                 <img src="\images\Blogs_4.jpg" alt="Person journaling in a notebook" class="blog-image" />
@@ -97,7 +97,7 @@
                         <asp:HyperLink NavigateUrl="https://mindjournals.com/blogs/read/the-mindjournal-story"  runat="server"> Continue Reading → </asp:HyperLink>
                     </footer>
                 </div>
-            </article>
+            </article> 
         </section>
     </main>
 </asp:Content>
