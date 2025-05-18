@@ -93,6 +93,10 @@
     <Content Include="About.aspx" />
     <Content Include="App_Data\app_data\Webapp.accdb" />
     <Content Include="App_Data\Webapp.accdb" />
+    <Content Include="images\blogs.png" />
+    <Content Include="images\resources.png" />
+    <Content Include="images\therapy.png" />
+    <Content Include="styles\home.css" />
     <Content Include="Logout.aspx" />
     <Content Include="styles\about.css" />
     <Content Include="styles\auth.css" />

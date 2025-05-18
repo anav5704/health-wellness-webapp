@@ -7,6 +7,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link href="styles/globals.css" rel="stylesheet" type="text/css" />
+    <link href="styles/home.css" rel="stylesheet" type="text/css" />
     <link href="styles/auth.css" rel="stylesheet" type="text/css" />
      <link href="styles/blogs.css" rel="stylesheet" type="text/css" />
      <link href="styles/about.css" rel="stylesheet" type="text/css" />
