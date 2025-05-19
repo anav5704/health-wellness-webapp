@@ -77,6 +77,15 @@ Partial Public Class Booking
     Protected WithEvents LblJameSmith As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''Label2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''TherapistCharlesDow control.
     '''</summary>
     '''<remarks>
@@ -104,6 +113,15 @@ Partial Public Class Booking
     Protected WithEvents LblCharlesDow As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''Label3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''TherapistEmilyJones control.
     '''</summary>
     '''<remarks>
@@ -129,4 +147,67 @@ Partial Public Class Booking
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents LblEmilyJones As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Label4 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''CblTherapists control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents CblTherapists As Global.System.Web.UI.WebControls.CheckBoxList
+
+    '''<summary>
+    '''xdsTimeSlots control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents xdsTimeSlots As Global.System.Web.UI.WebControls.XmlDataSource
+
+    '''<summary>
+    '''cvTimeSlots control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents cvTimeSlots As Global.System.Web.UI.WebControls.CustomValidator
+
+    '''<summary>
+    '''LblTotal control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblTotal As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''hfTotal control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hfTotal As Global.System.Web.UI.WebControls.HiddenField
+
+    '''<summary>
+    '''btnPay control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnPay As Global.System.Web.UI.WebControls.Button
 End Class
