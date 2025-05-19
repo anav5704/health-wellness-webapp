@@ -7,53 +7,11 @@
     <h1>Therapists</h1>
 
     <a href="Booking.aspx?therapist=JohnDoe">
-        <section style="display: flex; box-shadow: 0 4px 8px rgba(0,0,0,0.05); padding: 10px; margin-bottom: 30px;">
-            <figure style="margin: 0;">
+        <section class="therapist-card">
+            <figure class="image-cell">
                 <img src="/images/Therapist1.jpg" alt="Therapist" width="200" height="200">
             </figure>
-            <article style="padding-left: 15px;">
-                <h3>John Doe</h3>
-                <p>Specialist in depression disorder. Experienced in CBT and mindfulness-based therapies. Offers both online and offline sessions. Fluent in English and Spanish.</p>
-                <ul>
-                    <li>Depression</li>
-                    <li>CBT</li>
-                    <li>Mindfulness</li>
-                    <li>Online/Offline</li>
-                    <li>Bilingual</li>
-                </ul>
-                <strong>$800.00</strong>
-            </article>
-        </section>
-    </a>
-
-    <a href="Booking.aspx?therapist=JohnDoe" class="therapist-card-link">
-        <section class="therapist-card">
-            <figure class="therapist-image">
-                <img src="/images/Therapist1.jpg" alt="Therapist">
-            </figure>
-            <article class="therapist-content">
-                <h3 class="therapist-name">John Doe</h3>
-                <p class="therapist-description">
-                    Specialist in depression disorder. Experienced in CBT and mindfulness-based therapies.
-        Offers both online and offline sessions. Fluent in English and Spanish.
-                </p>
-                <ul class="therapist-tags">
-                    <li>Depression</li>
-                    <li>CBT</li>
-                    <li>Mindfulness</li>
-                    <li>Online/Offline</li>
-                    <li>Bilingual</li>
-                </ul>
-                <span class="therapist-price">$800.00</span>
-            </article>
-        </section>
-
-    <a href="Booking.aspx?therapist=JohnDoe">
-        <section class="therapist-card">
-            <figure class="therapist-image">
-                <img src="/images/Therapist1.jpg" alt="Therapist" width="200" height="200">
-            </figure>
-            <article class="therapist-content">
+            <article class="content-cell">
                 <h3 class="therapist-name">John Doe</h3>
                 <p class="therapist-description">Specialist in depression disorder. Experienced in CBT and mindfulness-based therapies. Offers both online and offline sessions. Fluent in English and Spanish.</p>
                 <ul class="therapist-tags">
@@ -68,35 +26,13 @@
         </section>
     </a>
 
-    <a href="Booking.aspx?therapist=JohnDoe">
-        <table class="therapist-card">
-            <tr>
-                <td class="image-cell">
-                    <img src="/images/Therapist1.jpg" alt="Therapist Image" width="200" height="200">
-                </td>
-                <td class="content-cell">
-                    <h3 class="therapist-name">John Doe</h3>
-                    <p class="therapist-description">Specialist in depression disorder. Experienced in CBT and mindfulness-based therapies. Offers both online and offline sessions. Fluent in English and Spanish.</p>
-                    <ul class="therapist-tags">
-                        <li>Depression</li>
-                        <li>CBT</li>
-                        <li>Mindfulness</li>
-                        <li>Online/Offline</li>
-                        <li>Bilingual</li>
-                    </ul>
-                    <span class="therapist-price">$800.00</span>
-                </td>
-            </tr>
-        </table>
-    </a>
 
     <a href="Booking.aspx?therapist=JameSmith">
-        <table class="therapist-card">
-            <tr>
-                <td class="image-cell">
+        <section class="therapist-card">
+                <figure class="image-cell">
                     <img src="/images/therapist2.jpg" alt="Therapist Image" width="200" height="200">
-                </td>
-                <td class="content-cell">
+                </figure>
+                <article class="content-cell">
                     <h3 class="therapist-name">Jame Smith</h3>
                     <p class="therapist-description">Specialist in anxiety disorder, including generalized anxiety, social anxiety, and panic disorders. Provide personalized therapy plans incorporating exposure therapy and relaxation techniques. Offers offline sesion only. English Only.</p>
                     <ul class="therapist-tags">
@@ -107,18 +43,16 @@
                         <li>English</li>
                     </ul>
                     <span class="therapist-price">$800.00</span>
-                </td>
-            </tr>
-        </table>
+                </article>
+        </section>
     </a>
 
     <a href="Booking.aspx?therapist=CharlesDow">
-        <table class="therapist-card">
-            <tr>
-                <td class="image-cell">
+        <section class="therapist-card">
+                <figure class="image-cell">
                     <img src="/images/therapist3.jpg" alt="Therapist Image" width="200" height="200">
-                </td>
-                <td class="content-cell">
+                </figure>
+                <article class="content-cell">
                     <h3 class="therapist-name">Charles Dow</h3>
                     <p class="therapist-description">Specialist in schizophrenia. Utilizes cognitive rehabilitation and social skills training. Provides online and offline sessions. Fluent in English and Spanish</p>
                     <ul class="therapist-tags">
@@ -129,18 +63,16 @@
                         <li>Bilingual</li>
                     </ul>
                     <span class="therapist-price">$800.00</span>
-                </td>
-            </tr>
-        </table>
+                </article>
+        </section>
     </a>
 
     <a href="Booking.aspx?therapist=EmilyJones">
-        <table class="therapist-card">
-            <tr>
-                <td class="image-cell">
+        <section class="therapist-card">
+                <figure class="image-cell">
                     <img src="/images/therapist4.jpg" alt="Therapist Image" width="200" height="200">
-                </td>
-                <td class="content-cell">
+                </figure>
+                <article class="content-cell">
                     <h3 class="therapist-name">Emily Jones</h3>
                     <p class="therapist-description">Specialist in bipolar. Experienced in CBT and medication management. Offers both online and offline sessions. Fluent in English and Spanish.\.</p>
                     <ul class="therapist-tags">
@@ -151,8 +83,7 @@
                         <li>Bilingual</li>
                     </ul>
                     <span class="therapist-price">$800.00</span>
-                </td>
-            </tr>
-        </table>
+                </article>
+        </section>
     </a>
 </asp:Content>
