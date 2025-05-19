@@ -7,6 +7,68 @@
     <h1>Therapists</h1>
 
     <a href="Booking.aspx?therapist=JohnDoe">
+        <section style="display: flex; box-shadow: 0 4px 8px rgba(0,0,0,0.05); padding: 10px; margin-bottom: 30px;">
+            <figure style="margin: 0;">
+                <img src="/images/Therapist1.jpg" alt="Therapist" width="200" height="200">
+            </figure>
+            <article style="padding-left: 15px;">
+                <h3>John Doe</h3>
+                <p>Specialist in depression disorder. Experienced in CBT and mindfulness-based therapies. Offers both online and offline sessions. Fluent in English and Spanish.</p>
+                <ul>
+                    <li>Depression</li>
+                    <li>CBT</li>
+                    <li>Mindfulness</li>
+                    <li>Online/Offline</li>
+                    <li>Bilingual</li>
+                </ul>
+                <strong>$800.00</strong>
+            </article>
+        </section>
+    </a>
+
+    <a href="Booking.aspx?therapist=JohnDoe" class="therapist-card-link">
+        <section class="therapist-card">
+            <figure class="therapist-image">
+                <img src="/images/Therapist1.jpg" alt="Therapist">
+            </figure>
+            <article class="therapist-content">
+                <h3 class="therapist-name">John Doe</h3>
+                <p class="therapist-description">
+                    Specialist in depression disorder. Experienced in CBT and mindfulness-based therapies.
+        Offers both online and offline sessions. Fluent in English and Spanish.
+                </p>
+                <ul class="therapist-tags">
+                    <li>Depression</li>
+                    <li>CBT</li>
+                    <li>Mindfulness</li>
+                    <li>Online/Offline</li>
+                    <li>Bilingual</li>
+                </ul>
+                <span class="therapist-price">$800.00</span>
+            </article>
+        </section>
+
+    <a href="Booking.aspx?therapist=JohnDoe">
+        <section class="therapist-card">
+            <figure class="therapist-image">
+                <img src="/images/Therapist1.jpg" alt="Therapist" width="200" height="200">
+            </figure>
+            <article class="therapist-content">
+                <h3 class="therapist-name">John Doe</h3>
+                <p class="therapist-description">Specialist in depression disorder. Experienced in CBT and mindfulness-based therapies. Offers both online and offline sessions. Fluent in English and Spanish.</p>
+                <ul class="therapist-tags">
+                    <li>Depression</li>
+                    <li>CBT</li>
+                    <li>Mindfulness</li>
+                    <li>Online/Offline</li>
+                    <li>Bilingual</li>
+                </ul>
+                <span class="therapist-price">$800.00</span>
+            </article>
+        </section>
+    </a>
+
+    <a href="Booking.aspx?therapist=JohnDoe">
         <table class="therapist-card">
             <tr>
                 <td class="image-cell">
