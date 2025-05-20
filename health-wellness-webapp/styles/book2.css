@@ -2,9 +2,9 @@
     margin: 30px;
 }
 
-.therapist-list{
-    width:100px;
-    height:100px;
+.therapist-list {
+    width: 100px;
+    height: 100px;
 }
 
 .therapist {
@@ -31,6 +31,7 @@
         display: inline-block;
         margin-top: 5px;
     }
+
 .therapist-select::after {
     content: "";
     display: table;
@@ -46,8 +47,8 @@
 
 .time-slots {
     display: flex;
-    flex-direction:column;
-    align-items:center;
+    flex-direction: column;
+    align-items: center;
     margin: 10px;
     border: transparent;
 }
@@ -65,7 +66,6 @@
         color: #fff;
         border-color: #007BFF;
     }
-
 
 .payment-section {
     margin-bottom: 30px;
