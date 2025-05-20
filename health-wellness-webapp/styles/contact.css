@@ -37,14 +37,3 @@ textarea {
     font-family: Geist;
 }
 
-
-/*Tablet screen*/
-@media screen and (max-width: 900px) {
-    .contactForm {
-        width: 100%
-    }
-}
-
-/*Mobile Screen*/
-@media screen and (max-width: 600px) {
-}
