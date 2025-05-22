@@ -16,7 +16,7 @@
     <section class="therapists-section">
         <h2 class="booking-title">Therapist</h2>
 
-        <div class="therapist-avatar">
+        <article class="therapist-avatar">
             <asp:Panel ID="Panel1" CssClass="therapist" runat="server">
                 <asp:Image ID="Image1" ImageUrl="/images/Therapist1.jpg" alt="John Doe" runat="server" />
                 <asp:Label ID="Label1" Text="John Doe" runat="server" />
@@ -40,7 +40,7 @@
                 <asp:Label ID="Label10" Text="Emily Jones" runat="server" />
                 <asp:Label ID="Label11" Text="$800.00/Session" runat="server" />
             </asp:Panel>
-        </div>
+        </article>
 
 
 
