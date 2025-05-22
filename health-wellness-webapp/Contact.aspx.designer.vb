@@ -86,13 +86,13 @@ Partial Public Class Contact
     Protected WithEvents btnMessage As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''lblMssg control.
+    '''lblConfirmation control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblMssg As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lblConfirmation As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''adsContact control.

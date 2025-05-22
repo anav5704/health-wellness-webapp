@@ -8,10 +8,10 @@
         <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator Display="Dynamic" ID="rfvEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email is required." CssClass="error" />
         <asp:Label ID="lblMessage" runat="server" Text="Message"></asp:Label>
-        <asp:TextBox ID="txtMessage" runat="server" Rows="6" TextMode="MultiLine"></asp:TextBox>
+        <asp:TextBox ID="txtMessage" runat="server" Rows="8" TextMode="MultiLine"></asp:TextBox>
         <asp:RequiredFieldValidator Display="Dynamic" ID="rfvMessage" runat="server" ControlToValidate="txtMessage" ErrorMessage="Message is required." CssClass="error" />
         <asp:Button CssClass="primary-button" ID="btnMessage" runat="server" Text="Send Message" />
-        <asp:Label ID="lblMssg" runat="server" />
+        <asp:Label ID="lblConfirmation" runat="server" />
     </asp:Panel>
     <asp:AccessDataSource ID="adsContact" runat="server" DataFile="~/App_Data/Webapp.accdb"
         InsertCommand="INSERT INTO Contact ([contact_Email], [Contact_Message]) VALUES (?, ?)">

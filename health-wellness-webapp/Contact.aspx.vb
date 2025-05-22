@@ -12,7 +12,7 @@ Public Class Contact
         Dim message As String = txtMessage.Text.Trim()
 
         If email = "" Or message = "" Then
-            lblMssg.Text = "Please enter both email and message."
+            lblConfirmation.Text = "Please enter both email and message."
             Exit Sub
         End If
 
@@ -20,7 +20,7 @@ Public Class Contact
         adsContact.InsertParameters("Contact_Message").DefaultValue = message
 
         adsContact.Insert()
-        lblMssg.Text = "Thank you for messaging us..."
+        lblConfirmation.Text = "Thank you for messaging us..."
     End Sub
 
     Protected Sub adsContact_Selecting(sender As Object, e As SqlDataSourceSelectingEventArgs) Handles adsContact.Selecting
