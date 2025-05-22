@@ -94,7 +94,6 @@
     <Content Include="App_Data\TimeSlots.xml" />
     <Content Include="App_Data\Webapp.accdb" />
     <Content Include="Booking.aspx" />
-    <Content Include="Booking2.aspx" />
     <Content Include="images\blogs.png" />
     <Content Include="images\resources.png" />
     <Content Include="images\Therapist1.jpg" />
@@ -103,7 +102,6 @@
     <Content Include="images\therapist4.jpg" />
     <Content Include="images\therapy.png" />
     <Content Include="styles\blogs.css" />
-    <Content Include="styles\book2.css" />
     <Content Include="styles\Booking.css" />
     <Content Include="styles\home.css" />
     <Content Include="Logout.aspx" />
@@ -152,13 +150,6 @@
     </Compile>
     <Compile Include="Booking.aspx.vb">
       <DependentUpon>Booking.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Booking2.aspx.designer.vb">
-      <DependentUpon>Booking2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Booking2.aspx.vb">
-      <DependentUpon>Booking2.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Contact.aspx.designer.vb">

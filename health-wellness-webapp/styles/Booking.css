@@ -2,9 +2,9 @@
     margin: 30px;
 }
 
-.therapist-list{
-    width:100px;
-    height:100px;
+.therapist-list {
+    width: 100px;
+    height: 100px;
 }
 
 .therapist {
@@ -31,53 +31,25 @@
         display: inline-block;
         margin-top: 5px;
     }
+
 .therapist-select::after {
     content: "";
     display: table;
     clear: both;
 }
 
-.timeSlotTitle {
+.Title {
     text-align: center;
     display: block;
     margin: 10px;
 }
-
-
-.time-slots {
-    display: flex;
-    flex-direction:column;
-    align-items:center;
-    margin: 10px;
-    border: transparent;
-}
-
-.time-slot {
-    padding: 10px 20px;
+.dropdownlist {
+    display: block;
+    width: 200px; 
+    margin: 10px auto; 
+    padding: 6px 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px 10px;
-}
-
-    .time-slot.selected {
-        background-color: var(--accent);
-        color: #fff;
-        border-color: #007BFF;
-    }
-
-
-.payment-section {
-    margin-bottom: 30px;
-}
-
-    .payment-section input {
-        width: 100px;
-        padding: 5px;
-        margin-right: 10px;
-    }
-
-.actions button {
-    padding: 10px 20px;
-    margin-right: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #fff;
 }
