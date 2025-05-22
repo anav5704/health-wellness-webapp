@@ -7,7 +7,7 @@
         <article class ="developer">
             <figure>
                 <asp:Image ID="imgAnav" runat="server" AlternateText="Picture of Anav" Height="300px" ImageUrl="~/images/anav.jpg" Width="300px" />
-                <figcaption>Anav Chand-S11221203</figcaption>
+                <figcaption>Anav Chand</figcaption>
             </figure>
                <p class ="bio">An aspiring DevOps engineer, self-taught web developer, and second-year software engineering student @ USP.</p>
                <br />        
@@ -23,7 +23,7 @@
         <article class ="developer">
             <figure>
                 <asp:Image ID="imgVishant" runat="server" AlternateText="Picture of Vishant" Height="300px" ImageUrl="~/images/vishant.jpg" Width="300px" />
-                <figcaption>Vishant Kumar-S11230430</figcaption>
+                <figcaption>Vishant Kumar</figcaption>
             </figure>
                 <p class ="bio">A frontend Web Developer who is always keen in growing his knowledge in the world of Web Development.</p>
                <br />        
@@ -39,7 +39,7 @@
         <article class ="developer">
             <figure>
                 <asp:Image ID="imgAryan" runat="server" AlternateText="Picture of Aryan" Height="300px" ImageUrl="~/images/aryan.jpg" Width="300px" />
-                <figcaption>Aryan Singh-S11230987</figcaption>
+                <figcaption>Aryan Singh</figcaption>
             </figure>
                <p class ="bio">A backend Web Developer who is known for his technical expertise, analytical thinking, and excellent collaboration skills.</p>
             <br />   
@@ -55,7 +55,7 @@
         <article class ="developer">
             <figure>
                 <asp:Image ID="imgZhixian" runat="server" AlternateText="Picture of Zhixian" Height="300px" ImageUrl="~/images/zhixian.jpg" Width="300px" />
-                <figcaption>Zhixian Chen-S11230686</figcaption>
+                <figcaption>Zhixian Chen</figcaption>
             </figure>
                <p class ="bio">A fullstack Web Developer who is known for his high level of competency in both frontend and backend languages.</p>
                <br />       
@@ -71,7 +71,7 @@
         <article class ="developer">
             <figure>
                 <asp:Image ID="imgRohan" runat="server" AlternateText="Picture of Rohan" Height="300px" ImageUrl="~/images/rohan.jpg" Width="300px" />
-                <figcaption>Rohan Nandan-S11234883</figcaption>
+                <figcaption>Rohan Nandan</figcaption>
             </figure>
                <p class ="bio">A Passionate Software Engineer with 5+ years of experience in developing web applications and backend systems.</p>
                <br />        
