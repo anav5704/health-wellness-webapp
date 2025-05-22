@@ -18,7 +18,7 @@
             <asp:Label CssClass="error" ID="lblMessage" runat="server" />
         </asp:Panel>
 
-        <p class="authInfo">Don't have an account? <asp:HyperLink ID="hlSignup" runat="server" NavigateUrl="Signup.aspx">Sign Up</asp:HyperLink></p>
+        <p class="authInfo">Don't have an account? <asp:HyperLink ID="hlCreateAccount" runat="server">Sign Up</asp:HyperLink></p>
 
     <asp:AccessDataSource ID="adsUsers" runat="server" DataFile="~/App_Data/Webapp.accdb"  
         SelectCommand="SELECT [User_Email], [User_Password], [User_Role] FROM [User] WHERE [User_Email] = ?"

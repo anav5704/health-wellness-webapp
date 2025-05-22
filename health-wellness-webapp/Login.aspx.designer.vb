@@ -95,13 +95,13 @@ Partial Public Class Login
     Protected WithEvents lblMessage As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''hlSignup control.
+    '''hlCreateAccount control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents hlSignup As Global.System.Web.UI.WebControls.HyperLink
+    Protected WithEvents hlCreateAccount As Global.System.Web.UI.WebControls.HyperLink
 
     '''<summary>
     '''adsUsers control.

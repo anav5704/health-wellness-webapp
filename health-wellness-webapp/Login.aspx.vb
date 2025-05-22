@@ -2,7 +2,14 @@
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
+        If Not IsPostBack Then
+            Dim returnUrl As String = Request.QueryString("ReturnUrl")
+            If Not String.IsNullOrEmpty(returnUrl) Then
+                hlCreateAccount.NavigateUrl = "Signup.aspx?ReturnUrl=" & Server.UrlEncode(returnUrl)
+            Else
+                hlCreateAccount.NavigateUrl = "Signup.aspx"
+            End If
+        End If
     End Sub
 
     Protected Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click

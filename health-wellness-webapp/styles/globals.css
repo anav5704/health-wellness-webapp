@@ -25,8 +25,8 @@
 }
 
 body {
-    text-underline-offset: 3px; 
-    font-family: "Geist"; 
+    text-underline-offset: 3px;
+    font-family: "Geist", Roboto, sans-serif;
     font-size: 1.125rem;
 }
 
@@ -76,7 +76,7 @@ nav {
 
 h1,
 h2 {
-    font-family: "Merriweather";
+    font-family: "Merriweather", Georgia, serif;
     margin-bottom: 50px;
 }
 

@@ -57,4 +57,15 @@ td, th
 caption {
     margin-top: 25px;
 }
+
+/*Tablet screen*/
+@media screen and (max-width: 1200px) {
+    .grid-3 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .card img {
+        display: block;
+        margin: auto;
+    }
 }

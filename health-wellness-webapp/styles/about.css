@@ -7,8 +7,8 @@
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: 1px solid #000000;
     padding: 1.5rem;
-    width: 100%;
     max-width: 300px;
     margin: 20px auto;
 }
@@ -53,4 +53,15 @@
     object-fit: cover;
     border-radius: 15px;
     display: block;
+}
+
+/*Mobile Screen*/
+@media screen and (max-width: 600px) {
+    .developer {
+        max-width: 100%;
+    }
+
+    .developer img {
+        margin: auto;
+    }
 }

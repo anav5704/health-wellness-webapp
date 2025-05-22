@@ -28,7 +28,13 @@
         adsUsers.InsertParameters("User_Role").DefaultValue = "Member"
 
         adsUsers.Insert()
-        Response.Redirect("Home.aspx")
+
+        Dim returnUrl As String = Request.QueryString("ReturnUrl")
+        If Not String.IsNullOrEmpty(returnUrl) Then
+            Response.Redirect(returnUrl)
+        Else
+            Response.Redirect("Home.aspx")
+        End If
     End Sub
 
     Protected Sub adsUsers_Selecting(sender As Object, e As SqlDataSourceSelectingEventArgs) Handles adsUsers.Selecting
