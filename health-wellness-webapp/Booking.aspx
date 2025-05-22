@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Booking.aspx.vb" Inherits="health_wellness_webapp.Booking2" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Booking.aspx.vb" Inherits="health_wellness_webapp.Booking" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -7,7 +7,7 @@
 
     <asp:AccessDataSource ID="adsGetUser" runat="server" DataFile="~/App_Data/Webapp.accdb" SelectCommand="SELECT User_Id FROM [User] WHERE User_Email = ?">
         <SelectParameters>
-            <asp:SessionParameter Name="User_Email" SessionField="User_Email" Type="String" />
+             <asp:Parameter Name="Email" Type="String" />
         </SelectParameters>
     </asp:AccessDataSource>
 

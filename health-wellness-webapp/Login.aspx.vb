@@ -30,7 +30,7 @@
             Dim inputHash As String = Utils.Password.Hash(password)
 
             If storedHash = inputHash Then
-                Session("User_Email") = email
+                Session("User_ID") = userData(0)("User_ID").ToString()
                 Session("User_Role") = userData(0)("User_Role").ToString()
 
                 Dim returnUrl As String = Request.QueryString("ReturnUrl")

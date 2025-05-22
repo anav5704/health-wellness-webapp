@@ -102,7 +102,7 @@
     <Content Include="images\therapist4.jpg" />
     <Content Include="images\therapy.png" />
     <Content Include="styles\blogs.css" />
-    <Content Include="styles\Booking.css" />
+    <Content Include="styles\booking.css" />
     <Content Include="styles\home.css" />
     <Content Include="Logout.aspx" />
     <Content Include="styles\about.css" />
