@@ -9,31 +9,41 @@
     border: 1px solid #ccc;
 }
 
-.contactForm input {
+    .contactForm input {
         width: 100%;
         padding: 0.75rem;
         border: 1px solid #ccc;
         border-radius: 5px;
         box-sizing: border-box;
         font-size: 1rem;
-}
+    }
 
-.contactForm label {
+    .contactForm label {
         display: block;
         margin-bottom: 0.25rem;
-        font-weight: bold;
-}
-
-.error {
-    color: #f43f5e;
-}
+    }
 
 .contactInfo {
     text-align: center;
     margin-top: 25px;
 }
 
+.error {
+    color: #f43f5e;
+}
+
 textarea {
     font-family: Geist;
+}
+
+/*Tablet screen*/
+@media screen and (max-width: 900px) {
+    .contactForm {
+        width: 100%
+    }
+}
+
+/*Mobile Screen*/
+@media screen and (max-width: 600px) {
 }
 
