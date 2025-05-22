@@ -17,10 +17,10 @@
 
             <div class="blog-content">
                 <header class="blog-header">
-                    <h3 class="blog-title">5 Mindfulness Techniques for Daily Stress Relief</h3>
+                    <h3 class="blog-title">Techniques for Daily Stress Relief</h3>
                     <div class="blog-meta">
                         <span class="blog-author">Wes Brown,</span>
-                        <time datetime="2025-04-30" class="blog-date">April 13, 2025</time>
+                        <time datetime="2025-04-13" class="blog-date">April 13, 2025</time>
                     </div>
                 </header>
                 <p class="blog-excerpt">Practical mindfulness exercises to incorporate into daily routines.</p>
@@ -44,7 +44,7 @@
                     <h3 class="blog-title">Nutrition Tips for Mental Health</h3>
                     <div class="blog-meta">
                         <span class="blog-author">Shai Cohen,</span>
-                        <time datetime="2025-04-30" class="blog-date">April 6, 2025</time>
+                        <time datetime="2025-04-06" class="blog-date">April 6, 2025</time>
                     </div>
                 </header>
                 <p class="blog-excerpt">Fuel your brain with foods that sharpen focus and stabilize mood.</p>
@@ -92,7 +92,7 @@
                     <h3 class="blog-title">How to Change your Thoughts</h3>
                     <div class="blog-meta">
                         <span class="blog-author">Ben Collings, </span>
-                        <time datetime="2025-03-18" class="blog-date">March 29, 2025</time>
+                        <time datetime="2025-03-29" class="blog-date">March 29, 2025</time>
                     </div>
                 </header>
                 <p class="blog-excerpt">Explore how therapy changes your life.</p>
@@ -115,7 +115,7 @@
                 <header class="blog-header">
                     <h3 class="blog-title">Journals - A Life Saver</h3>
                     <div class="blog-meta">
-                        <span class="blog-author">Ollie Aplin, </span>
+                        <span class="blog-author">Ollie Aplin,</span>
                         <time datetime="2025-03-18" class="blog-date">March 18, 2025</time>
                     </div>
                 </header>
