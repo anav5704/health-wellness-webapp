@@ -27,8 +27,7 @@
 .card {
     padding: 25px;
     border-radius: 25px;
-    border: 1px solid black;
-    column-span: 1;
+    border: 1px solid #e0e0e0;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 

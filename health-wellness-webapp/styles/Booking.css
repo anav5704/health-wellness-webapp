@@ -1,23 +1,25 @@
 ﻿
 .therapists-section {
     background: #fff;
-    border-radius: 8px;
+    border-radius: 25px;
+    border: 1px solid #e0e0e0;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     padding: 24px;
     margin: 30px auto;
     max-width: 800px;
-    text-align:center;
+    text-align: center;
 }
 
 
 .timeSlot-section {
     background: #fff;
-    border-radius: 8px;
+    border-radius: 25px;
+    border: 1px solid #e0e0e0;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     padding: 24px;
     margin: 30px auto;
     max-width: 800px;
-    text-align:center;
+    text-align: center;
 }
 
 
@@ -63,7 +65,7 @@
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size:1.1rem;
+    font-size: 1.1rem;
 }
 
 .session-info {
@@ -79,23 +81,22 @@
     margin: 8px auto 0;
     text-align: center;
     color: red;
-    font-size:1rem;
+    font-size: 1rem;
     box-sizing: border-box;
 }
 
 .Confirmbutton {
     display: block;
-    width: 10%;
-    max-width: 200px;
     margin: 16px auto 0;
-    padding: 20px;
-    background-color: var(--accent);
     color: #000;
+    background-color: var(--accent);
     border: none;
-    border-radius: 30px;
-    font-size: 1.2rem;
-    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: calc(infinity * 1px);
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
+
 .ConfirmMessage {
     display: block;
     width: 60%;

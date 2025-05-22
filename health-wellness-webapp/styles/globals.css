@@ -134,16 +134,18 @@ footer ul {
 
 .primary-link {
     background-color: var(--accent);
-    border: 1px solid black;
+    border: none;
     padding: 15px 30px;
     border-radius: calc(infinity * 1px);
     font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .secondary-link {
-    border: 1px solid black;
+    border: 1px solid #e0e0e0;
     padding: 15px 30px;
     border-radius: calc(infinity * 1px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     font-size: 1rem;
     cursor: pointer;
 }
