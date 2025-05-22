@@ -25,18 +25,13 @@
 
         Dim dvUser As DataView = CType(adsGetUser.Select(DataSourceSelectArguments.Empty), DataView)
 
-        If dvUser.Count = 0 Then
-            LblConfirmation.ForeColor = Drawing.Color.Red
-            LblConfirmation.Text = "User not found, please log in again."
-            Return
-        End If
-
         Dim uId As Integer = Convert.ToInt32(dvUser(0)("User_Id"))
+
 
         Dim dv As DataView = adsCheckBooking.Select(DataSourceSelectArguments.Empty)
 
         If dv.Count > 0 Then
-            LblConfirmation.Text = "Sorry, this time slot is already booked."
+            LblConfirmation.Text = "Sorry, this time slot is booked"
         Else
             adsBooking.InsertParameters("Booking_Time").DefaultValue = time
             adsBooking.InsertParameters("Therapist_Id").DefaultValue = therapist
