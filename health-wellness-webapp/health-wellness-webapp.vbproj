@@ -94,6 +94,7 @@
     <Content Include="App_Data\TimeSlots.xml" />
     <Content Include="App_Data\Webapp.accdb" />
     <Content Include="Booking.aspx" />
+    <Content Include="Feedback.aspx" />
     <Content Include="images\blogs.png" />
     <Content Include="images\resources.png" />
     <Content Include="images\Therapist1.jpg" />
@@ -157,6 +158,13 @@
     </Compile>
     <Compile Include="Contact.aspx.vb">
       <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Feedback.aspx.designer.vb">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.aspx.vb">
+      <DependentUpon>Feedback.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Global.asax.vb">
