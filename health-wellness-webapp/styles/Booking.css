@@ -1,82 +1,107 @@
-﻿.therapist-select {
-    margin: 30px;
+﻿
+.therapists-section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 24px;
+    margin: 30px auto;
+    max-width: 800px;
+    text-align:center;
 }
 
-.therapist-list{
-    width:100px;
-    height:100px;
+
+.timeSlot-section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 24px;
+    margin: 30px auto;
+    max-width: 800px;
+    text-align:center;
+}
+
+
+.booking-title {
+    text-align: center;
+    font-size: 2.0rem;
+    margin-bottom: 16px;
+}
+
+
+
+.therapists-section .therapist-avatar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 24px;
 }
 
 .therapist {
-    width: 25%;
+    width: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     cursor: pointer;
-    float: left;
-    text-align: left;
 }
 
     .therapist img {
         width: 100px;
         height: 100px;
-        border: 2px solid transparent;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 8px;
     }
 
-    .therapist.selected img {
-        border-color: var(--accent);
-    }
 
-    .therapist label {
-        display: inline-block;
-        margin-top: 5px;
-    }
-.therapist-select::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.timeSlotTitle {
-    text-align: center;
+.dropdownlist {
     display: block;
-    margin: 10px;
-}
-
-
-.time-slots {
-    display: flex;
-    flex-direction:column;
-    align-items:center;
-    margin: 10px;
-    border: transparent;
-}
-
-.time-slot {
-    padding: 10px 20px;
+    width: 60%;
+    max-width: 300px;
+    margin: 0 auto 20px;
+    padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size:1.1rem;
+}
+
+.session-info {
+    font-size: 1rem;
+    text-align: center;
+    margin: 16px 0;
+    color: #333;
+}
+
+.warning {
+    display: block;
+    width: 60%;
+    margin: 8px auto 0;
+    text-align: center;
+    color: red;
+    font-size:1rem;
+    box-sizing: border-box;
+}
+
+.Confirmbutton {
+    display: block;
+    width: 10%;
+    max-width: 200px;
+    margin: 16px auto 0;
+    padding: 20px;
+    background-color: var(--accent);
+    color: #000;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
     cursor: pointer;
-    margin: 10px 10px;
 }
-
-    .time-slot.selected {
-        background-color: var(--accent);
-        color: #fff;
-        border-color: #007BFF;
-    }
-
-.payment-section {
-    margin-bottom: 30px;
-}
-
-    .payment-section input {
-        width: 100px;
-        padding: 5px;
-        margin-right: 10px;
-    }
-
-.actions button {
-    padding: 10px 20px;
-    margin-right: 10px;
+.ConfirmMessage {
+    display: block;
+    width: 60%;
+    margin: 8px auto 0;
+    text-align: center;
+    color: #000;
+    font-size: 1.5rem;
+    box-sizing: border-box;
 }
