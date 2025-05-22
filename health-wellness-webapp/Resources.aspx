@@ -55,20 +55,20 @@
 
         <section>
             <h2>Video Resources</h2>
-            <section class="video-container">
-                <article>
-                    <h3 style="text-align:center"> Mental Health Wellness Tips </h3>
-                    <section class="video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/NQcYZplTXnQ" title="Mental Health Wellness Tips" allowfullscreen></iframe>
-                    </section>
-                </article>
+                <div class="video-container">
+                  <div class="video-box">
+                    <h3>Mental Health Wellness Tips</h3>
+                        <div class="video-wrapper">
+                         <iframe src="https://www.youtube.com/embed/NQcYZplTXnQ" title="Mental Health Wellness Tips" allowfullscreen></iframe>
+                        </div>
+                  </div>
 
-                <article>
-                    <h3 style="text-align:center"> What is Anxiety? </h3>
-                    <section class="video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/BVJkf8IuRjE" title="What is Anxiety?" allowfullscreen></iframe>
-                    </section>
-                </article>
-            </section>
+                  <div class="video-box">
+                    <h3>What is Anxiety?</h3>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/BVJkf8IuRjE" title="What is Anxiety?" allowfullscreen></iframe>
+                        </div>
+                  </div>
+                </div>
         </section>
 </asp:Content>
