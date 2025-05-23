@@ -6,11 +6,13 @@
     End Sub
 
     Protected Sub btnSignup_Click(sender As Object, e As EventArgs) Handles btnSignup.Click
+        Dim fname As String = txtFname.Text.Trim()
+        Dim lname As String = txtLname.Text.Trim()
         Dim email As String = txtEmail.Text.Trim()
         Dim password As String = txtPassword.Text.Trim()
 
-        If email = "" Or password = "" Then
-            lblMessage.Text = "Please enter both email and password."
+        If fname = "" Or lname = "" Or email = "" Or password = "" Then
+            lblMessage.Text = "Name, email and password are required."
             Exit Sub
         End If
 
@@ -23,23 +25,19 @@
             Exit Sub
         End If
 
+        adsUsers.InsertParameters("User_Fname").DefaultValue = fname
+        adsUsers.InsertParameters("User_Lname").DefaultValue = lname
         adsUsers.InsertParameters("User_Email").DefaultValue = email
         adsUsers.InsertParameters("User_Password").DefaultValue = Utils.Password.Hash(password)
         adsUsers.InsertParameters("User_Role").DefaultValue = "Member"
 
         adsUsers.Insert()
 
-        adsUsers.SelectParameters("User_Email").DefaultValue = email
-        Dim newUser As DataView = adsUsers.Select(DataSourceSelectArguments.Empty)
-
-        Session("User_ID") = newUser(0)("User_ID").ToString()
-        Session("User_Role") = newUser(0)("User_Role").ToString()
-
         Dim returnUrl As String = Request.QueryString("ReturnUrl")
         If Not String.IsNullOrEmpty(returnUrl) Then
-            Response.Redirect(returnUrl)
+            Response.Redirect("Login.aspx?ReturnUrl=" & Server.UrlEncode(returnUrl))
         Else
-            Response.Redirect("Home.aspx")
+            Response.Redirect("Login.aspx")
         End If
     End Sub
 

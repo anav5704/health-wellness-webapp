@@ -15,6 +15,7 @@
     <link href="styles/resource.css" rel="stylesheet" type="text/css" />
     <link href="styles/therapist.css" rel="stylesheet" type="text/css" />
     <link href="styles/booking.css" rel="stylesheet" type="text/css" />
+    <link href="styles/dashboard.css" rel="stylesheet" type="text/css" />
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 

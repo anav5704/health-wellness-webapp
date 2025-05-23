@@ -16,7 +16,7 @@
         Dim password As String = txtPassword.Text.Trim()
 
         If email = "" Or password = "" Then
-            lblMessage.Text = "Please enter both email and password."
+            lblMessage.Text = "Email and password are required."
             Exit Sub
         End If
 
@@ -36,7 +36,7 @@
                 If Not String.IsNullOrEmpty(returnUrl) Then
                     Response.Redirect(returnUrl)
                 Else
-                    Response.Redirect("Home.aspx")
+                    Response.Redirect("Dashboard.aspx")
                 End If
             Else
                 lblMessage.Text = "Invalid password."

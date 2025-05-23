@@ -8,7 +8,7 @@
     End Sub
 
     Private Sub RenderAuthLinks()
-        If Session("User_Email") IsNot Nothing Then
+        If Session("User_ID") IsNot Nothing Then
             Dim logoutLink As New HyperLink()
             logoutLink.NavigateUrl = "Logout.aspx"
             logoutLink.CssClass = "primary-link"

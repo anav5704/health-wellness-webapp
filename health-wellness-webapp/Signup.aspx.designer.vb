@@ -23,6 +23,42 @@ Partial Public Class Signup
     Protected WithEvents pnlSignup As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
+    '''txtFname control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtFname As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''rfvSignupFname control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents rfvSignupFname As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
+    '''txtLname control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtLname As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''rfvSignupLname control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents rfvSignupLname As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
     '''txtEmail control.
     '''</summary>
     '''<remarks>

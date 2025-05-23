@@ -5,6 +5,14 @@
 
     <h1>Create Account</h1>
     <asp:Panel ID="pnlSignup" CssClass="authForm" runat="server">
+        <label for="txtFname">First Name</label>
+         <asp:TextBox ID="txtFname" runat="server" />
+         <asp:RequiredFieldValidator Display="Dynamic" ID="rfvSignupFname" runat="server" ControlToValidate="txtFname" ErrorMessage="First name is required." CssClass="error" />
+
+        <label for="txtLname">Last Name</label>
+        <asp:TextBox ID="txtLname" runat="server" />
+        <asp:RequiredFieldValidator Display="Dynamic" ID="rfvSignupLname" runat="server" ControlToValidate="txtLname" ErrorMessage="Last Name is required." CssClass="error" />
+
         <label for="txtEmail">Email</label>
          <asp:TextBox ID="txtEmail" runat="server" />
          <asp:RequiredFieldValidator Display="Dynamic" ID="rfvSignupEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email is required." CssClass="error" />
@@ -22,11 +30,13 @@
 
      <asp:AccessDataSource ID="adsUsers" runat="server" DataFile="~/App_Data/Webapp.accdb"
          SelectCommand="SELECT [User_Id], [User_Email], [User_Role] FROM [User] WHERE [User_Email] = ?"
-         InsertCommand="INSERT INTO [User] ([User_Email], [User_Password], [User_Role]) VALUES (?, ?, ?)">
+         InsertCommand="INSERT INTO [User] ([User_Fname], [User_Lname], [User_Email], [User_Password], [User_Role]) VALUES (?, ?, ?, ?, ?)">
         <SelectParameters>
             <asp:Parameter Name="User_Email" Type="String" />
         </SelectParameters>
          <InsertParameters>
+             <asp:Parameter Name="User_Fname" Type="String" />
+             <asp:Parameter Name="User_Lname" Type="String" />
              <asp:Parameter Name="User_Email" Type="String" />
              <asp:Parameter Name="User_Password" Type="String" />
              <asp:Parameter Name="User_Role" Type="String" />
