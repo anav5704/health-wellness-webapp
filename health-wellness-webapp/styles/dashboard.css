@@ -1,2 +1,12 @@
-﻿body {
+﻿#gvBookings {
+    width: 100%;
+}
+
+.userInfo {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#hlLogout {
+    text-decoration: underline;
 }

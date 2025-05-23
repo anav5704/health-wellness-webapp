@@ -16,6 +16,7 @@
     <link href="styles/therapist.css" rel="stylesheet" type="text/css" />
     <link href="styles/booking.css" rel="stylesheet" type="text/css" />
     <link href="styles/feedback.css" rel="stylesheet" type="text/css" />
+    <link href="styles/dashboard.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
@@ -42,7 +43,7 @@
             <% If Session("User_Id") IsNot Nothing Then %>
                 <a href="Dashboard.aspx" class="primary-link auth-link">Dashboard</a>
             <% Else %>
-                <a href="Signup.aspx" class="primary-link auth-link">Craete Account</a>
+                <a href="Signup.aspx" class="primary-link auth-link">Create Account</a>
             <% End If %>
         </header>
         <main>
