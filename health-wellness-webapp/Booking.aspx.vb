@@ -42,4 +42,7 @@
         End If
     End Sub
 
+    Protected Sub adsCheckBooking_Selecting(sender As Object, e As SqlDataSourceSelectingEventArgs)
+
+    End Sub
 End Class
