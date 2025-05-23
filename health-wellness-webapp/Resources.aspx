@@ -16,22 +16,10 @@
                 </article>
 
                 <article>
-                    <h3>Tips for Mental Wellbeing</h3>
-                    <p>Practical steps to improve your mental health and daily wellbeing</p> <br/>
-                    <a href="https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/five-steps-to-mental-wellbeing/"> Read More -> </a>
+                    <h3>Mental Health Guide</h3>
+                    <p>A walkthrough on understanding menatal and emotional wellbeing</p> <br/>
+                   <a href="\PDF Resource\Mental & Emotional Wellbeing Guide.pdf" class="primary-link" download="Mental & Emotional Wellbeing Guide.pdf"> Download </a>
                 </article>
-
-                <article>
-                    <h3>Mental Health Exercises</h3>
-                    <p>Exercises to boost brain health and overall mental wellbeing</p> <br/>
-                    <a href="https://www.calm.com/blog/mental-health-exercises"> Read More -> </a>
-                </article>
-
-                 <article>
-                     <h3>Mental Health - MOH Fiji</h3>
-                     <p>Information and resources about mental health from Fiji's Ministry of Health</p> <br/>
-                     <a href="https://www.health.gov.fj/mental-health/"> Read More -> </a>
-                 </article>
             </section>
         </section>
 
@@ -55,20 +43,20 @@
 
         <section>
             <h2>Video Resources</h2>
-                <div class="video-container">
-                  <div class="video-box">
+                <section class="video-container">
+                  <section class="video-box">
                     <h3>Mental Health Wellness Tips</h3>
-                        <div class="video-wrapper">
+                        <section class="video-wrapper">
                          <iframe src="https://www.youtube.com/embed/NQcYZplTXnQ" title="Mental Health Wellness Tips" allowfullscreen></iframe>
-                        </div>
-                  </div>
+                        </section>
+                  </section>
 
-                  <div class="video-box">
+                  <section class="video-box">
                     <h3>What is Anxiety?</h3>
-                        <div class="video-wrapper">
+                        <section class="video-wrapper">
                             <iframe src="https://www.youtube.com/embed/BVJkf8IuRjE" title="What is Anxiety?" allowfullscreen></iframe>
-                        </div>
-                  </div>
-                </div>
+                        </section>
+                  </section>
+                </section>
         </section>
 </asp:Content>
