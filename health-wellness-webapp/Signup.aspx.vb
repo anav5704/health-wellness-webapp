@@ -29,6 +29,12 @@
 
         adsUsers.Insert()
 
+        adsUsers.SelectParameters("User_Email").DefaultValue = email
+        Dim newUser As DataView = adsUsers.Select(DataSourceSelectArguments.Empty)
+
+        Session("User_ID") = newUser(0)("User_ID").ToString()
+        Session("User_Role") = newUser(0)("User_Role").ToString()
+
         Dim returnUrl As String = Request.QueryString("ReturnUrl")
         If Not String.IsNullOrEmpty(returnUrl) Then
             Response.Redirect(returnUrl)
