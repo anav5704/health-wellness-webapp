@@ -16,6 +16,7 @@
     <link href="styles/therapist.css" rel="stylesheet" type="text/css" />
     <link href="styles/booking.css" rel="stylesheet" type="text/css" />
     <link href="styles/feedback.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -23,9 +24,9 @@
     <form id="form1" runat="server">
         <header id="nav-header">
              <img src="images/logo.png" alt="Best Health Logo" title="Best Health Logo" height="45" width="200" />
-             <div class="menu-toggle" onclick="toggleMenu()">
-               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
-            </div>
+             <button type="button" aria-label="Hamburger Menu" class="menu-toggle" onclick="toggleMenu(event)">
+                <i class="fa-solid fa-bars fa-lg"></i>
+            </button>
             <nav id="navbar">    
                 <ul>
                     <li><a href="Home.aspx">Home</a></li>
@@ -39,37 +40,41 @@
                 </ul>
             </nav>
             <% If Session("User_Id") IsNot Nothing Then %>
-                <a href="Dashboard.aspx" class="primary-link">Dashboard</a>
+                <a href="Dashboard.aspx" class="primary-link auth-link">Dashboard</a>
             <% Else %>
-                <a href="Signup.aspx" class="primary-link">Craete Account</a>
+                <a href="Signup.aspx" class="primary-link auth-link">Craete Account</a>
             <% End If %>
         </header>
         <main>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </main>
-             <footer>
+        <footer>
             <img src="images/logo.png" alt="Best Health Logo" title="Best Health Logo" height="45" width="200" />
             <ul id="footer-links">
-				<li><a href="Mailto:info@best.health">Email</a></li>
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">Twitter</a></li>
-                <li><a href="">YouTube</a></li>
+				<li><a aria-label="Email" href="Mailto:info@best.health"><i class="fa-solid fa-envelope fa-lg"></i></a></li>
+                <li><a  aria-label="Facebook" href="https://facebook.com/besthealth"><i class="fa-brands fa-facebook fa-lg"></i></a></li>
+                <li><a  aria-label="Instagram" href="https://instagram.com/besthealth"><i class="fa-brands fa-square-instagram fa-lg"></i></a></li>
+                <li><a  aria-label="Twitter" href="https://twitter.com/besthealth"><i class="fa-brands fa-twitter fa-lg"></i></a></li>
+                <li><a  aria-label="YoutTube" href="https://youtube.com/besthealth"><i class="fa-brands fa-youtube fa-lg"></i></a></li>
             </ul>
-            <p>&copy; <span id="year"></span> Best Health. All rights reserved.</p>
+            <p>&copy; <time id="year">2025</time> Best Health. All rights reserved.</p>
         </footer>
 
         <script>
-            const toggleMenu = () => {
+            const toggleMenu = (e) => {
+                e.preventDefault()
                 document.getElementById('nav-header').classList.toggle('open');
                 document.getElementById('navbar').classList.toggle('open');
-                document.getElementById('auth-links').classList.toggle('open');
+                document.querySelectorAll('.auth-link').forEach((link) => {
+                    link.classList.toggle('open');
+                })
              
             }
+
             document.getElementById("year").textContent = new Date().getFullYear();
 
-            function checkFileSize(input) {
+            const checkFileSize = (input) => {
                 if (input.files.length === 0) return;
                 const maxBytes = 5 * 1024 * 1024;
                 if (input.files[0].size > maxBytes) {
