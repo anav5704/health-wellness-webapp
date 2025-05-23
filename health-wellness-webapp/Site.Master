@@ -15,6 +15,7 @@
     <link href="styles/resource.css" rel="stylesheet" type="text/css" />
     <link href="styles/therapist.css" rel="stylesheet" type="text/css" />
     <link href="styles/booking.css" rel="stylesheet" type="text/css" />
+    <link href="styles/feedback.css" rel="stylesheet" type="text/css" />
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -34,9 +35,14 @@
                     <li><a href="Blogs.aspx">Blogs</a></li> 
                     <li><a href="About.aspx">About</a></li>
                     <li><a href="Contact.aspx">Contact</a></li>
+                    <li><a href="Feedback.aspx">Feedback</a></li>
                 </ul>
             </nav>
-            <asp:PlaceHolder ID="phAuthLinks" runat="server" />
+            <% If Session("User_Id") IsNot Nothing Then %>
+                <a href="Dashboard.aspx" class="primary-link">Dashboard</a>
+            <% Else %>
+                <a href="Signup.aspx" class="primary-link">Craete Account</a>
+            <% End If %>
         </header>
         <main>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

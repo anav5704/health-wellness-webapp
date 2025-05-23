@@ -10,3 +10,5 @@ Namespace Utils
         End Function
     End Class
 End Namespace
+
+'Reference: https://github.com/search?q=Using+sha256Hash+As+SHA256+%3D+SHA256.Create%28%29+language%3A%22Visual+Basic%22+&type=code
