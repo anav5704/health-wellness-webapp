@@ -12,10 +12,29 @@
     End Sub
 
     Protected Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
+
+        lblupload.Text = ""
+        lblupload.ForeColor = Drawing.Color.Black
+
+        Dim ext = System.IO.Path.GetExtension(fuReport.FileName).ToLower()
+        If ext <> ".pdf" Then
+            lblupload.Text = "Only .pdf file are accept"
+            lblupload.ForeColor = Drawing.Color.Red
+            Exit Sub
+        End If
+
+        Dim saveDir = Server.MapPath("~/App_Data/MedicalReports/")
+        If Not System.IO.Directory.Exists(saveDir) Then
+            System.IO.Directory.CreateDirectory(saveDir)
+        End If
+
         Dim therapist As Integer = ddlTherapists.SelectedValue.Trim()
         Dim time As String = ddlTimeSlots.SelectedValue.Trim()
         Dim userEmail As String = Session("User_Email").ToString().Trim()
+        Dim fileName As String = $"{userEmail}_{DateTime.Now:yyyyMMddHHmmss}{ext}"
+        Dim savePath As String = System.IO.Path.Combine(saveDir, fileName)
 
+        fuReport.SaveAs(savePath)
 
         adsCheckBooking.SelectParameters("Therapist_Id").DefaultValue = therapist
         adsCheckBooking.SelectParameters("Booking_Time").DefaultValue = time
@@ -35,6 +54,8 @@
             adsBooking.InsertParameters("Booking_Time").DefaultValue = time
             adsBooking.InsertParameters("Therapist_Id").DefaultValue = therapist
             adsBooking.InsertParameters("User_Id").DefaultValue = uId.ToString()
+            adsBooking.InsertParameters("User_ReportPath").DefaultValue = "/App_Data/MedicalReports/" & fileName
+
 
             adsBooking.Insert()
             LblConfirmation.Text = "Session booking confirmed"

@@ -230,6 +230,24 @@ Partial Public Class Booking
     Protected WithEvents adsCheckBooking As Global.System.Web.UI.WebControls.AccessDataSource
 
     '''<summary>
+    '''fuReport control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents fuReport As Global.System.Web.UI.WebControls.FileUpload
+
+    '''<summary>
+    '''lblupload control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblupload As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''btnConfirm control.
     '''</summary>
     '''<remarks>
