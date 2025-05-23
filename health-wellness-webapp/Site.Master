@@ -38,7 +38,11 @@
                     <li><a href="Feedback.aspx">Feedback</a></li>
                 </ul>
             </nav>
-            <asp:PlaceHolder ID="phAuthLinks" runat="server" />
+            <% If Session("User_Id") IsNot Nothing Then %>
+                <a href="Dashboard.aspx" class="primary-link">Dashboard</a>
+            <% Else %>
+                <a href="Signup.aspx" class="primary-link">Craete Account</a>
+            <% End If %>
         </header>
         <main>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
