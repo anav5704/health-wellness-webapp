@@ -3,14 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-
-    <asp:AccessDataSource ID="adsGetUser" runat="server" DataFile="~/App_Data/Webapp.accdb" SelectCommand="SELECT User_Id FROM [User] WHERE User_Email = ?">
-        <SelectParameters>
-             <asp:Parameter Name="Email" Type="String" />
-        </SelectParameters>
-    </asp:AccessDataSource>
-
     <h1 class="top-heading">Booking</h1>
 
     <section class="therapists-section">
@@ -49,7 +41,7 @@
         </asp:DropDownList>
         <asp:RequiredFieldValidator Display="Dynamic" ID="rfvTherapist" runat="server" ControlToValidate="ddlTherapists" ErrorMessage="Choose a therapist." CssClass="warning" />
 
-        <asp:AccessDataSource ID="adsTherapists" runat="server" DataFile="~/App_Data/Webapp.accdb" SelectCommand="SELECT Therapist_Name, Therapist_Id FROM [Therapist]"></asp:AccessDataSource>
+        <asp:AccessDataSource ID="adsTherapists" runat="server" DataFile="~/App_Data/Webapp.accdb" SelectCommand="SELECT [Therapist_Name], [Therapist_Id] FROM [Therapist]"></asp:AccessDataSource>
 
     </section>
 
@@ -64,7 +56,7 @@
         <asp:XmlDataSource ID="xdsTimeSlots" runat="server" DataFile="~/App_Data/TimeSlots.xml"></asp:XmlDataSource>
 
 
-        <asp:AccessDataSource ID="adsCheckBooking" runat="server" DataFile="~/App_Data/Webapp.accdb" SelectCommand="SELECT Booking_ID FROM Booking WHERE Therapist_Id = ? AND Booking_Time = ?">
+        <asp:AccessDataSource ID="adsCheckBooking" runat="server" DataFile="~/App_Data/Webapp.accdb" SelectCommand="SELECT [Booking_Id] FROM [Booking] WHERE [Therapist_Id] = ? AND [Booking_Time] = ?">
             <SelectParameters>
                 <asp:Parameter Name="Therapist_Id" Type="Int32" />
                 <asp:Parameter Name="Booking_Time" Type="String" />
@@ -83,9 +75,9 @@
     <asp:Label ID="LblConfirmation" runat="server" CssClass="ConfirmMessage"></asp:Label>
 
     <asp:AccessDataSource ID="adsBooking" runat="server" DataFile="~/App_Data/Webapp.accdb"
-        InsertCommand="INSERT INTO Booking ([User_Id], [Therapist_Id] , [Booking_Time],[User_ReportPath]) VALUES (?,?,?,?)">
+        InsertCommand="INSERT INTO [Booking] ([User_Id], [Therapist_Id] , [Booking_Time],[User_ReportPath]) VALUES (?,?,?,?)">
         <InsertParameters>
-            <asp:SessionParameter Name="User_Id" SessionField="User_Mail" Type="String" />
+            <asp:Parameter Name="User_Id" Type="Int32" />
             <asp:Parameter Name="Therapist_Id" Type="Int32" />
             <asp:Parameter Name="Booking_Time" Type="String" />
             <asp:Parameter Name="User_ReportPath" Type="String" />

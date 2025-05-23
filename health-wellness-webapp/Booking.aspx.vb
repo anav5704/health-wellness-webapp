@@ -28,36 +28,29 @@
             System.IO.Directory.CreateDirectory(saveDir)
         End If
 
-        Dim therapist As Integer = ddlTherapists.SelectedValue.Trim()
+        Dim userId As String = Session("User_ID")
+        Dim therapistId As Integer = ddlTherapists.SelectedValue.Trim()
         Dim time As String = ddlTimeSlots.SelectedValue.Trim()
-        Dim userEmail As String = Session("User_Email").ToString().Trim()
-        Dim fileName As String = $"{userEmail}_{DateTime.Now:yyyyMMddHHmmss}{ext}"
+        Dim fileName As String = $"{userId}_{DateTime.Now:yyyyMMddHHmmss}{ext}"
         Dim savePath As String = System.IO.Path.Combine(saveDir, fileName)
 
         fuReport.SaveAs(savePath)
 
-        adsCheckBooking.SelectParameters("Therapist_Id").DefaultValue = therapist
+        adsCheckBooking.SelectParameters("Therapist_Id").DefaultValue = therapistId
         adsCheckBooking.SelectParameters("Booking_Time").DefaultValue = time
-
-
-
-        Dim dvUser As DataView = CType(adsGetUser.Select(DataSourceSelectArguments.Empty), DataView)
-
-        Dim uId As Integer = Convert.ToInt32(dvUser(0)("User_Id"))
-
 
         Dim dv As DataView = adsCheckBooking.Select(DataSourceSelectArguments.Empty)
 
         If dv.Count > 0 Then
             LblConfirmation.Text = "Sorry, this time slot is booked"
         Else
+            adsBooking.InsertParameters("User_Id").DefaultValue = userId
             adsBooking.InsertParameters("Booking_Time").DefaultValue = time
-            adsBooking.InsertParameters("Therapist_Id").DefaultValue = therapist
-            adsBooking.InsertParameters("User_Id").DefaultValue = uId.ToString()
+            adsBooking.InsertParameters("Therapist_Id").DefaultValue = therapistId
             adsBooking.InsertParameters("User_ReportPath").DefaultValue = "/App_Data/MedicalReports/" & fileName
 
-
             adsBooking.Insert()
+
             LblConfirmation.Text = "Session booking confirmed"
         End If
     End Sub
