@@ -62,25 +62,33 @@
             <p>&copy; <time id="year">2025</time> Best Health. All rights reserved.</p>
         </footer>
 
-        <script>
+        <script>  
+            const currentPath = window.location.pathname.split('/').pop().toLowerCase()
+
+            document.querySelectorAll('#navbar a').forEach(link => {
+                if (link.getAttribute('href').toLowerCase() === currentPath) {
+                    link.classList.add('active');
+                }
+            })
+
             const toggleMenu = (e) => {
                 e.preventDefault()
-                document.getElementById('nav-header').classList.toggle('open');
-                document.getElementById('navbar').classList.toggle('open');
+                document.getElementById('nav-header').classList.toggle('open')
+                document.getElementById('navbar').classList.toggle('open')
                 document.querySelectorAll('.auth-link').forEach((link) => {
-                    link.classList.toggle('open');
+                    link.classList.toggle('open')
                 })
              
             }
 
-            document.getElementById("year").textContent = new Date().getFullYear();
+            document.getElementById("year").textContent = new Date().getFullYear()
 
             const checkFileSize = (input) => {
-                if (input.files.length === 0) return;
-                const maxBytes = 5 * 1024 * 1024;
+                if (input.files.length === 0) return
+                const maxBytes = 5 * 1024 * 1024
                 if (input.files[0].size > maxBytes) {
-                    alert("Maximum acceptable file size is 5MB");
-                    input.value = "";
+                    alert("Maximum acceptable file size is 5MB")
+                    input.value = ""
                 }
             }
         </script>
