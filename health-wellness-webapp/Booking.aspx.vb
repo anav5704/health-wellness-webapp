@@ -25,6 +25,7 @@ Public Class Booking
             End If
 
             If bookingId IsNot Nothing Then
+                ValidatePermission(bookingId)
                 lblBookingType.Text = "Edit"
                 lblFileUpload.Text = "Editing medical report is disabled due to security"
                 btnConfirm.Text = "Update Booking"
@@ -40,7 +41,7 @@ Public Class Booking
         End If
     End Sub
 
-    Protected Sub LoadBooking(bookingId)
+    Protected Sub LoadBooking(bookingId As String)
         adsBooking.SelectParameters("Booking_Id").DefaultValue = bookingId
         Dim dv As DataView = CType(adsBooking.Select(DataSourceSelectArguments.Empty), DataView)
 
@@ -129,6 +130,24 @@ Public Class Booking
         adsBooking.Delete()
 
         Response.Redirect("Dashboard.aspx")
+    End Sub
+
+    Protected Sub ValidatePermission(bookingId As String)
+        Dim currentUserId As String = Session("User_ID").ToString()
+        Dim currentUserRole As String = If(Session("User_Role"), "").ToString()
+
+        adsBooking.SelectParameters("Booking_Id").DefaultValue = bookingId
+        Dim dv As DataView = CType(adsBooking.Select(DataSourceSelectArguments.Empty), DataView)
+
+        If dv.Count = 0 Then
+            Response.Redirect("Booking.aspx")
+        End If
+
+        Dim bookingOwnerId As String = dv(0)("User_Id").ToString()
+
+        If currentUserRole <> "Admin" AndAlso bookingOwnerId <> currentUserId Then
+            Response.Redirect("Booking.aspx")
+        End If
     End Sub
 
 End Class
