@@ -15,44 +15,49 @@
 
         lblupload.Text = ""
         lblupload.ForeColor = Drawing.Color.Black
-
-        Dim ext = System.IO.Path.GetExtension(fuReport.FileName).ToLower()
-        If ext <> ".pdf" Then
-            lblupload.Text = "Only .pdf file are accept"
-            lblupload.ForeColor = Drawing.Color.Red
-            Exit Sub
-        End If
-
-        Dim saveDir = Server.MapPath("~/App_Data/MedicalReports/")
-        If Not System.IO.Directory.Exists(saveDir) Then
-            System.IO.Directory.CreateDirectory(saveDir)
-        End If
+        LblConfirmation.Text = ""
 
         Dim userId As String = Session("User_ID")
         Dim therapistId As Integer = ddlTherapists.SelectedValue.Trim()
         Dim time As String = ddlTimeSlots.SelectedValue.Trim()
-        Dim fileName As String = $"{userId}_{DateTime.Now:yyyyMMddHHmmss}{ext}"
-        Dim savePath As String = System.IO.Path.Combine(saveDir, fileName)
 
-        fuReport.SaveAs(savePath)
+        adsBooking.InsertParameters("Booking_Time").DefaultValue = time
+        adsBooking.InsertParameters("Therapist_Id").DefaultValue = therapistId
+        Dim dv As DataView = adsCheckBooking.Select(DataSourceSelectArguments.Empty)
+        If dv.Count > 0 Then
+            LblConfirmation.Text = "Sorry, this time slot is booked"
+            Return
+        End If
+
+        Dim reportPath As String = ""
+        If fuReport.HasFile Then
+            Dim ext = IO.Path.GetExtension(fuReport.FileName).ToLower()
+            If ext <> ".pdf" Then
+                lblupload.Text = "Only .pdf file are accepted"
+                lblupload.ForeColor = Drawing.Color.Red
+                Return
+            End If
+
+            Dim saveDir = Server.MapPath("~/App_Data/MedicalReports/")
+            If Not System.IO.Directory.Exists(saveDir) Then
+                System.IO.Directory.CreateDirectory(saveDir)
+            End If
+
+
+            Dim fileName As String = $"{userId}_{DateTime.Now:yyyyMMddHHmmss}{ext}"
+            reportPath = "/App_Data/MedicalReports/" & fileName
+            fuReport.SaveAs(IO.Path.Combine(saveDir, fileName))
+        End If
+
 
         adsCheckBooking.SelectParameters("Therapist_Id").DefaultValue = therapistId
         adsCheckBooking.SelectParameters("Booking_Time").DefaultValue = time
+        adsBooking.InsertParameters("User_Id").DefaultValue = userId
+        adsBooking.InsertParameters("User_ReportPath").DefaultValue = "/App_Data/MedicalReports/" & fileName
 
-        Dim dv As DataView = adsCheckBooking.Select(DataSourceSelectArguments.Empty)
+        adsBooking.Insert()
+        LblConfirmation.Text = "Session booking confirmed"
 
-        If dv.Count > 0 Then
-            LblConfirmation.Text = "Sorry, this time slot is booked"
-        Else
-            adsBooking.InsertParameters("User_Id").DefaultValue = userId
-            adsBooking.InsertParameters("Booking_Time").DefaultValue = time
-            adsBooking.InsertParameters("Therapist_Id").DefaultValue = therapistId
-            adsBooking.InsertParameters("User_ReportPath").DefaultValue = "/App_Data/MedicalReports/" & fileName
-
-            adsBooking.Insert()
-
-            LblConfirmation.Text = "Session booking confirmed"
-        End If
     End Sub
 
     Protected Sub adsCheckBooking_Selecting(sender As Object, e As SqlDataSourceSelectingEventArgs)
