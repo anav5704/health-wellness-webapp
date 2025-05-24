@@ -6,6 +6,22 @@
         If Session("User_ID") Is Nothing Then
             Response.Redirect("Login.aspx?ReturnUrl=" & Server.UrlEncode(Request.RawUrl))
         End If
+
+        If Not IsPostBack Then
+            ddlTherapists.DataBind()
+            Dim qsId As String = Request.QueryString("therapistId")
+            Dim tid As Integer
+
+            If Integer.TryParse(qsId, tid) Then
+                Dim li As ListItem = ddlTherapists.Items.FindByValue(tid.ToString())
+                If li IsNot Nothing Then
+                    ddlTherapists.ClearSelection()
+                    li.Selected = True
+                End If
+            End If
+        End If
+
+
     End Sub
 
     Protected Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
