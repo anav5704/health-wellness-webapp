@@ -10,7 +10,7 @@
             <asp:RequiredFieldValidator Display="Dynamic"  ID="rfvLoginEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email is required." CssClass="error" />
 
              <asp:Label ID ="lblPassword" runat ="server" Text ="Password"></asp:Label>
-            <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" />
+            <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
             <asp:RequiredFieldValidator Display="Dynamic"  ID="rfvLoginPasswrd" runat="server" ControlToValidate="txtPassword" ErrorMessage="Passowrd is required." CssClass="error" />
 
             <asp:Button CssClass="primary-button" ID="btnLogin" runat="server" Text="Login" />
