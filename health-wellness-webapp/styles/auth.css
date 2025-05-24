@@ -6,7 +6,8 @@
     padding: 2rem;
     border-radius: 10px;
     width: 50%;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .authForm input {
@@ -32,6 +33,9 @@
     margin-top: 25px;
 }
 
+.authInfo a {
+    text-decoration: underline;
+}
 
 /*Tablet screen*/
 @media screen and (max-width: 900px) {

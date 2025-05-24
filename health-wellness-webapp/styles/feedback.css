@@ -6,8 +6,10 @@
     padding: 2rem;
     border-radius: 10px;
     width: 50%;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
 .feedbackForm input {
         width: 100%;
         padding: 0.75rem;
@@ -16,6 +18,7 @@
         box-sizing: border-box;
         font-size: 1rem;
 }
+
 .feedbackForm label {
         display: block;
         margin-bottom: 0.25rem;
