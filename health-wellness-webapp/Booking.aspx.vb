@@ -34,7 +34,7 @@ Public Class Booking
                 LoadBooking(bookingId)
             Else
                 lblBookingType.Text = "New"
-                lblFileUpload.Text = "You can upload an optional PDF metal report"
+                lblFileUpload.Text = "You can upload an optional PDF medidcal report"
                 btnConfirm.Text = "Confirm Booking"
                 btnDelete.Visible = False
             End If
