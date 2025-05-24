@@ -12,13 +12,13 @@
                 <article>
                     <h3>Wellness Routine Guide</h3>
                     <p>A comprehensive guide to building healthy eating habits and routines</p> <br/>
-                   <a href="\PDF Resource\Healthy Habits & Routines.pdf" class="primary-link" download="Healthy Habits & Routines.pdf"> Download </a>
+                   <a href="/resources/Healthy Habits & Routines.pdf" class="primary-link" download="Healthy Habits & Routines.pdf"> Download </a>
                 </article>
 
                 <article>
                     <h3>Mental Health Guide</h3>
                     <p>A walkthrough on understanding menatal and emotional wellbeing</p> <br/>
-                   <a href="\PDF Resource\Mental & Emotional Wellbeing Guide.pdf" class="primary-link" download="Mental & Emotional Wellbeing Guide.pdf"> Download </a>
+                   <a href="/resources/Mental & Emotional Wellbeing Guide.pdf" class="primary-link" download="Mental & Emotional Wellbeing Guide.pdf"> Download </a>
                 </article>
             </section>
         </section>

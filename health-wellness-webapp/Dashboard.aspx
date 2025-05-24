@@ -20,6 +20,11 @@
             <asp:BoundField DataField="UserName" HeaderText="User" />
             <asp:BoundField DataField="Therapist_Name" HeaderText="Therapist" />
             <asp:BoundField DataField="Booking_Time" HeaderText="Time" />
+            <asp:TemplateField HeaderText="Report">
+            <ItemTemplate>
+                    <asp:HyperLink ID="hlVIew" runat="server" NavigateUrl='<%# Eval("USer_ReportPath") %>' Visible='<%# Not String.IsNullOrEmpty(Eval("User_ReportPath").ToString()) %>' Target="_blank" Text="View" />
+                    </ItemTemplate>
+        </asp:TemplateField>
             <asp:TemplateField HeaderText="Action">
                 <ItemTemplate>
                     <asp:HyperLink ID="hlEdit" runat="server" NavigateUrl='<%# Eval("Booking_Id", "Booking.aspx?bookingId={0}") %>' Text="Edit" />

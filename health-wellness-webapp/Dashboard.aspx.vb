@@ -9,6 +9,7 @@ Public Class Dashboard
                 adsBookings.SelectCommand = "
                     SELECT 
                         Booking.Booking_Id, 
+                        Booking.USer_ReportPath,
                         Therapist.Therapist_Name, 
                         [User].User_Fname & ' ' & [User].User_Lname AS UserName, 
                         FORMAT(Booking.Booking_Time, 'MMM dd, yyyy hh:mm') AS Booking_Time 
@@ -21,6 +22,7 @@ Public Class Dashboard
                 adsBookings.SelectCommand = "
                 SELECT 
                     Booking.Booking_Id, 
+                    Booking.USer_ReportPath,
                     Therapist.Therapist_Name, 
                     [User].User_Fname & ' ' & [User].User_Lname AS UserName, 
                     FORMAT(Booking.Booking_Time, 'MMM dd, yyyy hh:mm') AS Booking_Time 
