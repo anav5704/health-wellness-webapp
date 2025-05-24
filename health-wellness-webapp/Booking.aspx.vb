@@ -48,13 +48,11 @@
             fuReport.SaveAs(IO.Path.Combine(saveDir, uniqueName))
         End If
 
-        With adsBooking.InsertParameters
-            .Clear()
-            .Add("User_Id", userId)
-            .Add("Therapist_Id", therapistId.ToString())
-            .Add("Booking_Time", slot)
-            .Add("User_ReportPath", reportPath)
-        End With
+        adsCheckBooking.SelectParameters("Therapist_Id").DefaultValue = therapistId
+        adsCheckBooking.SelectParameters("Booking_Time").DefaultValue = slot
+        adsBooking.InsertParameters("User_Id").DefaultValue = userId
+        adsBooking.InsertParameters("User_ReportPath").DefaultValue = "/App_Data/MedicalReports/" & fileName
+
         adsBooking.Insert()
 
         LblConfirmation.Text = "Session booking confirmed!"
