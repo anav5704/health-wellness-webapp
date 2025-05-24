@@ -23,17 +23,16 @@
     <link href="styles/dashboard.css" rel="stylesheet" type="text/css" />
 
     <link rel="preload" href="fonts/Merriweather.woff" as="font" type="font/woff" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
     <form id="form1" runat="server">
         <header id="nav-header">
              <img src="images/logo.png" alt="Best Health Logo" title="Best Health Logo" height="45" width="200"  loading="eager"/>
-             <button type="button" aria-label="Hamburger Menu" class="menu-toggle" onclick="toggleMenu(event)">
-                <i class="fa-solid fa-bars fa-lg"></i>
+             <button type="button" class="menu-toggle" onclick="toggleMenu(event)">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="25" width="25" viewBox="0 0 25 25" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
             </button>
             <nav id="navbar">    
                 <ul>
@@ -60,11 +59,10 @@
         <footer>
             <img src="images/logo.png" alt="Best Health Logo" title="Best Health Logo" height="45" width="200" loading="lazy"/>
             <ul id="footer-links">
-				<li><a aria-label="Email" href="Mailto:info@best.health"><i class="fa-solid fa-envelope fa-lg"></i></a></li>
-                <li><a  aria-label="Facebook" href="https://facebook.com/besthealth"><i class="fa-brands fa-facebook fa-lg"></i></a></li>
-                <li><a  aria-label="Instagram" href="https://instagram.com/besthealth"><i class="fa-brands fa-square-instagram fa-lg"></i></a></li>
-                <li><a  aria-label="Twitter" href="https://twitter.com/besthealth"><i class="fa-brands fa-twitter fa-lg"></i></a></li>
-                <li><a  aria-label="YoutTube" href="https://youtube.com/besthealth"><i class="fa-brands fa-youtube fa-lg"></i></a></li>
+				<li><a href="Mailto:info@best.health"><img src="images/gmail.svg" alt="Gmail" title="Gmail" height="25" width="25" loading="lazy"/></a></li>
+                <li><a href="https://facebook.com/besthealth"><img src="images/facebook.svg" alt="Facebook" title="Facebook" height="25" width="25" loading="lazy"/></a></li>
+                <li><a href="https://twitter.com/besthealth"><img src="images/twitter.svg" alt="Twitter" title="Twitter" height="25" width="25" loading="lazy"/></a></li>
+                <li><a href="https://youtube.com/besthealth"><img src="images/youtube.svg" alt="YouTube" title="YouTube" height="25" width="25" loading="lazy"/></a></li>
             </ul>
             <p>&copy; <time id="year">2025</time> Best Health. All rights reserved.</p>
         </footer>

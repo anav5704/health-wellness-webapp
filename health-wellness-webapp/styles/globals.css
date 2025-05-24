@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: "Merriweather";
-    src: url("../fonts/Merriweather.woff") format("truetype");
+    src: url("../fonts/Merriweather.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: "Geist";
-    src: url("../fonts/Geist.woff") format("truetype");
+    src: url("../fonts/Geist.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -122,12 +122,8 @@ footer {
 }
 footer ul {
     display: flex;
-    gap: 30px;
+    gap:30px;
     list-style: none;
-}
-
- footer a {
-    color: black;
 }
 
 .primary-button {
