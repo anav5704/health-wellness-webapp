@@ -14,9 +14,11 @@
     margin: 10px;
 }
 
-.image-cell img {
-    border-radius: 15px;
-}
+    .image-cell img {
+        border-radius: 15px;
+        width :200px;
+        height:200px;
+    }
 
 .content-cell {
     padding: 10px;

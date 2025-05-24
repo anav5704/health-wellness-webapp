@@ -6,10 +6,10 @@
 
     <h1>Therapists</h1>
 
-    <a href="Booking.aspx?therapist=JohnDoe">
+    <a href="Booking.aspx?therapistId=1">
         <section class="therapist-card">
             <figure class="image-cell">
-                <img src="/images/Therapist1.jpg" alt="Therapist" width="200" height="200">
+                <img src="/images/Therapist1.jpg" alt="Therapist">
             </figure>
             <article class="content-cell">
                 <h3 class="therapist-name">John Doe</h3>
@@ -27,10 +27,10 @@
     </a>
 
 
-    <a href="Booking.aspx?therapist=JameSmith">
+    <a href="Booking.aspx?therapistId=2">
         <section class="therapist-card">
             <figure class="image-cell">
-                <img src="/images/therapist2.jpg" alt="Therapist Image" width="200" height="200">
+                <img src="/images/therapist2.jpg" alt="Therapist Image">
             </figure>
             <article class="content-cell">
                 <h3 class="therapist-name">Jame Smith</h3>
@@ -47,10 +47,10 @@
         </section>
     </a>
 
-    <a href="Booking.aspx?therapist=CharlesDow">
+    <a href="Booking.aspx?therapistId=3">
         <section class="therapist-card">
             <figure class="image-cell">
-                <img src="/images/therapist3.jpg" alt="Therapist Image" width="200" height="200">
+                <img src="/images/therapist3.jpg" alt="Therapist Image">
             </figure>
             <article class="content-cell">
                 <h3 class="therapist-name">Charles Dow</h3>
@@ -67,10 +67,10 @@
         </section>
     </a>
 
-    <a href="Booking.aspx?therapist=EmilyJones">
+    <a href="Booking.aspx?therapistId=4">
         <section class="therapist-card">
             <figure class="image-cell">
-                <img src="/images/therapist4.jpg" alt="Therapist Image" width="200" height="200">
+                <img src="/images/therapist4.jpg" alt="Therapist Image">
             </figure>
             <article class="content-cell">
                 <h3 class="therapist-name">Emily Jones</h3>
