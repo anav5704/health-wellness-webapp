@@ -95,6 +95,7 @@
     <Content Include="App_Data\Webapp.accdb" />
     <Content Include="Booking.aspx" />
     <Content Include="Dashboard.aspx" />
+    <Content Include="EditBooking.aspx" />
     <Content Include="Feedback.aspx" />
     <Content Include="images\blogs.png" />
     <Content Include="images\resources.png" />
@@ -168,6 +169,13 @@
     <Compile Include="Dashboard.aspx.vb">
       <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditBooking.aspx.designer.vb">
+      <DependentUpon>EditBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditBooking.aspx.vb">
+      <DependentUpon>EditBooking.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Feedback.aspx.designer.vb">
       <DependentUpon>Feedback.aspx</DependentUpon>
