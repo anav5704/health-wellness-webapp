@@ -16,7 +16,7 @@
             <asp:BoundField DataField="Booking_Time" HeaderText="Time" />
             <asp:TemplateField HeaderText="Action">
                 <ItemTemplate>
-                    <asp:HyperLink ID="hlEdit" runat="server" NavigateUrl='<%# Eval("Booking_Id", "EditBooking.aspx?id={0}") %>' Text="Edit" />
+                    <asp:HyperLink ID="hlEdit" runat="server" NavigateUrl='<%# Eval("Booking_Id", "Booking.aspx?bookingId={0}") %>' Text="Edit" />
                 </ItemTemplate>
             </asp:TemplateField>
         </Columns>

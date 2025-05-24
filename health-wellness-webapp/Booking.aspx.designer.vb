@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class Booking
 
     '''<summary>
+    '''lblBookingType control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblBookingType As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''Panel1 control.
     '''</summary>
     '''<remarks>
@@ -221,6 +230,15 @@ Partial Public Class Booking
     Protected WithEvents adsCheckBooking As Global.System.Web.UI.WebControls.AccessDataSource
 
     '''<summary>
+    '''lblFileUpload control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblFileUpload As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''fuReport control.
     '''</summary>
     '''<remarks>
@@ -246,6 +264,15 @@ Partial Public Class Booking
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnConfirm As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''btnDelete control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnDelete As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''LblConfirmation control.
