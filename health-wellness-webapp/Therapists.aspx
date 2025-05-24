@@ -9,7 +9,7 @@
     <a href="Booking.aspx?therapistId=1">
         <section class="therapist-card">
             <figure class="image-cell">
-                <img src="/images/Therapist1.jpg" alt="Therapist">
+                <img src="/images/Therapist1.jpg" alt="Therapist" loading="lazy">
             </figure>
             <article class="content-cell">
                 <h3 class="therapist-name">John Doe</h3>
@@ -30,7 +30,7 @@
     <a href="Booking.aspx?therapistId=2">
         <section class="therapist-card">
             <figure class="image-cell">
-                <img src="/images/therapist2.jpg" alt="Therapist Image">
+                <img src="/images/therapist2.jpg" alt="Therapist Image" loading="lazy">
             </figure>
             <article class="content-cell">
                 <h3 class="therapist-name">Jame Smith</h3>
@@ -50,7 +50,7 @@
     <a href="Booking.aspx?therapistId=3">
         <section class="therapist-card">
             <figure class="image-cell">
-                <img src="/images/therapist3.jpg" alt="Therapist Image">
+                <img src="/images/therapist3.jpg" alt="Therapist Image" loading="lazy">
             </figure>
             <article class="content-cell">
                 <h3 class="therapist-name">Charles Dow</h3>
@@ -70,7 +70,7 @@
     <a href="Booking.aspx?therapistId=4">
         <section class="therapist-card">
             <figure class="image-cell">
-                <img src="/images/therapist4.jpg" alt="Therapist Image">
+                <img src="/images/therapist4.jpg" alt="Therapist Image" loading="lazy">
             </figure>
             <article class="content-cell">
                 <h3 class="therapist-name">Emily Jones</h3>

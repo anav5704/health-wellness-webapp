@@ -275,6 +275,8 @@
   <ItemGroup>
     <Content Include="fonts\Geist.ttf" />
     <Content Include="fonts\Merriweather.ttf" />
+    <Content Include="fonts\Geist.woff" />
+    <Content Include="fonts\Merriweather.woff" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

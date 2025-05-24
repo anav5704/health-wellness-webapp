@@ -4,8 +4,6 @@
     <meta name="description" content=" Send us a message regarding any of your queries." />
     <meta property="og:title" content="Best Health | Contact" />
     <meta property="og:description" content=" Send us a message regarding any of your queries." />
-    <meta property="og:image" content="/images/og.png" />
-    <link rel="icon" type="image/png" href="/images/favicon.ico" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Contact Us</h1>

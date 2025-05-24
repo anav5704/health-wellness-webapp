@@ -4,8 +4,6 @@
     <meta name="description" content=" Send a feedback of your experience." />
     <meta property="og:title" content="Best Health | Feedback" />
     <meta property="og:description" content=" Send a feedback of your experience." />
-    <meta property="og:image" content="/images/og.png" />
-    <link rel="icon" type="image/png" href="/images/favicon.ico" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Feedback</h1>

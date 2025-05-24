@@ -4,8 +4,6 @@
     <meta name="description" content="Log in to access your Best Health dashboard, manage bookings, and continue your mental wellness journey." />
     <meta property="og:title" content="Best Health | Login" />
     <meta property="og:description" content="Log in to access your Best Health dashboard, manage bookings, and continue your mental wellness journey." />
-    <meta property="og:image" content="/images/og.png" />
-    <link rel="icon" type="image/png" href="/images/favicon.ico" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <h1>Account Login</h1>

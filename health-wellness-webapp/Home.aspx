@@ -4,8 +4,6 @@
     <meta name="description" content=" Start your mental wellness journey with expert support, helpful tools, and a community that cares about your well-being." />
     <meta property="og:title" content="Best Health | Home" />
     <meta property="og:description" content=" Start your mental wellness journey with expert support, helpful tools, and a community that cares about your well-being." />
-    <meta property="og:image" content="/images/og.png" />
-    <link rel="icon" type="image/png" href="/images/favicon.ico" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
        <section id="hero">
@@ -33,19 +31,19 @@
                 </p>
                 <div class="grid-3">
                     <article class="card">
-                        <img src="images/therapy.png" alt="Therapy Sessions" title="Therapy Sessions" height="300" width="300" />
+                        <img src="images/therapy.png" alt="Therapy Sessions" title="Therapy Sessions" height="300" width="300" loading="lazy"/>
                         <h3>Therapy Sessions</h3>
                         <p>Private sessions with licensed therapists to discuss emotions, challenges, and personal growth.</p>
                         <a href="Booking.aspx">Book Session -></a>
                     </article>
                     <article class="card">
-                        <img src="images/resources.png" alt="Health Resources" title="Health Resrouces" height="300" width="300" />
+                        <img src="images/resources.png" alt="Health Resources" title="Health Resrouces" height="300" width="300" loading="lazy"/>
                         <h3>Health Resources</h3>
                         <p>Explore helpful PDFs and videos on mindfulness, self-care, and emotional health strategies.</p>
                         <a href="Resources.aspx">View Resources -></a>
                     </article>
                     <article class="card">
-                        <img src="images/blogs.png" alt="Blog Articles" title="Blog Articles" height="300" width="300" />
+                        <img src="images/blogs.png" alt="Blog Articles" title="Blog Articles" height="300" width="300" loading="lazy"/>
                         <h3>Blog Articles</h3>
                         <p>Browse articles covering mental health tips, coping techniques, and emotional wellness insights.</p>
                         <a href="Blogs.aspx">View Resources -></a>
