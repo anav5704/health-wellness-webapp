@@ -3,6 +3,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Contact Us</h1>
+    <p class ="subtitle">Should you have any queries regarding our <br /> services, please do send us a message</p>
+    <br />
     <asp:Panel ID="pnlContact" CssClass="contactForm" runat="server">
         <asp:Label ID="lblEmail" runat="server" Text="Email"></asp:Label>
         <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
