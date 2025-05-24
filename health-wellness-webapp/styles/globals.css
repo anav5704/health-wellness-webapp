@@ -31,7 +31,7 @@ body {
 main {
     width: 70%;
     margin: auto;
-    padding: 100px 0px;
+    padding: 75px 0px;
 }
 
 header {
@@ -130,6 +130,10 @@ footer ul {
 
 .primary-button {
     background-color: var(--accent);
+    border: 1px solid black;
+    padding: 15px 30px;
+    border-radius: calc(infinity * 1px);
+    font-size: 1rem;
 }
 
 .primary-link {

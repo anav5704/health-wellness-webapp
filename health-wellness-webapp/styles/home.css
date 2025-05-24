@@ -13,6 +13,7 @@
 
 #hero-buttons {
     display: flex;
+    align-items: center;
     gap: 15px;
     list-style-type: none;
 }

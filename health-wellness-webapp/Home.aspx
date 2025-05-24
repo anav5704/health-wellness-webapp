@@ -12,10 +12,10 @@
                     Your mental wellness is important. We offer the support, tools, and resources you need to feel
                     <br />better and live more fully. Join our community and start your journey to well-being today.
                 </p>
-                <ul id="hero-buttons">
-                    <li><a class="primary-link" href="Booking.aspx">Book Session</a></li>
-                    <li><a class="secondary-link" href="Therapists.aspx">View Therapists</a></li>
-                </ul>
+                <div role="group" aria-label="Hero Actions" id="hero-buttons">
+                    <a class="primary-link" href="Booking.aspx">Book Session</a>
+                    <a class="secondary-link" href="Therapists.aspx">View Therapists</a>
+                </div>
             </section>
 
             <section id="services">

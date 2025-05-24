@@ -39,7 +39,7 @@
         <asp:DropDownList ID="ddlTherapists" runat="server" DataSourceID="adsTherapists" DataTextField="Therapist_Name" DataValueField="Therapist_ID" AutoPostBack="False" AppendDataBoundItems="true" CssClass="dropdownlist">
             <asp:ListItem Value=""></asp:ListItem>
         </asp:DropDownList>
-        <asp:RequiredFieldValidator Display="Dynamic" ID="rfvTherapist" runat="server" ControlToValidate="ddlTherapists" ErrorMessage="Choose a therapist." CssClass="warning" />
+        <asp:RequiredFieldValidator Display="Dynamic" ID="rfvTherapist" runat="server" ControlToValidate="ddlTherapists" ErrorMessage="Therapist is required." CssClass="error" />
 
         <asp:AccessDataSource ID="adsTherapists" runat="server" DataFile="~/App_Data/Webapp.accdb" SelectCommand="SELECT [Therapist_Name], [Therapist_Id] FROM [Therapist]"></asp:AccessDataSource>
 
@@ -47,12 +47,12 @@
 
     <section class="timeSlot-section">
         <h2 class="booking-title">Time Slot</h2>
-
+        <p>Each session lasts 60 minutes</p>
 
         <asp:DropDownList ID="ddlTimeSlots" runat="server" DataSourceID="xdsTimeSlots" DataTextField="value" CssClass="dropdownlist">
         </asp:DropDownList>
-        <asp:RequiredFieldValidator Display="Dynamic" ID="rfvTimeSlot" runat="server" ControlToValidate="ddlTimeSlots" ErrorMessage="Choose a time slot." CssClass="warning" />
-        <p>*Each session lasts 60 minutes</p>
+        <asp:RequiredFieldValidator Display="Dynamic" ID="rfvTimeSlot" runat="server" ControlToValidate="ddlTimeSlots" ErrorMessage="Time slot is required." CssClass="error" />
+        
         <asp:XmlDataSource ID="xdsTimeSlots" runat="server" DataFile="~/App_Data/TimeSlots.xml"></asp:XmlDataSource>
 
 
@@ -65,14 +65,13 @@
     </section>
 
     <section class="fileUpload-section">
-        <h2 class="booking-title">Upload Report</h2>
-        <p>You can upload your medical report here</p>
-        <asp:FileUpload ID="fuReport" runat="server" CssClass="dropdownlist" onchange="checkFileSize(this)" />
-        <asp:Label ID="lblupload" runat="server" CssClass="ConfirmMessage"></asp:Label>
+        <h2 class="booking-title">Medical Report</h2>
+        <p>You can optionally upload your medical report here (PDF)</p>
+        <asp:FileUpload  ID="fuReport" runat="server" CssClass="dropdownlist" onchange="checkFileSize(this)" />
+        <asp:Label ID="lblupload" runat="server" CssClass="error"></asp:Label>
+        <asp:Button ID="btnConfirm" runat="server" Text="Confirm Booking" CssClass="primary-button" CausesValidation="true" />
+        <asp:Label ID="LblConfirmation" runat="server"></asp:Label>
     </section>
-
-    <asp:Button ID="btnConfirm" runat="server" Text="Confirm" CssClass="Confirmbutton" CausesValidation="true" />
-    <asp:Label ID="LblConfirmation" runat="server" CssClass="ConfirmMessage"></asp:Label>
 
     <asp:AccessDataSource ID="adsBooking" runat="server" DataFile="~/App_Data/Webapp.accdb"
         InsertCommand="INSERT INTO [Booking] ([User_Id], [Therapist_Id] , [Booking_Time],[User_ReportPath]) VALUES (?,?,?,?)">

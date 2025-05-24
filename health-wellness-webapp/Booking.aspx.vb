@@ -24,7 +24,6 @@
         Dim dv As DataView = CType(adsCheckBooking.Select(DataSourceSelectArguments.Empty), DataView)
         If dv.Count > 0 Then
             LblConfirmation.Text = "Sorry, this time slot is already booked."
-            LblConfirmation.ForeColor = Drawing.Color.Red
             Return
         End If
 
@@ -36,7 +35,6 @@
             Dim ext = IO.Path.GetExtension(fileName).ToLower()
             If ext <> ".pdf" Then
                 lblupload.Text = "Only .pdf files are accepted."
-                lblupload.ForeColor = Drawing.Color.Red
                 Return
             End If
 
@@ -55,8 +53,7 @@
 
         adsBooking.Insert()
 
-        LblConfirmation.Text = "Session booking confirmed!"
-        LblConfirmation.ForeColor = Drawing.Color.Green
+        LblConfirmation.Text = "Session sucessfully booked."
     End Sub
 
 End Class

@@ -14,6 +14,10 @@
     margin: 10px;
 }
 
+.image-cell img {
+    border-radius: 15px;
+}
+
 .content-cell {
     padding: 10px;
 }
