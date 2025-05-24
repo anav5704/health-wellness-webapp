@@ -13,7 +13,7 @@
 
         <section class="blog-card">
             <figure class="blog-image-container">
-                <img src="\images\Blogs_1.png" alt="Photo of food" class="blog-image" />
+                <img src="\images\Blogs_1.png" alt="Photo of food" class="blog-image" loading="lazy"/>
             </figure>
             <section class="blog-content">
                 <section class="blog-header">
@@ -37,7 +37,7 @@
 
         <section class="blog-card">
             <figure class="blog-image-container">
-                <img src="\images\Blogs_2.jpg" alt="Two people holding hands" class="blog-image" />
+                <img src="\images\Blogs_2.jpg" alt="Two people holding hands" class="blog-image" loading="lazy"/>
             </figure>
             <section class="blog-content">
                 <section class="blog-header">
@@ -61,7 +61,7 @@
 
         <section class="blog-card">
             <figure class="blog-image-container">
-                <img src="\images\Blogs_3.jpg" alt="Two people journaling in notebooks" class="blog-image" />
+                <img src="\images\Blogs_3.jpg" alt="Two people journaling in notebooks" class="blog-image" loading="lazy"/>
             </figure>
             <section class="blog-content">
                 <section class="blog-header">
@@ -85,7 +85,7 @@
 
         <section class="blog-card">
             <figure class="blog-image-container">
-                <img src="\images\Blogs_5.jpg" alt="Two people talking to each other (Counselling)" class="blog-image" />
+                <img src="\images\Blogs_5.jpg" alt="Two people talking to each other (Counselling)" class="blog-image"  loading="lazy"/>
             </figure>
             <section class="blog-content">
                 <section class="blog-header">
@@ -109,7 +109,7 @@
 
         <section class="blog-card">
             <figure class="blog-image-container">
-                <img src="\images\Blogs_4.jpg" alt="Person journaling in a notebook" class="blog-image" />
+                <img src="\images\Blogs_4.jpg" alt="Person journaling in a notebook" class="blog-image"  loading="lazy"/>
             </figure>
             <section class="blog-content">
                 <section class="blog-header">

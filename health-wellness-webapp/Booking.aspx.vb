@@ -81,11 +81,11 @@ Public Class Booking
                 Return
             End If
 
-            Dim saveDir = Server.MapPath("~/App_Data/MedicalReports/")
+            Dim saveDir = Server.MapPath("~/uploads/")
             If Not IO.Directory.Exists(saveDir) Then IO.Directory.CreateDirectory(saveDir)
 
             Dim uniqueName As String = $"{Guid.NewGuid():N}{ext}"
-            reportPath = "/App_Data/MedicalReports/" & uniqueName
+            reportPath = "/uploads/" & uniqueName
             fuReport.SaveAs(IO.Path.Combine(saveDir, uniqueName))
         End If
 
@@ -149,5 +149,4 @@ Public Class Booking
             Response.Redirect("Booking.aspx")
         End If
     End Sub
-
 End Class
