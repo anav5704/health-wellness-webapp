@@ -48,8 +48,8 @@
             fuReport.SaveAs(IO.Path.Combine(saveDir, uniqueName))
         End If
 
-        adsCheckBooking.SelectParameters("Therapist_Id").DefaultValue = therapistId
-        adsCheckBooking.SelectParameters("Booking_Time").DefaultValue = slot
+        adsBooking.InsertParameters("Therapist_Id").DefaultValue = therapistId
+        adsBooking.InsertParameters("Booking_Time").DefaultValue = slot
         adsBooking.InsertParameters("User_Id").DefaultValue = userId
         adsBooking.InsertParameters("User_ReportPath").DefaultValue = "/App_Data/MedicalReports/" & fileName
 
