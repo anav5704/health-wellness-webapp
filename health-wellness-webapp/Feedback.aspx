@@ -3,6 +3,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Feedback</h1>
+    <p class ="subtitle">Please do share your experience with us. This will help us <br /> in improving user experience and the quality of our services.</p>
+    <br />
     <asp:Panel ID="pnlFeedback" CssClass="feedbackForm" runat="server">
         <asp:Label ID="lblMessage" runat="server" Text="Message"></asp:Label>
         <asp:TextBox ID="txtMessage" runat="server" Rows="8" TextMode="MultiLine"></asp:TextBox>
