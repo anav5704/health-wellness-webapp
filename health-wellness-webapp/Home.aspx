@@ -1,5 +1,11 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Home.aspx.vb" Inherits="health_wellness_webapp.Home" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <title>Best Health | Home</title>
+    <meta name="description" content=" Start your mental wellness journey with expert support, helpful tools, and a community that cares about your well-being." />
+    <meta property="og:title" content="Best Health | Home" />
+    <meta property="og:description" content=" Start your mental wellness journey with expert support, helpful tools, and a community that cares about your well-being." />
+    <meta property="og:image" content="/images/og.png" />
+    <link rel="icon" type="image/png" href="/images/favicon.ico" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
        <section id="hero">
@@ -12,7 +18,7 @@
                     Your mental wellness is important. We offer the support, tools, and resources you need to feel
                     <br />better and live more fully. Join our community and start your journey to well-being today.
                 </p>
-                <div role="group" aria-label="Hero Actions" id="hero-buttons">
+                <div role="group" id="hero-buttons">
                     <a class="primary-link" href="Booking.aspx">Book Session</a>
                     <a class="secondary-link" href="Therapists.aspx">View Therapists</a>
                 </div>

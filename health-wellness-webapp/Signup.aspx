@@ -1,5 +1,11 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Signup.aspx.vb" Inherits="health_wellness_webapp.Signup" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <title>Best Health | Sign Up</title>
+    <meta name="description" content="Sign up to Best Health for expert guidance, wellness resources, and a caring community focused on your mental health." />
+    <meta property="og:title" content="Best Health | Sign Up" />
+    <meta property="og:description" content="Sign up to Best Health for expert guidance, wellness resources, and a caring community focused on your mental health." />
+    <meta property="og:image" content="/images/og.png" />
+    <link rel="icon" type="image/png" href="/images/favicon.ico" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 

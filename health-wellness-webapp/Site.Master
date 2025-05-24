@@ -3,7 +3,6 @@
 
 <html>
 <head runat="server">
-    <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link href="styles/globals.css" rel="stylesheet" type="text/css" />

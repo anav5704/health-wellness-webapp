@@ -1,5 +1,11 @@
 ﻿<%@ Page Title="" ClientIDMode="Static" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Dashboard.aspx.vb" Inherits="health_wellness_webapp.Dashboard" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <title>Best Health | Dashboard</title>
+    <meta name="description" content="Easily view and update your therapy sessions anytime through your personalized booking dashboard." />
+    <meta property="og:title" content="Best Health | Dashboard" />
+    <meta property="og:description" content="Easily view and update your therapy sessions anytime through your personalized booking dashboard." />
+    <meta property="og:image" content="/images/og.png" />
+    <link rel="icon" type="image/png" href="/images/favicon.ico" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
        <h1><asp:Label ID="lblUserRole" Text="" runat="server"></asp:Label> Dashboard</h1>
