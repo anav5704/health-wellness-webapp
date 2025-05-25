@@ -12,7 +12,7 @@
     <section class ="team">
         <article class ="developer">
             <figure>
-                <asp:Image ID="imgAnav" runat="server" AlternateText="Picture of Anav" Title="Anav" Height="300px" ImageUrl="~/images/anav.jpg" Width="300px" />
+                <img src="images/anav.jpg" alt="Picture of Anav" title="Anav" height="300" width="300" loading="lazy" />
                 <figcaption>Anav Chand</figcaption>
             </figure>
                <p class ="bio">An aspiring DevOps engineer, self-taught web developer, and second-year software engineering student @ USP.</p>     
@@ -26,7 +26,7 @@
         </article>
         <article class ="developer">
             <figure>
-                <asp:Image ID="imgVishant" runat="server" AlternateText="Picture of Vishant" Title="Vishant" Height="300px" ImageUrl="~/images/vishant.jpg" Width="300px" />
+                <img src="images/vishant.jpg" alt="Picture of Vishant" title="Vishant" height="300" width="300" loading="lazy" />
                 <figcaption>Vishant Kumar</figcaption>
             </figure>
                 <p class ="bio">A frontend Web Developer who is always keen in growing his knowledge in the world of Web Development.</p>      
@@ -40,10 +40,10 @@
         </article>
         <article class ="developer">
             <figure>
-                <asp:Image ID="imgAryan" runat="server" AlternateText="Picture of Aryan" Title="Aryan" Height="300px" ImageUrl="~/images/aryan.jpg" Width="300px" />
+                <img src="images/aryan.jpg" alt="Picture of Aryan" title="Aryan" height="300" width="300" loading="lazy" />
                 <figcaption>Aryan Singh</figcaption>
             </figure>
-               <p class ="bio">A backend Web Developer who is known for his analytical thinking and excellent collaboration skills.</p>  
+               <p class ="bio">A backend Web Developer who is known for his analytical thinking, technical expertise and excellent collaboration skills.</p>  
             <h4>Technology Skills</h4>
                <ul>
                    <li>PHP</li>
@@ -54,7 +54,7 @@
         </article>
         <article class ="developer">
             <figure>
-                <asp:Image ID="imgZhixian" runat="server" AlternateText="Picture of Zhixian" Title="Zhixian" Height="300px" ImageUrl="~/images/zhixian.jpg" Width="300px" />
+               <img src="images/zhixian.jpg" alt="Picture of Zhixian" title="Zhixian" height="300" width="300" loading="lazy" />
                 <figcaption>Zhixian Chen</figcaption>
             </figure>
                <p class ="bio">A fullstack Web Developer who is known for his high level of competency in both frontend and backend languages.</p>      
@@ -68,7 +68,7 @@
         </article>
         <article class ="developer">
             <figure>
-                <asp:Image ID="imgRohan" runat="server" AlternateText="Picture of Rohan" Title="Rohan" Height="300px" ImageUrl="~/images/rohan.jpg" Width="300px" />
+               <img src="images/rohan.jpg" alt="Picture of Rohan" title="Rohan" height="300" width="300" loading="lazy" />
                 <figcaption>Rohan Nandan</figcaption>
             </figure>
                <p class ="bio">A Passionate Software Engineer with 2 years of experience in developing web applications and backend systems.</p>       
