@@ -48,16 +48,17 @@ header {
     background-color: white;
     border-bottom: 1px solid black;
 }
- header ul {
-        display: flex;
-        gap: 30px;
-        list-style: none;
-        margin: 0px;
-    }
 
-header  a  {
-        color: rgba(0, 0, 0, 0.5);
-    }
+header ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0px;
+}
+
+header a {
+    color: rgba(0, 0, 0, 0.5);
+}
 
 .active {
     color: black;
@@ -122,9 +123,10 @@ footer {
     padding: 30px;
     gap: 20px;
 }
+
 footer ul {
     display: flex;
-    gap:30px;
+    gap: 30px;
     list-style: none;
 }
 
@@ -166,12 +168,12 @@ footer ul {
 
     .auth-link.open {
         display: block;
-        margin: 25px auto;    
+        margin: 25px auto;
     }
 
     header {
         flex-wrap: wrap;
-        gap:15px;
+        gap: 15px;
         padding: 15px 0 0 0;
         height: auto;
     }
@@ -195,7 +197,7 @@ footer ul {
     header ul {
         flex-direction: column;
         width: 100%;
-       justify-content: space-between;
+        justify-content: space-between;
         align-items: center;
     }
 

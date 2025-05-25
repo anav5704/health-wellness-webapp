@@ -114,6 +114,7 @@
     <Content Include="images\youtube.svg" />
     <Content Include="styles\blogs.css" />
     <Content Include="styles\booking.css" />
+    <Content Include="styles\dashboard.css" />
     <Content Include="styles\feedback.css" />
     <Content Include="styles\home.css" />
     <Content Include="Logout.aspx" />

@@ -33,9 +33,9 @@
     margin-top: 25px;
 }
 
-.authInfo a {
-    text-decoration: underline;
-}
+    .authInfo a {
+        text-decoration: underline;
+    }
 
 /*Tablet screen*/
 @media screen and (max-width: 900px) {
