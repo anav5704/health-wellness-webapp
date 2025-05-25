@@ -4,33 +4,31 @@
     <title>Best Health | Resources</title>
     <meta name="description" content=" Resources page for our website." />
     <meta property="og:title" content="Best Health | Resources" />
-    <meta property="og:description" content=" Resources page for our website." />
+    <meta property="og:description" content=" Explore comprehensive guides, community forums, and video resources for building healthy routines, mental wellbeing insights, and professional counseling support." />
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <section aria-labelledby="documents-heading">
             <h1 id="documents-heading">Documents</h1>
-
+             <p class ="subtitle"> Comprehensive guides and documented resources with secrets to building <br/> healthy routines and understanding mental wellbeing.</p>
             <section class="resources-grid">
                 <article>
                     <h3>Wellness Routine Guide</h3>
                     <p>A comprehensive guide to building healthy eating habits and routines</p>
-                   <a href="\PDF Resource\Healthy Habits & Routines.pdf" class="secondary-link" download="Healthy Habits & Routines.pdf">
-                            Download <i class="fa-solid fa-download"></i> </a>
+                   <a href="\resources\Healthy Habits & Routines.pdf" class="secondary-link" download="Healthy Habits & Routines.pdf"> Download </a>
                 </article>
 
                 <article>
                     <h3>Mental Health Guide</h3>
                     <p>A walkthrough on understanding mental and emotional wellbeing</p>
-                   <a href="\PDF Resource\Mental & Emotional Wellbeing Guide.pdf" class="secondary-link" download=="Mental & Emotional Wellbeing Guide.pdf">
-                       Download <i class="fa-solid fa-download"></i> </a>
+                   <a href="\resources\Mental & Emotional Wellbeing Guide.pdf" class="secondary-link" download="Mental & Emotional Wellbeing Guide.pdf"> Download </a>
                 </article>
             </section>
         </section>
 
         <section aria-labelledby="external-links-heading">
             <h2 id="external-links-heading">External Links</h2>
-            
+            <p class ="subtitle"> Connect with community forums and access professional counselling support services.</p>
             <section class="resources-grid">
                 <article>
                     <h3>Wellness Community Forum</h3>
@@ -48,6 +46,7 @@
 
         <section>
             <h2>Video Resources</h2>
+             <p class ="subtitle"> Watch educational videos covering mental health fundamentals and wellness strategies.</p>
                 <section class="video-container">
                   <section class="video-box">
                     <h3>Mental Health Tips</h3>
