@@ -25,7 +25,7 @@
                     <li>Online/Offline</li>
                     <li>Bilingual</li>
                 </ul>
-                <span class="therapist-price">$800.00</span>
+                <p class="therapist-price">$800.00</p>
             </article>
         </section>
     </a>
@@ -46,7 +46,7 @@
                     <li>Offline</li>
                     <li>English</li>
                 </ul>
-                <span class="therapist-price">$800.00</span>
+                <p class="therapist-price">$800.00</p>
             </article>
         </section>
     </a>
@@ -66,7 +66,7 @@
                     <li>Online/Offline</li>
                     <li>Bilingual</li>
                 </ul>
-                <span class="therapist-price">$800.00</span>
+                <p class="therapist-price">$800.00</p>
             </article>
         </section>
     </a>
@@ -86,7 +86,7 @@
                     <li>Online/Offline</li>
                     <li>Bilingual</li>
                 </ul>
-                <span class="therapist-price">$800.00</span>
+                <p class="therapist-price">$800.00</p>
             </article>
         </section>
     </a>

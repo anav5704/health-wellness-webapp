@@ -1,14 +1,11 @@
 ﻿.therapist-card {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px auto;
-    max-width: 90%;
+    width: 100%;
+    margin: 30px auto;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    padding: 15px;
+    padding: 10px;
     border-radius: 25px;
     border: 1px solid #000000;
-    box-sizing: border-box;
 }
 
 .image-cell {
@@ -53,11 +50,11 @@
     font-weight: bold;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .therapist-card {
         flex-direction: column;
         align-items: center;
-        margin: 15px;
+        padding: 15px;
     }
 
     .image-cell {
@@ -68,8 +65,8 @@
     }
 
         .image-cell img {
-            width: 100px;
-            height: 100px;
+            width: 200px;
+            height: 200px;
             border-radius: 15px;
         }
 
