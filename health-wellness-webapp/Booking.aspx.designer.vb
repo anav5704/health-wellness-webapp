@@ -32,15 +32,6 @@ Partial Public Class Booking
     Protected WithEvents Panel1 As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
-    '''Image1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Image1 As Global.System.Web.UI.WebControls.Image
-
-    '''<summary>
     '''Label1 control.
     '''</summary>
     '''<remarks>
@@ -66,15 +57,6 @@ Partial Public Class Booking
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents TherapistJameSmith As Global.System.Web.UI.WebControls.Panel
-
-    '''<summary>
-    '''Image2 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Image2 As Global.System.Web.UI.WebControls.Image
 
     '''<summary>
     '''Label6 control.
@@ -104,15 +86,6 @@ Partial Public Class Booking
     Protected WithEvents TherapistCharlesDow As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
-    '''Image3 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Image3 As Global.System.Web.UI.WebControls.Image
-
-    '''<summary>
     '''Label8 control.
     '''</summary>
     '''<remarks>
@@ -138,15 +111,6 @@ Partial Public Class Booking
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents TherapistEmilyJones As Global.System.Web.UI.WebControls.Panel
-
-    '''<summary>
-    '''Image4 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Image4 As Global.System.Web.UI.WebControls.Image
 
     '''<summary>
     '''Label10 control.
