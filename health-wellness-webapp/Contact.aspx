@@ -20,7 +20,7 @@
         <asp:Label ID="lblConfirmation" runat="server" />
     </asp:Panel>
     <asp:AccessDataSource ID="adsContact" runat="server" DataFile="~/App_Data/Webapp.accdb"
-        InsertCommand="INSERT INTO Contact ([contact_Email], [Contact_Message]) VALUES (?, ?)">
+        InsertCommand="INSERT INTO Contact ([Contact_Email], [Contact_Message]) VALUES (?, ?)">
     <InsertParameters>
         <asp:Parameter Name="Contact_Email" Type="String" />
         <asp:Parameter Name="Contact_Message" Type="String" />
