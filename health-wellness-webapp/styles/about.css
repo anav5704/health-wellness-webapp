@@ -1,15 +1,14 @@
-﻿    .team {
+﻿.team {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 20px; 
 }
 
 .developer {
     background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    border: 1px solid #000000;
-    padding: 1.5rem;
+    border-radius: 15px; 
+    border: 1px solid #000000; 
+    padding: 1.5rem; 
     max-width: 300px;
 }
 
@@ -20,8 +19,8 @@
     margin-top: 1rem;
 }
 
-.developer bio {
-    font-size: 0.95rem;
+.developer .bio {
+    font-size: 1rem;
     color: #000000;
 }
 
