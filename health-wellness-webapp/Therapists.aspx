@@ -6,6 +6,7 @@
     <meta property="og:title" content="Best Health | Therapists" />
     <meta property="og:description" content="Check therapist details to find the best therapist for you" />
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <h1>Our Therapists</h1>
@@ -29,7 +30,6 @@
             </article>
         </section>
     </a>
-
 
     <a href="Booking.aspx?therapistId=2">
         <section class="therapist-card">
@@ -90,4 +90,5 @@
             </article>
         </section>
     </a>
+
 </asp:Content>

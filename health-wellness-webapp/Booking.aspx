@@ -5,8 +5,8 @@
     <meta name="description" content="Make a new appointment with a therapist to step forward to better mental health" />
     <meta property="og:title" content="Best Health | New Booking" />
     <meta property="og:description" content="Make a new appointment with a therapist to step forward to better mental health" />
-
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1 class="top-heading">
         <asp:Label ID="lblBookingType" runat="server" Text=""></asp:Label>
@@ -51,7 +51,6 @@
         <asp:RequiredFieldValidator Display="Dynamic" ID="rfvTherapist" runat="server" ControlToValidate="ddlTherapists" ErrorMessage="Therapist is required." CssClass="error" />
 
         <asp:AccessDataSource ID="adsTherapists" runat="server" DataFile="~/App_Data/Webapp.accdb" SelectCommand="SELECT [Therapist_Name], [Therapist_Id] FROM [Therapist]"></asp:AccessDataSource>
-
     </section>
 
     <section class="timeSlot-section">
