@@ -10,18 +10,17 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <section aria-labelledby="documents-heading">
             <h1 id="documents-heading">Documents</h1>
-             <p class ="subtitle">Comprehensive guides and resources for building healthy routines and understanding mental wellbeing.</p>
+            <p class ="subtitle">Comprehensive guides and resources for building healthy routines and understanding mental wellbeing.</p>
             <section class="resources-grid">
                 <article>
                     <h3>Wellness Routine Guide</h3>
                     <p>A comprehensive guide to building healthy eating habits and routines</p>
-                   <a href="\resources\Healthy Habits & Routines.pdf" class="secondary-link" download="Healthy Habits & Routines.pdf"> Download </a>
+                    <a href="\resources\Healthy Habits & Routines.pdf" class="secondary-link" download="Healthy Habits & Routines.pdf"> Download </a>
                 </article>
-
                 <article>
                     <h3>Mental Health Guide</h3>
                     <p>A walkthrough on understanding mental and emotional wellbeing</p>
-                   <a href="\resources\Mental & Emotional Wellbeing Guide.pdf" class="secondary-link" download="Mental & Emotional Wellbeing Guide.pdf"> Download </a>
+                    <a href="\resources\Mental & Emotional Wellbeing Guide.pdf" class="secondary-link" download="Mental & Emotional Wellbeing Guide.pdf"> Download </a>
                 </article>
             </section>
         </section>
@@ -51,7 +50,7 @@
                   <section class="video-box">
                     <h3>Mental Health Tips</h3>
                         <section class="video-wrapper">
-                         <iframe src="https://www.youtube.com/embed/NQcYZplTXnQ" title="Mental Health Wellness Tips" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/NQcYZplTXnQ" title="Mental Health Wellness Tips" allowfullscreen></iframe>
                         </section>
                   </section>
 
