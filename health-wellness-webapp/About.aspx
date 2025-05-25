@@ -7,7 +7,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Our Developers</h1>
-    <p class ="subtitle">This website was designed and developed by the these five Software Engineering students.</p>
+    <p class ="subtitle">This website was designed and developed by these five Software Engineering students.</p>
     <br />
     <section class ="team">
         <article class ="developer">
