@@ -23,12 +23,6 @@
     display: block;
     margin-bottom: 0.25rem;
 }
-
-.contactInfo {
-    text-align: center;
-    margin-top: 25px;
-}
-
 .error {
     color: #f43f5e;
 }
