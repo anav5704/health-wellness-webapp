@@ -95,6 +95,15 @@ Partial Public Class Signup
     Protected WithEvents rfvSignupPasswrd As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
+    '''revPassword control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents revPassword As Global.System.Web.UI.WebControls.RegularExpressionValidator
+
+    '''<summary>
     '''btnSignup control.
     '''</summary>
     '''<remarks>

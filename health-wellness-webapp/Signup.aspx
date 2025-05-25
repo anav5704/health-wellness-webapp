@@ -24,6 +24,8 @@
          <label for="txtPassword">Password</label>
          <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" />
          <asp:RequiredFieldValidator Display="Dynamic" ID="rfvSignupPasswrd" runat="server" ControlToValidate="txtPassword" ErrorMessage="Password is required." CssClass="error" />
+        <asp:RegularExpressionValidator ID="revPassword" runat="server" ControlToValidate="txtPassword" ValidationExpression=".{8,}" ErrorMessage="Password must be at least 8 characters long." CssClass="error" Display="Dynamic" />
+
 
          <asp:Button CssClass="primary-button" ID="btnSignup" runat="server" Text="Sign Up" />
 
