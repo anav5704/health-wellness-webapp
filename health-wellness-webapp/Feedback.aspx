@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Feedback.aspx.vb" Inherits="health_wellness_webapp.Feedback" %>
+﻿<%@ Page Title="Feedback" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Feedback.aspx.vb" Inherits="health_wellness_webapp.Feedback" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Best Health | Feedback</title>
     <meta name="description" content=" Send a feedback of your experience." />

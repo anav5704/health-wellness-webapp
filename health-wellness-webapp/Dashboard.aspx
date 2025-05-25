@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" ClientIDMode="Static" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Dashboard.aspx.vb" Inherits="health_wellness_webapp.Dashboard" %>
+﻿<%@ Page Title="Dashboard" ClientIDMode="Static" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Dashboard.aspx.vb" Inherits="health_wellness_webapp.Dashboard" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Best Health | Dashboard</title>

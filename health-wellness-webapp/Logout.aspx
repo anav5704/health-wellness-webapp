@@ -1,1 +1,1 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Logout.aspx.vb" Inherits="health_wellness_webapp.Logout" %>
+﻿<%@ Page Title="Logout" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Logout.aspx.vb" Inherits="health_wellness_webapp.Logout" %>

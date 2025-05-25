@@ -292,8 +292,6 @@
     <None Include="packages.config" />
     <Content Include="resources\Healthy Habits &amp; Routines.pdf" />
     <Content Include="resources\Mental &amp; Emotional Wellbeing Guide.pdf" />
-    <Content Include="uploads\9a9a21b4923d422cac34d17bd1290d8b.pdf" />
-    <Content Include="uploads\e1dda3334c774f3f95565119354be327.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -303,6 +301,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
+    <Folder Include="uploads\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
