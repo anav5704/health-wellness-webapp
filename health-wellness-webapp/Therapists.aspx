@@ -1,15 +1,19 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Therapists.aspx.vb" Inherits="health_wellness_webapp.Therapists" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <title>Best Health | Therapist List</title>
+    <meta name="description" content="Check therapist details to find the best therapist for you" />
+    <meta property="og:title" content="Best Health | Therapist List" />
+    <meta property="og:description" content="Check therapist details to find the best therapist for you" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <h1>Therapists</h1>
-
+    <h1>Therapist List</h1>
+    <p class="subtitle">View therapist details to find which one is best for you</p>
     <a href="Booking.aspx?therapistId=1">
         <section class="therapist-card">
             <figure class="image-cell">
-                <img src="/images/Therapist1.jpg" alt="Therapist" loading="lazy">
+                <img src="/images/Therapist1.jpg" title="Therapist John Doe" alt="Therapist John Doe" loading="lazy" width="200" height="200">
             </figure>
             <article class="content-cell">
                 <h3 class="therapist-name">John Doe</h3>
@@ -21,7 +25,7 @@
                     <li>Online/Offline</li>
                     <li>Bilingual</li>
                 </ul>
-                <span class="therapist-price">$800.00</span>
+                <p class="therapist-price">$800.00</p>
             </article>
         </section>
     </a>
@@ -30,7 +34,7 @@
     <a href="Booking.aspx?therapistId=2">
         <section class="therapist-card">
             <figure class="image-cell">
-                <img src="/images/therapist2.jpg" alt="Therapist Image" loading="lazy">
+                <img src="/images/therapist2.jpg" title="Therapist Jame Smith" alt="Therapist Jame Smith" loading="lazy" width="200" height="200">
             </figure>
             <article class="content-cell">
                 <h3 class="therapist-name">Jame Smith</h3>
@@ -42,7 +46,7 @@
                     <li>Offline</li>
                     <li>English</li>
                 </ul>
-                <span class="therapist-price">$800.00</span>
+                <p class="therapist-price">$800.00</p>
             </article>
         </section>
     </a>
@@ -50,7 +54,7 @@
     <a href="Booking.aspx?therapistId=3">
         <section class="therapist-card">
             <figure class="image-cell">
-                <img src="/images/therapist3.jpg" alt="Therapist Image" loading="lazy">
+                <img src="/images/therapist3.jpg" title="Therapist Charles Dow" alt="Therapist Charles Dow" loading="lazy" width="200" height="200">
             </figure>
             <article class="content-cell">
                 <h3 class="therapist-name">Charles Dow</h3>
@@ -62,7 +66,7 @@
                     <li>Online/Offline</li>
                     <li>Bilingual</li>
                 </ul>
-                <span class="therapist-price">$800.00</span>
+                <p class="therapist-price">$800.00</p>
             </article>
         </section>
     </a>
@@ -70,7 +74,7 @@
     <a href="Booking.aspx?therapistId=4">
         <section class="therapist-card">
             <figure class="image-cell">
-                <img src="/images/therapist4.jpg" alt="Therapist Image" loading="lazy">
+                <img src="/images/therapist4.jpg" title="Therapist Emily Jones" alt="Therapist Emily Jones" loading="lazy" width="200" height="200">
             </figure>
             <article class="content-cell">
                 <h3 class="therapist-name">Emily Jones</h3>
@@ -82,7 +86,7 @@
                     <li>Online/Offline</li>
                     <li>Bilingual</li>
                 </ul>
-                <span class="therapist-price">$800.00</span>
+                <p class="therapist-price">$800.00</p>
             </article>
         </section>
     </a>
