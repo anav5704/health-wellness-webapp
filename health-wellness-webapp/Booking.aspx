@@ -19,25 +19,25 @@
 
         <article class="therapist-avatar">
             <asp:Panel ID="Panel1" CssClass="therapist" runat="server">
-                <asp:Image ID="Image1" ImageUrl="/images/Therapist1.jpg" alt="John Doe" runat="server" />
+                <img src="/images/Therapist1.jpg" title="Therapist John Doe" alt="Therapist John Doe" loading="lazy" width="100" height="100" />
                 <asp:Label ID="Label1" Text="John Doe" runat="server" />
                 <asp:Label ID="Label5" Text="$800.00/Session" runat="server" />
             </asp:Panel>
 
             <asp:Panel ID="TherapistJameSmith" CssClass="therapist" runat="server">
-                <asp:Image ID="Image2" ImageUrl="/images/therapist2.jpg" alt="Jame Smith" runat="server" />
+                <img src="/images/therapist2.jpg" title="Therapist Jame Smith" alt="Therapist Jame Smith" loading="lazy" width="100" height="100">
                 <asp:Label ID="Label6" Text="Jame Smith" runat="server" />
                 <asp:Label ID="Label7" Text="$800.00/Session" runat="server" />
             </asp:Panel>
 
             <asp:Panel ID="TherapistCharlesDow" CssClass="therapist" runat="server">
-                <asp:Image ID="Image3" ImageUrl="/images/therapist3.jpg" alt="Charles Dow" runat="server" />
+                <img src="/images/therapist3.jpg" title="Therapist Charles Dow" alt="Therapist Charles Dow" loading="lazy" width="100" height="100">
                 <asp:Label ID="Label8" Text="Charles Dow" runat="server" />
                 <asp:Label ID="Label9" Text="$800.00/Session" runat="server" />
             </asp:Panel>
 
             <asp:Panel ID="TherapistEmilyJones" CssClass="therapist" runat="server">
-                <asp:Image ID="Image4" ImageUrl="/images/therapist4.jpg" alt="Emily Jones" runat="server" />
+                <img src="/images/therapist4.jpg" title="Therapist Emily Jones" alt="Therapist Emily Jones" loading="lazy" width="100" height="100">
                 <asp:Label ID="Label10" Text="Emily Jones" runat="server" />
                 <asp:Label ID="Label11" Text="$800.00/Session" runat="server" />
             </asp:Panel>
