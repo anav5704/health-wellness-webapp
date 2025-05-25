@@ -18,10 +18,10 @@
                <p class ="bio">An aspiring DevOps engineer, self-taught web developer, and second-year software engineering student @ USP.</p>     
             <h4>Technology Skills</h4>
                 <ul>
-                    <li>Next js
-                    <li>TypeScript
-                    <li>PostgreSQL
-                    <li>Docker
+                    <li>Next js</li>
+                    <li>TypeScript</li>
+                    <li>PostgreSQL</li>
+                    <li>Docker</li>
                 </ul>
         </article>
         <article class ="developer">
