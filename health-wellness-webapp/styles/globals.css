@@ -80,13 +80,14 @@ nav {
 h1,
 h2 {
     font-family: "Merriweather", Georgia, serif;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 h1 {
     font-size: 3rem;
     line-height: 100%;
     text-align: center;
+    text-wrap: balance;
 }
 
 h2 {

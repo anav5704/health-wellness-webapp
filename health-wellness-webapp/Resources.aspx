@@ -10,7 +10,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <section aria-labelledby="documents-heading">
             <h1 id="documents-heading">Documents</h1>
-             <p class ="subtitle"> Comprehensive guides and documented resources with secrets to building <br/> healthy routines and understanding mental wellbeing.</p>
+             <p class ="subtitle">Comprehensive guides and resources for building healthy routines and understanding mental wellbeing.</p>
             <section class="resources-grid">
                 <article>
                     <h3>Wellness Routine Guide</h3>
