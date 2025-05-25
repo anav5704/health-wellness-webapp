@@ -6,8 +6,8 @@
     <meta property="og:description" content=" Meet the developers of this website." />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1>Meet Our Developers</h1>
-    <p class ="subtitle">This website was designed and built by the these five <br /> students who currently studying Software Engineering.</p>
+    <h1>Our Developers</h1>
+    <p class ="subtitle">This website was designed and developed by the these five Software Engineering students.</p>
     <br />
     <section class ="team">
         <article class ="developer">

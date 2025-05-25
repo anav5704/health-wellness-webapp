@@ -3,13 +3,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Best Health | Therapist List</title>
     <meta name="description" content="Check therapist details to find the best therapist for you" />
-    <meta property="og:title" content="Best Health | Therapist List" />
+    <meta property="og:title" content="Best Health | Therapists" />
     <meta property="og:description" content="Check therapist details to find the best therapist for you" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <h1>Therapist List</h1>
-    <p class="subtitle">View therapist details to find which one is best for you</p>
+    <h1>Our Therapists</h1>
+    <p class="subtitle">View therapist details to find which one is best for you.</p>
     <a href="Booking.aspx?therapistId=1">
         <section class="therapist-card">
             <figure class="image-cell">

@@ -9,7 +9,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
        <h1 id="blogs-header" class="blogs-header"> Blog Articles</h1>
-        <p class ="subtitle"> Stay informed through testimonials and expert insights on wellness,<br /> mindfulness, and mental health topics.</p>
+        <p class ="subtitle"> Stay informed through testimonials and expert insights on wellness.</p>
 
         <section class="blog-card">
             <figure class="blog-image-container">

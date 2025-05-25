@@ -12,7 +12,7 @@
         <asp:Label ID="lblBookingType" runat="server" Text=""></asp:Label>
         Booking</h1>
 
-    <p class="subtitle">Make an Appointment with a Therapist to Move Toward a Healthier Mentality </p>
+    <p class="subtitle">Make an Appointment with a Therapist to Move Toward a Healthier Mentality.</p>
 
     <section class="therapists-section">
         <h2 class="booking-title">Therapist</h2>

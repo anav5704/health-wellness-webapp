@@ -8,26 +8,21 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
        <section id="hero">
                 <h1 style="margin: 0px;">
-                    Prioritize Your Well-Being
-                    <br />
-                    Embrace Your Journey
+                    Prioritize Your Well-Being, Embrace Your Journey.
                 </h1>
                 <p class="subtitle">
-                    Your mental wellness is important. We offer the support, tools, and resources you need to feel
-                    <br />better and live more fully. Join our community and start your journey to well-being today.
+                    Your mental wellness is important. Join our community and start your journey to well-being today.
                 </p>
-                <div role="group" id="hero-buttons">
+                <nav role="group" id="hero-buttons">
                     <a class="primary-link" href="Booking.aspx">Book Session</a>
                     <a class="secondary-link" href="Therapists.aspx">View Therapists</a>
-                </div>
+                </nav>
             </section>
 
             <section id="services">
                 <h2 style="margin: 0px;">What We Offer</h2>
                 <p class="subtitle">
-                    We provide professional support, a safe space to talk,
-                    <br />
-                    and tools to help you take charge of your well-being.
+                    We provide professional support, a safe space to talk, and tools to help you take charge of your well-being.
                 </p>
                 <div class="grid-3">
                     <article class="card">
@@ -60,8 +55,7 @@
             <section id="hotlines">
                 <h2 style="margin: 0px;">Mental Health <span class="accent-text">Hotlines</span></h2>
                 <p class="subtitle">
-                    These resources are available 24/7 for <br />
-                    immediate support during crisis situations.
+                    These resources are available 24/7 for immediate support during crisis situations.
                 </p>
                 <table>
                     <caption align="bottom">
