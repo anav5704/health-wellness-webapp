@@ -22,8 +22,9 @@
     color: #000000;
 }
 
-.developer h4 {
+.developer .tech-title {
     margin: 0.5rem 0;
+    font-weight: bold;
     font-size: 1.2rem;
 }
 
