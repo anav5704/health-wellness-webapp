@@ -27,13 +27,14 @@
 body {
     text-underline-offset: 3px;
     font-family: "Geist", Roboto, sans-serif;
-    font-size: 1.125rem;
+    font-size: 1.2rem;
 }
 
 main {
     width: 70%;
     margin: auto;
     padding: 75px 0px;
+    max-width: 1080px;
 }
 
 header {
@@ -49,15 +50,21 @@ header {
     border-bottom: 1px solid black;
 }
 
-header ul {
+header nav ul {
     display: flex;
     gap: 30px;
     list-style: none;
     margin: 0px;
 }
 
-header a {
+header nav a {
     color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+
+}
+
+header nav a:hover {
+    color: black;
 }
 
 .active {
@@ -65,7 +72,7 @@ header a {
     text-decoration: underline;
 }
 
-nav {
+header nav {
     background-color: white;
 }
 
@@ -109,9 +116,12 @@ a {
 button {
     padding: 15px 30px;
     border-radius: calc(infinity * 1px);
-    font-size: 1rem;
     cursor: pointer;
     border: none;
+}
+
+input[type="submit"] {
+    font-size: 1rem;
 }
 
 footer {
@@ -136,7 +146,6 @@ footer ul {
     color: #000000;
     padding: 15px 30px;
     border-radius: calc(infinity * 1px);
-    font-size: 1rem;
 }
 
 .primary-link {
@@ -153,8 +162,8 @@ footer ul {
     padding: 15px 30px;
     color: #000000;
     border-radius: calc(infinity * 1px);
-    font-size: 1rem;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -182,7 +191,7 @@ footer ul {
         height: fit-content;
     }
 
-    nav {
+    header nav {
         max-height: 0;
         overflow: hidden;
         flex-direction: column;
@@ -190,11 +199,11 @@ footer ul {
         width: 100%;
     }
 
-    nav.open {
+    header nav.open {
         max-height: fit-content;
     }
 
-    header ul {
+    header nav ul {
         flex-direction: column;
         width: 100%;
         justify-content: space-between;
