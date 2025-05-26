@@ -10,7 +10,7 @@
     <p class ="subtitle">Please do share your experience with us. This will help us improve our user experience and services.</p>
     <br />
     <asp:Panel ID="pnlFeedback" CssClass="feedbackForm" runat="server">
-        <asp:Label ID="lblMessage" runat="server" Text="Message"></asp:Label>
+        <asp:Label ID="lblMessage" AssociatedControlID="txtMessage" runat="server" Text="Message"></asp:Label>
         <asp:TextBox ID="txtMessage" runat="server" Rows="8" TextMode="MultiLine"></asp:TextBox>
         <asp:RequiredFieldValidator Display="Dynamic" ID="rfvMessage" runat="server" ControlToValidate="txtMessage" ErrorMessage="Feedback is required." CssClass="error" />
         <asp:Button CssClass="primary-button" ID="btnFeedback" runat="server" Text="Send Feedback" />

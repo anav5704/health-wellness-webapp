@@ -12,19 +12,20 @@
     max-width: 300px;
 }
 
-.developer figcaption {
+.developer h2 {
+    font-family: "Geist", Roboto, sans-serif;
     margin: 0;
-    font-size: 1.2rem;
+    text-align: left;
+    font-size: 1.3rem;
     font-weight: bold;
     margin-top: 1rem;
 }
 
 .developer .bio {
-    font-size: 1rem;
-    color: #000000;
+    font-size: 1.1rem;
 }
 
-.developer .tech-title {
+.developer h3 {
     margin: 0.5rem 0;
     font-weight: bold;
     font-size: 1.2rem;
@@ -41,7 +42,7 @@
     padding: 0.75rem;
     border-radius: 6px;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 
 .developer img {
