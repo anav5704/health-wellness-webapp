@@ -10,10 +10,10 @@
     <p class ="subtitle">Should you have any queries regarding our services, please do send us a message</p>
     <br />
     <asp:Panel ID="pnlContact" CssClass="contactForm" runat="server">
-        <asp:Label ID="lblEmail" runat="server" Text="Email"></asp:Label>
+        <asp:Label ID="lblEmail" AssociatedControlID="txtEmail" runat="server" Text="Email"></asp:Label>
         <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator Display="Dynamic" ID="rfvEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email is required." CssClass="error" />
-        <asp:Label ID="lblMessage" runat="server" Text="Message"></asp:Label>
+        <asp:Label ID="lblMessage" AssociatedControlID="txtMessage" runat="server" Text="Message"></asp:Label>
         <asp:TextBox ID="txtMessage" runat="server" Rows="8" TextMode="MultiLine"></asp:TextBox>
         <asp:RequiredFieldValidator Display="Dynamic" ID="rfvMessage" runat="server" ControlToValidate="txtMessage" ErrorMessage="Message is required." CssClass="error" />
         <asp:Button CssClass="primary-button" ID="btnMessage" runat="server" Text="Send Message" />

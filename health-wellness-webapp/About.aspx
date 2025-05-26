@@ -13,10 +13,10 @@
         <article class ="developer">
             <figure>
                 <img src="images/anav.jpg" alt="Picture of Anav" title="Anav" height="300" width="300" loading="lazy" />
-                <figcaption>Anav Chand</figcaption>
             </figure>
-               <p class ="bio">An aspiring DevOps engineer, self-taught web developer, and second-year software engineering student @ USP.</p>     
-            <p class="tech-title">Technology Skills</p>
+            <h2>Anav Chand</h2>
+            <p class ="bio">An aspiring DevOps engineer, self-taught web developer, and second-year software engineering student @ USP.</p>     
+            <h3>Technology Skills</h3>
                 <ul>
                     <li>Next js</li>
                     <li>TypeScript</li>
@@ -27,10 +27,10 @@
         <article class ="developer">
             <figure>
                 <img src="images/vishant.jpg" alt="Picture of Vishant" title="Vishant" height="300" width="300" loading="lazy" />
-                <figcaption>Vishant Kumar</figcaption>
             </figure>
-                <p class ="bio">A frontend Web Developer who is always keen in growing his knowledge in the world of Web Development.</p>      
-            <p class="tech-title">Technology Skills</p>
+            <h2>Vishant Kumar</h2>
+            <p class ="bio">A frontend Web Developer who is always keen in growing his knowledge in the world of Web Development.</p>      
+            <h3>Technology Skills</h3>
                 <ul>
                     <li>C++</li>
                     <li>HTML</li>
@@ -41,10 +41,10 @@
         <article class ="developer">
             <figure>
                 <img src="images/aryan.jpg" alt="Picture of Aryan" title="Aryan" height="300" width="300" loading="lazy" />
-                <figcaption>Aryan Singh</figcaption>
             </figure>
-               <p class ="bio">A backend Web Developer who is known for his analytical thinking, technical expertise and excellent collaboration skills.</p>  
-            <p class="tech-title">Technology Skills</p>
+            <h2>Aryan Singh</h2>
+            <p class ="bio">A backend Web Developer who is known for his analytical thinking, technical expertise and excellent collaboration skills.</p>  
+            <h3>Technology Skills</h3>
                <ul>
                    <li>PHP</li>
                    <li>C#</li>
@@ -55,10 +55,10 @@
         <article class ="developer">
             <figure>
                <img src="images/zhixian.jpg" alt="Picture of Zhixian" title="Zhixian" height="300" width="300" loading="lazy" />
-                <figcaption>Zhixian Chen</figcaption>
             </figure>
-               <p class ="bio">A fullstack Web Developer who is known for his high level of competency in both frontend and backend languages.</p>      
-            <p class="tech-title">Technology Skills</p>
+            <h2>Zhixian Chen</h2>
+            <p class ="bio">A fullstack Web Developer who is known for his high level of competency in both frontend and backend languages.</p>      
+            <h3>Technology Skills</h3>
                <ul>
                    <li>Javascript</li>
                    <li>Node js</li>
@@ -69,10 +69,10 @@
         <article class ="developer">
             <figure>
                <img src="images/rohan.jpg" alt="Picture of Rohan" title="Rohan" height="300" width="300" loading="lazy" />
-                <figcaption>Rohan Nandan</figcaption>
             </figure>
-               <p class ="bio">A Passionate Software Engineer with 2 years of experience in developing web applications and backend systems.</p>       
-            <p class="tech-title">Technology Skills</p>
+            <h2>Rohan Nandan</h2>
+            <p class ="bio">A Passionate Software Engineer with 2 years of experience in developing web applications and backend systems.</p>       
+            <h3>Technology Skills</h3>
                 <ul>
                     <li>Kotlin</li>
                     <li>Godot</li>
