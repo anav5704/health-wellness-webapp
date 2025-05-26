@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="About.aspx.vb" Inherits="health_wellness_webapp.About" %>
+﻿<%@ Page Title="About" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="About.aspx.vb" Inherits="health_wellness_webapp.About" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Best Health | About</title>
     <meta name="description" content=" Meet the developers of this website." />

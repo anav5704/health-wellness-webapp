@@ -11,17 +11,17 @@
 }
 
 .feedbackForm input {
-        width: 100%;
-        padding: 0.75rem;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        box-sizing: border-box;
-        font-size: 1rem;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
 }
 
 .feedbackForm label {
-        display: block;
-        margin-bottom: 0.25rem;
+    display: block;
+    margin-bottom: 0.25rem;
 }
 
 .error {

@@ -1,4 +1,5 @@
 ﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.Master.vb" Inherits="health_wellness_webapp.Site1" %>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -28,54 +29,72 @@
 <body>
     <form id="form1" runat="server">
         <header id="nav-header">
-             <img src="images/logo.png" alt="Best Health Logo" title="Best Health Logo" height="45" width="200"  loading="eager"/>
-             <button type="button" class="menu-toggle" onclick="toggleMenu(event)">
+            <img src="images/logo.png" alt="Best Health Logo" title="Best Health Logo" height="45" width="200" loading="eager" />
+            <button type="button" class="menu-toggle" onclick="toggleMenu(event)" aria-label="Toggle navigation menu">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="25" width="25" viewBox="0 0 25 25" stroke-width="1.5" stroke="currentColor" class="size-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
             </button>
-            <nav id="navbar">    
+            <nav id="navbar">
                 <ul>
                     <li><a href="Home.aspx">Home</a></li>
                     <li><a href="Therapists.aspx">Therapists</a></li>
                     <li><a href="Booking.aspx">Booking</a></li>
                     <li><a href="Resources.aspx">Resources</a></li>
-                    <li><a href="Blogs.aspx">Blogs</a></li> 
+                    <li><a href="Blogs.aspx">Blogs</a></li>
                     <li><a href="About.aspx">About</a></li>
                     <li><a href="Contact.aspx">Contact</a></li>
                     <li><a href="Feedback.aspx">Feedback</a></li>
                 </ul>
             </nav>
             <% If Session("User_Id") IsNot Nothing Then %>
-                <a href="Dashboard.aspx" class="primary-link auth-link">Dashboard</a>
+            <a href="Dashboard.aspx" class="primary-link auth-link">Dashboard</a>
             <% Else %>
-                <a href="Signup.aspx" class="primary-link auth-link">Create Account</a>
+            <a href="Signup.aspx" class="primary-link auth-link">Create Account</a>
             <% End If %>
         </header>
+
         <main>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </main>
+
         <footer>
-            <img src="images/logo.png" alt="Best Health Logo" title="Best Health Logo" height="45" width="200" loading="lazy"/>
+            <img src="images/logo.png" alt="Best Health Logo" title="Best Health Logo" height="45" width="200" loading="lazy" />
             <ul id="footer-links">
-				<li><a href="Mailto:info@best.health"><img src="images/gmail.svg" alt="Gmail" title="Gmail" height="25" width="25" loading="lazy"/></a></li>
-                <li><a href="https://facebook.com/besthealth"><img src="images/facebook.svg" alt="Facebook" title="Facebook" height="25" width="25" loading="lazy"/></a></li>
-                <li><a href="https://twitter.com/besthealth"><img src="images/twitter.svg" alt="Twitter" title="Twitter" height="25" width="25" loading="lazy"/></a></li>
-                <li><a href="https://youtube.com/besthealth"><img src="images/youtube.svg" alt="YouTube" title="YouTube" height="25" width="25" loading="lazy"/></a></li>
+                <li>
+                    <a href="mailto:info@best.health" aria-label="Email Best Health">
+                        <img src="images/gmail.svg" alt="Gmail" title="Gmail" height="25" width="25" loading="lazy" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://facebook.com/besthealth" aria-label="Best Health on Facebook">
+                        <img src="images/facebook.svg" alt="Facebook" title="Facebook" height="25" width="25" loading="lazy" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/besthealth" aria-label="Best Health on Twitter">
+                        <img src="images/twitter.svg" alt="Twitter" title="Twitter" height="25" width="25" loading="lazy" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtube.com/besthealth" aria-label="Best Health on YouTube">
+                        <img src="images/youtube.svg" alt="YouTube" title="YouTube" height="25" width="25" loading="lazy" />
+                    </a>
+                </li>
             </ul>
             <p>&copy; <time id="year">2025</time> Best Health. All rights reserved.</p>
         </footer>
 
         <script>  
-            const currentPath = window.location.pathname.split('/').pop().toLowerCase()
-
-            document.querySelectorAll('#navbar a').forEach(link => {
-                if (link.getAttribute('href').toLowerCase() === currentPath) {
+            //Active link on navigation bar
+            document.querySelectorAll('#navbar a').forEach((link) => {
+                if (link.getAttribute('href').toLowerCase() === window.location.pathname.split('/').pop().toLowerCase()) {
                     link.classList.add('active');
                 }
             })
 
+            // Toggle hamburger menu
             const toggleMenu = (e) => {
                 e.preventDefault()
                 document.getElementById('nav-header').classList.toggle('open')
@@ -83,11 +102,13 @@
                 document.querySelectorAll('.auth-link').forEach((link) => {
                     link.classList.toggle('open')
                 })
-             
+
             }
 
+            // Dynamic year on footer
             document.getElementById("year").textContent = new Date().getFullYear()
 
+            // Upload file size limit
             const checkFileSize = (input) => {
                 if (input.files.length === 0) return
                 const maxBytes = 5 * 1024 * 1024

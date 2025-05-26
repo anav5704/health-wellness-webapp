@@ -95,7 +95,6 @@
     <Content Include="App_Data\Webapp.accdb" />
     <Content Include="Booking.aspx" />
     <Content Include="Dashboard.aspx" />
-    <Content Include="EditBooking.aspx" />
     <Content Include="Feedback.aspx" />
     <Content Include="images\blogs.png" />
     <Content Include="images\Blogs_1.png" />
@@ -115,6 +114,7 @@
     <Content Include="images\youtube.svg" />
     <Content Include="styles\blogs.css" />
     <Content Include="styles\booking.css" />
+    <Content Include="styles\dashboard.css" />
     <Content Include="styles\feedback.css" />
     <Content Include="styles\home.css" />
     <Content Include="Logout.aspx" />
@@ -178,13 +178,6 @@
     <Compile Include="Dashboard.aspx.vb">
       <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="EditBooking.aspx.designer.vb">
-      <DependentUpon>EditBooking.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="EditBooking.aspx.vb">
-      <DependentUpon>EditBooking.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Feedback.aspx.designer.vb">
       <DependentUpon>Feedback.aspx</DependentUpon>
@@ -299,8 +292,6 @@
     <None Include="packages.config" />
     <Content Include="resources\Healthy Habits &amp; Routines.pdf" />
     <Content Include="resources\Mental &amp; Emotional Wellbeing Guide.pdf" />
-    <Content Include="uploads\9a9a21b4923d422cac34d17bd1290d8b.pdf" />
-    <Content Include="uploads\e1dda3334c774f3f95565119354be327.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -310,6 +301,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
+    <Folder Include="uploads\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

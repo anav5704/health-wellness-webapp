@@ -12,9 +12,9 @@
     margin: 10px;
 }
 
-    .image-cell img {
-        border-radius: 15px;
-    }
+.image-cell img {
+    border-radius: 15px;
+}
 
 .content-cell {
     padding: 10px;
@@ -35,13 +35,13 @@
     margin: 20px 0;
 }
 
-    .therapist-tags li {
-        display: inline-block;
-        background-color: var(--accent);
-        padding: 5px 10px;
-        margin-bottom: 5px;
-        border-radius: 10px;
-    }
+.therapist-tags li {
+    display: inline-block;
+    background-color: var(--accent);
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
 
 .therapist-price {
     margin-top: 5px;
@@ -62,11 +62,11 @@
         text-align: center;
     }
 
-        .image-cell img {
-            width: 200px;
-            height: 200px;
-            border-radius: 15px;
-        }
+    .image-cell img {
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+    }
 
     .content-cell {
         width: 100%;

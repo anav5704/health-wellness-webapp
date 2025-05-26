@@ -1,7 +1,7 @@
 ﻿.team {
     display: flex;
     flex-wrap: wrap;
-    gap: 45px; 
+    gap: 45px;
 }
 
 .developer {
@@ -59,7 +59,7 @@
         max-width: 100%;
     }
 
-    .developer img {
-        margin: auto;
-    }
+        .developer img {
+            margin: auto;
+        }
 }

@@ -23,6 +23,7 @@
     display: block;
     margin-bottom: 0.25rem;
 }
+
 .error {
     color: #f43f5e;
 }
@@ -37,5 +38,3 @@ textarea {
         width: 100%
     }
 }
-
-

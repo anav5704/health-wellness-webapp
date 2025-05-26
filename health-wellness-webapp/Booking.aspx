@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Booking.aspx.vb" Inherits="health_wellness_webapp.Booking" %>
+﻿<%@ Page Title="Booking" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Booking.aspx.vb" Inherits="health_wellness_webapp.Booking" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Best Health | New Booking</title>
@@ -21,25 +21,25 @@
             <asp:Panel ID="Panel1" CssClass="therapist" runat="server">
                 <img src="/images/Therapist1.jpg" title="Therapist John Doe" alt="Therapist John Doe" loading="lazy" width="100" height="100" />
                 <asp:Label ID="Label1" Text="John Doe" runat="server" />
-                <asp:Label ID="Label5" Text="$800.00/Session" runat="server" />
+                <asp:Label ID="Label5" Text="$150.00/Session" runat="server" />
             </asp:Panel>
 
             <asp:Panel ID="TherapistJameSmith" CssClass="therapist" runat="server">
                 <img src="/images/therapist2.jpg" title="Therapist Jame Smith" alt="Therapist Jame Smith" loading="lazy" width="100" height="100">
                 <asp:Label ID="Label6" Text="Jame Smith" runat="server" />
-                <asp:Label ID="Label7" Text="$800.00/Session" runat="server" />
+                <asp:Label ID="Label7" Text="$125.00/Session" runat="server" />
             </asp:Panel>
 
             <asp:Panel ID="TherapistCharlesDow" CssClass="therapist" runat="server">
                 <img src="/images/therapist3.jpg" title="Therapist Charles Dow" alt="Therapist Charles Dow" loading="lazy" width="100" height="100">
                 <asp:Label ID="Label8" Text="Charles Dow" runat="server" />
-                <asp:Label ID="Label9" Text="$800.00/Session" runat="server" />
+                <asp:Label ID="Label9" Text="$200.00/Session" runat="server" />
             </asp:Panel>
 
             <asp:Panel ID="TherapistEmilyJones" CssClass="therapist" runat="server">
                 <img src="/images/therapist4.jpg" title="Therapist Emily Jones" alt="Therapist Emily Jones" loading="lazy" width="100" height="100">
                 <asp:Label ID="Label10" Text="Emily Jones" runat="server" />
-                <asp:Label ID="Label11" Text="$800.00/Session" runat="server" />
+                <asp:Label ID="Label11" Text="$175.00/Session" runat="server" />
             </asp:Panel>
         </article>
 

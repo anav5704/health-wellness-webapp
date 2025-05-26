@@ -6,30 +6,34 @@ Public Class Dashboard
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not IsPostBack Then
             If Session("User_Role") IsNot Nothing AndAlso Session("User_Role").ToString() = "Admin" Then
+                pnlMessages.Visible = True
+
                 adsBookings.SelectCommand = "
                     SELECT 
                         Booking.Booking_Id, 
-                        Booking.USer_ReportPath,
+                        Booking.User_ReportPath,
                         Therapist.Therapist_Name, 
-                        [User].User_Fname & ' ' & [User].User_Lname AS UserName, 
+                        [User].User_Fname & ' ' & [User].User_Lname AS User_Name, 
                         FORMAT(Booking.Booking_Time, 'MMM dd, yyyy hh:mm') AS Booking_Time 
                     FROM 
                         (Booking 
-                        INNER JOIN Therapist ON Booking.Therapist_Id = Therapist.Therapist_Id)
-                        INNER JOIN [User] ON Booking.User_Id = [User].User_Id"
+                        INNER JOIN [Therapist] ON [Booking].Therapist_Id = [Therapist].Therapist_Id)
+                        INNER JOIN [User] ON [Booking].User_Id = [User].User_Id"
 
             ElseIf Session("User_ID") IsNot Nothing Then
+                pnlMessages.Visible = False
+
                 adsBookings.SelectCommand = "
                 SELECT 
                     Booking.Booking_Id, 
-                    Booking.USer_ReportPath,
+                    Booking.User_ReportPath,
                     Therapist.Therapist_Name, 
-                    [User].User_Fname & ' ' & [User].User_Lname AS UserName, 
+                    [User].User_Fname & ' ' & [User].User_Lname AS User_Name, 
                     FORMAT(Booking.Booking_Time, 'MMM dd, yyyy hh:mm') AS Booking_Time 
                 FROM 
                     (Booking 
-                    INNER JOIN Therapist ON Booking.Therapist_Id = Therapist.Therapist_Id)
-                    INNER JOIN [User] ON Booking.User_Id = [User].User_Id 
+                    INNER JOIN [Therapist] ON [Booking].Therapist_Id = [Therapist].Therapist_Id)
+                    INNER JOIN [User] ON [Booking].User_Id = [User].User_Id 
                 WHERE 
                     Booking.User_Id = ?"
 

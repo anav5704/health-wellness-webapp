@@ -50,6 +50,33 @@ Partial Public Class Dashboard
     Protected WithEvents gvBookings As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
+    '''pnlMessages control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlMessages As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''gvContact control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents gvContact As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''gvFeedback control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents gvFeedback As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
     '''adsBookings control.
     '''</summary>
     '''<remarks>
@@ -66,4 +93,22 @@ Partial Public Class Dashboard
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adsUser As Global.System.Web.UI.WebControls.AccessDataSource
+
+    '''<summary>
+    '''adsContact control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents adsContact As Global.System.Web.UI.WebControls.AccessDataSource
+
+    '''<summary>
+    '''adsFeedback control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents adsFeedback As Global.System.Web.UI.WebControls.AccessDataSource
 End Class
