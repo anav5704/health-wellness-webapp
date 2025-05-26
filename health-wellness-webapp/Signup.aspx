@@ -10,19 +10,19 @@
 
     <h1>Create Account</h1>
     <asp:Panel ID="pnlSignup" CssClass="authForm" runat="server">
-        <label for="txtFname">First Name</label>
-        <asp:TextBox ID="txtFname" runat="server" />
+         <asp:Label ID="lblFname" AssociatedControlId="txtFname" runat="server" Text="First Name"></asp:Label>
+        <asp:TextBox ID="txtFname" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator Display="Dynamic" ID="rfvSignupFname" runat="server" ControlToValidate="txtFname" ErrorMessage="First name is required." CssClass="error" />
 
-        <label for="txtLname">Last Name</label>
-        <asp:TextBox ID="txtLname" runat="server" />
+        <asp:Label ID="lblLname" AssociatedControlId="txtLname" runat="server" Text="Last Name"></asp:Label>
+        <asp:TextBox ID="txtLname" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator Display="Dynamic" ID="rfvSignupLname" runat="server" ControlToValidate="txtLname" ErrorMessage="Last Name is required." CssClass="error" />
 
-        <label for="txtEmail">Email</label>
-        <asp:TextBox ID="txtEmail" runat="server" />
+        <asp:Label ID="lblEmail" AssociatedControlId="txtEmail" runat="server" Text="Email"></asp:Label>
+        <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator Display="Dynamic" ID="rfvSignupEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email is required." CssClass="error" />
 
-        <label for="txtPassword">Password</label>
+        <asp:Label ID="lblPassword" AssociatedControlId="txtPassword" runat="server" Text="Password"></asp:Label>
         <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" />
         <asp:RequiredFieldValidator Display="Dynamic" ID="rfvSignupPasswrd" runat="server" ControlToValidate="txtPassword" ErrorMessage="Password is required." CssClass="error" />
         <asp:RegularExpressionValidator ID="revPassword" runat="server" ControlToValidate="txtPassword" ValidationExpression="^.{8,}$" ErrorMessage="Password must be at least 8 characters long." CssClass="error" Display="Dynamic" />
@@ -30,7 +30,7 @@
 
         <asp:Button CssClass="primary-button" ID="btnSignup" runat="server" Text="Sign Up" />
 
-        <asp:Label CssClass="error" ID="lblMessage" runat="server"></asp:Label>
+        <asp:Label CssClass="error" ID="lblMessage" runat="server" Text=""></asp:Label>
     </asp:Panel>
 
     <p class="authInfo">Already have an account?

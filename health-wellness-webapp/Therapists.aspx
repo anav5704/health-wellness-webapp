@@ -17,7 +17,7 @@
                 <img src="/images/Therapist1.jpg" title="Therapist John Doe" alt="Therapist John Doe" loading="lazy" width="200" height="200">
             </figure>
             <article class="content-cell">
-                <h3 class="therapist-name">John Doe</h3>
+                <p class="therapist-name">John Doe</p>
                 <p class="therapist-description">Specialist in depression disorder. Experienced in CBT and mindfulness-based therapies. Offers both online and offline sessions. Fluent in English and Spanish.</p>
                 <ul class="therapist-tags">
                     <li>Depression</li>
@@ -37,7 +37,7 @@
                 <img src="/images/therapist2.jpg" title="Therapist Jame Smith" alt="Therapist Jame Smith" loading="lazy" width="200" height="200">
             </figure>
             <article class="content-cell">
-                <h3 class="therapist-name">Jame Smith</h3>
+                <p class="therapist-name">Jame Smith</p>
                 <p class="therapist-description">Specialist in anxiety disorder, including generalized anxiety, social anxiety, and panic disorders. Provide personalized therapy plans incorporating exposure therapy and relaxation techniques. Offers offline sesion only. English Only.</p>
                 <ul class="therapist-tags">
                     <li>Anexity</li>
@@ -57,7 +57,7 @@
                 <img src="/images/therapist3.jpg" title="Therapist Charles Dow" alt="Therapist Charles Dow" loading="lazy" width="200" height="200">
             </figure>
             <article class="content-cell">
-                <h3 class="therapist-name">Charles Dow</h3>
+                <p class="therapist-name">Charles Dow</p>
                 <p class="therapist-description">Specialist in schizophrenia. Utilizes cognitive rehabilitation and social skills training. Provides online and offline sessions. Fluent in English and Spanish</p>
                 <ul class="therapist-tags">
                     <li>Schizophrenia</li>
@@ -77,7 +77,7 @@
                 <img src="/images/therapist4.jpg" title="Therapist Emily Jones" alt="Therapist Emily Jones" loading="lazy" width="200" height="200">
             </figure>
             <article class="content-cell">
-                <h3 class="therapist-name">Emily Jones</h3>
+                <p class="therapist-name">Emily Jones</p>
                 <p class="therapist-description">Specialist in bipolar. Experienced in CBT and medication management. Offers both online and offline sessions. Fluent in English and Spanish.</p>
                 <ul class="therapist-tags">
                     <li>Bipolar</li>

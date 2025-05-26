@@ -30,6 +30,7 @@
     border-radius: 25px;
     border: 1px solid #000000;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #ffffff;
 }
 
 
@@ -44,16 +45,6 @@
     margin: auto;
     max-width: 60%;
     text-wrap: balance;
-}
-
-table {
-    border: 1px solid #ffffff50;
-    border-collapse: collapse;
-}
-
-td, th {
-    border: 1px solid black;
-    padding: 10px;
 }
 
 caption {

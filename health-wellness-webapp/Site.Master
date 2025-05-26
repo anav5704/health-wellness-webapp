@@ -31,7 +31,7 @@
         <header id="nav-header">
             <img src="images/logo.png" alt="Best Health Logo" title="Best Health Logo" height="45" width="200" loading="eager" />
             <button type="button" class="menu-toggle" onclick="toggleMenu(event)" aria-label="Toggle navigation menu">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="25" width="25" viewBox="0 0 25 25" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="30" width="30" viewBox="0 0 25 25" stroke-width="1.5" stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
             </button>
@@ -64,22 +64,22 @@
             <ul id="footer-links">
                 <li>
                     <a href="mailto:info@best.health" aria-label="Email Best Health">
-                        <img src="images/gmail.svg" alt="Gmail" title="Gmail" height="25" width="25" loading="lazy" />
+                        <img src="images/gmail.svg" alt="Gmail" title="Gmail" height="30" width="30" loading="lazy" />
                     </a>
                 </li>
                 <li>
                     <a href="https://facebook.com/besthealth" aria-label="Best Health on Facebook">
-                        <img src="images/facebook.svg" alt="Facebook" title="Facebook" height="25" width="25" loading="lazy" />
+                        <img src="images/facebook.svg" alt="Facebook" title="Facebook" height="30" width="30" loading="lazy" />
                     </a>
                 </li>
                 <li>
                     <a href="https://twitter.com/besthealth" aria-label="Best Health on Twitter">
-                        <img src="images/twitter.svg" alt="Twitter" title="Twitter" height="25" width="25" loading="lazy" />
+                        <img src="images/twitter.svg" alt="Twitter" title="Twitter" height="30" width="30" loading="lazy" />
                     </a>
                 </li>
                 <li>
                     <a href="https://youtube.com/besthealth" aria-label="Best Health on YouTube">
-                        <img src="images/youtube.svg" alt="YouTube" title="YouTube" height="25" width="25" loading="lazy" />
+                        <img src="images/youtube.svg" alt="YouTube" title="YouTube" height="30" width="30" loading="lazy" />
                     </a>
                 </li>
             </ul>
