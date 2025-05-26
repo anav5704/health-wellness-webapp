@@ -58,7 +58,7 @@
         <p>Each session lasts 60 minutes</p>
 
         <asp:DropDownList ID="ddlTimeSlots" runat="server" AppendDataBoundItems="true" DataSourceID="xdsTimeSlots" DataTextField="text" DataValueField="value" CssClass="dropdownlist">
-            <asp:ListItem Text="Select a time slot" Value="0" Selected="True" />
+            <asp:ListItem Text="Select a time slot" Value="" />
         </asp:DropDownList>
         <asp:RequiredFieldValidator Display="Dynamic" ID="rfvTimeSlot" runat="server" ControlToValidate="ddlTimeSlots" ErrorMessage="Time slot is required." CssClass="error" />
 
