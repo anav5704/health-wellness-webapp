@@ -16,7 +16,7 @@
                 <figcaption>Anav Chand</figcaption>
             </figure>
                <p class ="bio">An aspiring DevOps engineer, self-taught web developer, and second-year software engineering student @ USP.</p>     
-            <h4>Technology Skills</h4>
+            <p class="tech-title">Technology Skills</p>
                 <ul>
                     <li>Next js</li>
                     <li>TypeScript</li>
@@ -30,9 +30,9 @@
                 <figcaption>Vishant Kumar</figcaption>
             </figure>
                 <p class ="bio">A frontend Web Developer who is always keen in growing his knowledge in the world of Web Development.</p>      
-            <h4>Technology Skills</h4>
+            <p class="tech-title">Technology Skills</p>
                 <ul>
-                    <li>React</li>
+                    <li>C++</li>
                     <li>HTML</li>
                     <li>ASP.NET</li>
                     <li>Javascript</li>
@@ -44,7 +44,7 @@
                 <figcaption>Aryan Singh</figcaption>
             </figure>
                <p class ="bio">A backend Web Developer who is known for his analytical thinking, technical expertise and excellent collaboration skills.</p>  
-            <h4>Technology Skills</h4>
+            <p class="tech-title">Technology Skills</p>
                <ul>
                    <li>PHP</li>
                    <li>C#</li>
@@ -58,7 +58,7 @@
                 <figcaption>Zhixian Chen</figcaption>
             </figure>
                <p class ="bio">A fullstack Web Developer who is known for his high level of competency in both frontend and backend languages.</p>      
-            <h4>Technology Skills</h4>
+            <p class="tech-title">Technology Skills</p>
                <ul>
                    <li>Javascript</li>
                    <li>Node js</li>
@@ -72,10 +72,10 @@
                 <figcaption>Rohan Nandan</figcaption>
             </figure>
                <p class ="bio">A Passionate Software Engineer with 2 years of experience in developing web applications and backend systems.</p>       
-            <h4>Technology Skills</h4>
+            <p class="tech-title">Technology Skills</p>
                 <ul>
                     <li>Kotlin</li>
-                    <li>Perl</li>
+                    <li>Godot</li>
                     <li>Go</li>
                     <li>Visual Basic</li>
                 </ul>
