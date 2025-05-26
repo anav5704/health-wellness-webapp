@@ -10,21 +10,20 @@
     <h1>Account Login</h1>
 
     <asp:Panel ID="pnlLogin" CssClass="authForm" runat="server">
-        <asp:Label ID="lblEmail" runat="server" Text="Email"></asp:Label>
-        <asp:TextBox ID="txtEmail" runat="server" />
+        <asp:Label ID="lblEmail" AssociatedControlId="txtEmail" runat="server" Text="Email"></asp:Label>
+        <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator Display="Dynamic" ID="rfvLoginEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email is required." CssClass="error" />
 
-        <asp:Label ID="lblPassword" runat="server" Text="Password"></asp:Label>
+        <asp:Label ID="lblPassword" AssociatedControlId="txtPassword" runat="server" Text="Password"></asp:Label>
         <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
         <asp:RequiredFieldValidator Display="Dynamic" ID="rfvLoginPasswrd" runat="server" ControlToValidate="txtPassword" ErrorMessage="Passowrd is required." CssClass="error" />
 
         <asp:Button CssClass="primary-button" ID="btnLogin" runat="server" Text="Login" />
 
-        <asp:Label CssClass="error" ID="lblMessage" runat="server" />
+        <asp:Label CssClass="error" ID="lblMessage" runat="server" Text=""></asp:Label>
     </asp:Panel>
 
-    <p class="authInfo">Don't have an account?
-        <asp:HyperLink ID="hlCreateAccount" runat="server">Sign Up</asp:HyperLink></p>
+    <p class="authInfo">Don't have an account? <asp:HyperLink ID="hlCreateAccount" runat="server">Sign Up</asp:HyperLink></p>
 
     <asp:AccessDataSource ID="adsUsers" runat="server" DataFile="~/App_Data/Webapp.accdb"
         SelectCommand="SELECT [User_ID], [User_Email], [User_Password], [User_Role] FROM [User] WHERE [User_Email] = ?">

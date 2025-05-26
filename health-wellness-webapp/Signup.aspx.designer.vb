@@ -23,6 +23,15 @@ Partial Public Class Signup
     Protected WithEvents pnlSignup As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
+    '''lblFname control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblFname As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''txtFname control.
     '''</summary>
     '''<remarks>
@@ -39,6 +48,15 @@ Partial Public Class Signup
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents rfvSignupFname As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
+    '''lblLname control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblLname As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''txtLname control.
@@ -59,6 +77,15 @@ Partial Public Class Signup
     Protected WithEvents rfvSignupLname As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
+    '''lblEmail control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblEmail As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''txtEmail control.
     '''</summary>
     '''<remarks>
@@ -75,6 +102,15 @@ Partial Public Class Signup
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents rfvSignupEmail As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
+    '''lblPassword control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblPassword As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''txtPassword control.

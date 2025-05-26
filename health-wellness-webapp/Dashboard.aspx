@@ -7,9 +7,7 @@
     <meta property="og:description" content="Easily view and update your therapy sessions anytime through your personalized booking dashboard." />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1>
-        <asp:Label ID="lblUserRole" Text="" runat="server"></asp:Label>
-        Dashboard</h1>
+    <h1><asp:Label ID="lblUserRole" Text="" runat="server"></asp:Label> Dashboard</h1>
 
     <p class="userInfo">
         You are logged in as
