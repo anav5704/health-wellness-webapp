@@ -32,7 +32,7 @@
                 <a href="Booking.aspx">Book Session -></a>
             </article>
             <article class="card">
-                <img src="images/resources.png" alt="Health Resources" title="Health Resrouces" height="300" width="300" loading="lazy" />
+                <img src="images/resources.png" alt="Health Resources" title="Health Resources" height="300" width="300" loading="lazy" />
                 <h3>Health Resources</h3>
                 <p>Explore helpful PDFs and videos on mindfulness, self-care, and emotional health strategies.</p>
                 <a href="Resources.aspx">View Resources -></a>
@@ -41,7 +41,7 @@
                 <img src="images/blogs.png" alt="Blog Articles" title="Blog Articles" height="300" width="300" loading="lazy" />
                 <h3>Blog Articles</h3>
                 <p>Browse articles covering mental health tips, coping techniques, and emotional wellness insights.</p>
-                <a href="Blogs.aspx">View Resources -></a>
+                <a href="Blogs.aspx">Read Blogs -></a>
             </article>
         </div>
     </section>
