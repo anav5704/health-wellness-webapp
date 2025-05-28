@@ -43,7 +43,7 @@
                 <img src="images/aryan.jpg" alt="Picture of Aryan" title="Aryan" height="300" width="300" loading="lazy" />
             </figure>
             <h2>Aryan Singh</h2>
-            <p class ="bio">A backend Web Developer who is known for his analytical thinking, technical expertise and excellent collaboration skills.</p>  
+            <p class ="bio">A backend Web Developer who is known for his analytical thinking and excellent collaboration skills.</p>  
             <h3>Technology Skills</h3>
                <ul>
                    <li>PHP</li>
