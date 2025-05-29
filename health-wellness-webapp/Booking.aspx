@@ -17,31 +17,22 @@
     <section class="therapists-section">
         <h2 class="booking-title">Therapist</h2>
 
+        <asp:AccessDataSource ID="adsTherapistList" runat="server" DataFile="~/App_Data/Webapp.accdb" SelectCommand=" SELECT Therapist_Id, Therapist_Name, Therapist_ImgUrl, Therapist_Price FROM Therapist"></asp:AccessDataSource>
+
         <article class="therapist-avatar">
-            <asp:Panel ID="Panel1" CssClass="therapist" runat="server">
-                <img src="/images/Therapist1.jpg" title="Therapist John Doe" alt="Therapist John Doe" loading="lazy" width="100" height="100" />
-                <asp:Label ID="Label1" Text="John Doe" runat="server" />
-                <asp:Label ID="Label5" Text="$150.00/Session" runat="server" />
-            </asp:Panel>
-
-            <asp:Panel ID="TherapistJameSmith" CssClass="therapist" runat="server">
-                <img src="/images/therapist2.jpg" title="Therapist Jame Smith" alt="Therapist Jame Smith" loading="lazy" width="100" height="100">
-                <asp:Label ID="Label6" Text="Jame Smith" runat="server" />
-                <asp:Label ID="Label7" Text="$125.00/Session" runat="server" />
-            </asp:Panel>
-
-            <asp:Panel ID="TherapistCharlesDow" CssClass="therapist" runat="server">
-                <img src="/images/therapist3.jpg" title="Therapist Charles Dow" alt="Therapist Charles Dow" loading="lazy" width="100" height="100">
-                <asp:Label ID="Label8" Text="Charles Dow" runat="server" />
-                <asp:Label ID="Label9" Text="$200.00/Session" runat="server" />
-            </asp:Panel>
-
-            <asp:Panel ID="TherapistEmilyJones" CssClass="therapist" runat="server">
-                <img src="/images/therapist4.jpg" title="Therapist Emily Jones" alt="Therapist Emily Jones" loading="lazy" width="100" height="100">
-                <asp:Label ID="Label10" Text="Emily Jones" runat="server" />
-                <asp:Label ID="Label11" Text="$175.00/Session" runat="server" />
-            </asp:Panel>
+            <asp:Repeater ID="rptTherapists" runat="server" DataSourceID="adsTherapistList">
+                <ItemTemplate>
+                    <section class="therapist">
+                        <img src='<%# Eval("Therapist_ImgUrl") %>' title='<%# Eval("Therapist_Name") %>' alt='<%# Eval("Therapist_Name") %>' loading="lazy" width="100" height="100" />
+                        <p><%# Eval("Therapist_Name") %></p>
+                        <p>$<%# Eval("Therapist_Price") %>/Session</p>
+                    </section>
+                </ItemTemplate>
+            </asp:Repeater>
         </article>
+
+
+
 
 
 
@@ -53,16 +44,19 @@
         <asp:AccessDataSource ID="adsTherapists" runat="server" DataFile="~/App_Data/Webapp.accdb" SelectCommand="SELECT [Therapist_Name], [Therapist_Id] FROM [Therapist]"></asp:AccessDataSource>
     </section>
 
+
+
     <section class="timeSlot-section">
+        <asp:AccessDataSource ID="adsTimeSlots" runat="server" DataFile="~/App_Data/Webapp.accdb" SelectCommand="SELECT Booking_Time FROM TimeSlot ORDER BY Booking_Time"></asp:AccessDataSource>
         <h2 class="booking-title">Time Slot</h2>
         <p>Each session lasts 60 minutes</p>
 
-        <asp:DropDownList ID="ddlTimeSlots" runat="server" AppendDataBoundItems="true" DataSourceID="xdsTimeSlots" DataTextField="text" DataValueField="value" CssClass="dropdownlist">
+        <asp:DropDownList ID="ddlTimeSlots" runat="server" AppendDataBoundItems="true" DataSourceID="adsTimeSlots" DataTextField="Booking_Time" DataValueField="Booking_Time" CssClass="dropdownlist">
             <asp:ListItem Text="Select a time slot" Value="" />
         </asp:DropDownList>
-        <asp:RequiredFieldValidator Display="Dynamic" ID="rfvTimeSlot" runat="server" ControlToValidate="ddlTimeSlots" ErrorMessage="Time slot is required." CssClass="error" />
+        <asp:RequiredFieldValidator ID="rfvTimeSlot" runat="server" ControlToValidate="ddlTimeSlots" InitialValue="" ErrorMessage="Time slot is required." CssClass="error" Display="Dynamic" />
 
-        <asp:XmlDataSource ID="xdsTimeSlots" runat="server" DataFile="~/App_Data/TimeSlots.xml"></asp:XmlDataSource>
+
 
 
         <asp:AccessDataSource ID="adsCheckBooking" runat="server" DataFile="~/App_Data/Webapp.accdb" SelectCommand="SELECT [Booking_Id] FROM [Booking] WHERE [Therapist_Id] = ? AND [Booking_Time] = ?">

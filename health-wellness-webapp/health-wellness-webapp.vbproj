@@ -91,7 +91,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="App_Data\TimeSlots.xml" />
     <Content Include="App_Data\Webapp.accdb" />
     <Content Include="Booking.aspx" />
     <Content Include="Dashboard.aspx" />
