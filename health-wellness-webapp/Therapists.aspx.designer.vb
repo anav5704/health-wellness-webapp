@@ -12,4 +12,22 @@ Option Explicit On
 
 
 Partial Public Class Therapists
+
+    '''<summary>
+    '''adsTherapistList control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents adsTherapistList As Global.System.Web.UI.WebControls.AccessDataSource
+
+    '''<summary>
+    '''rptTherapists control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents rptTherapists As Global.System.Web.UI.WebControls.Repeater
 End Class

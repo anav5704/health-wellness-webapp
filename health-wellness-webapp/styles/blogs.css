@@ -100,7 +100,7 @@
 }
 
 /* Tablet Screen */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .blog-card {
         flex-direction: column;
         align-items: stretch;
@@ -120,7 +120,7 @@
 }
 
 /* Mobile Screen */
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .blog-image-container {
         width: 100%;
     }
