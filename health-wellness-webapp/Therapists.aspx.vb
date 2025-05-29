@@ -1,5 +1,4 @@
 ﻿Imports System.Data.OleDb
-Imports System.Data
 
 Public Class Therapists
     Inherits System.Web.UI.Page
@@ -8,35 +7,35 @@ Public Class Therapists
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not IsPostBack Then
-            Dim searchTerm As String = Request.QueryString("search")
-            If Not String.IsNullOrEmpty(searchTerm) Then
-                txtSearch.Text = searchTerm
+            Dim searchQuery As String = Request.QueryString("search")
+            If Not String.IsNullOrEmpty(searchQuery) Then
+                txtSearch.Text = searchQuery
             End If
-            BindTherapists(searchTerm)
+            BindTherapists(searchQuery)
         End If
     End Sub
 
     Protected Sub btnSearch_Click(sender As Object, e As EventArgs)
-        Dim searchTerm As String = txtSearch.Text.Trim()
-        Response.Redirect("Therapists.aspx?search=" & Server.UrlEncode(searchTerm))
+        Dim searchQuery As String = txtSearch.Text.Trim()
+        Response.Redirect("Therapists.aspx?search=" & Server.UrlEncode(searchQuery))
     End Sub
 
-    Private Sub BindTherapists(Optional ByVal searchTerm As String = "")
+    Private Sub BindTherapists(Optional ByVal searchQuery As String = "")
         Dim dbPath As String = Server.MapPath("~/App_Data/Webapp.accdb")
         Dim cs As String = String.Format(connStr, dbPath)
 
         Using conn As New OleDbConnection(cs)
             Dim sql As String = "SELECT Therapist_Id, Therapist_Name, Therapist_Description, Therapist_ImgUrl, Therapist_Price, Therapist_Speciality FROM Therapist"
 
-            Dim hasSearch As Boolean = Not String.IsNullOrEmpty(searchTerm)
+            Dim hasSearch As Boolean = Not String.IsNullOrEmpty(searchQuery)
 
             If hasSearch Then
                 sql &= " WHERE Therapist_Name LIKE ? OR Therapist_Description LIKE ? OR Therapist_Speciality LIKE ?"
             End If
 
             Using cmd As New OleDbCommand(sql, conn)
-                If Not String.IsNullOrEmpty(searchTerm) Then
-                    Dim likeTerm As String = "%" & searchTerm & "%"
+                If hasSearch Then
+                    Dim likeTerm As String = "%" & searchQuery & "%"
                     cmd.Parameters.AddWithValue("?", likeTerm)
                     cmd.Parameters.AddWithValue("?", likeTerm)
                     cmd.Parameters.AddWithValue("?", likeTerm)
@@ -51,9 +50,9 @@ Public Class Therapists
 
                 If hasSearch Then
                     If dt.Rows.Count > 0 Then
-                        lblSearchResult.Text = $"Showing search results for '<strong>{Server.HtmlEncode(searchTerm)}</strong>'"
+                        lblSearchResult.Text = $"Showing search results for '<strong>{Server.HtmlEncode(searchQuery)}</strong>'"
                     Else
-                        lblSearchResult.Text = $"No search results found for '<strong>{Server.HtmlEncode(searchTerm)}</strong>'"
+                        lblSearchResult.Text = $"No search results found for '<strong>{Server.HtmlEncode(searchQuery)}</strong>'"
                     End If
                 Else
                     lblSearchResult.Text = ""

@@ -14,13 +14,40 @@ Option Explicit On
 Partial Public Class Blogs
 
     '''<summary>
-    '''adsBlogs control.
+    '''pnlSearch control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents adsBlogs As Global.System.Web.UI.WebControls.AccessDataSource
+    Protected WithEvents pnlSearch As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''txtSearch control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtSearch As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''btnSearch control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnSearch As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''lblSearchResult control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblSearchResult As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''rptBlogs control.

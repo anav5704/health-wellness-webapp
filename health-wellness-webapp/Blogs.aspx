@@ -9,10 +9,17 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1 id="blogs-header" class="blogs-header">Blog Articles</h1>
+
     <p class="subtitle">Stay informed through testimonials and expert insights on wellness, click to get detail.</p>
 
-    <asp:AccessDataSource ID="adsBlogs" runat="server" DataFile="~/App_Data/Webapp.accdb" SelectCommand=" SELECT BlogId, BlogTitle, Author, PublishDate, Excerpt, Tags, ImageUrl, ReadUrl FROM Blog"></asp:AccessDataSource>
-    <asp:Repeater ID="rptBlogs" runat="server" DataSourceID="adsBlogs">
+    <asp:Panel ID="pnlSearch" runat="server" CssClass="search-panel">
+        <asp:TextBox ID="txtSearch" runat="server" CssClass="search-box" Placeholder="Search blogs by title, author, tag or description..."></asp:TextBox>
+        <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="search-button" OnClick="btnSearch_Click" />
+    </asp:Panel>
+
+    <asp:Label ID="lblSearchResult" runat="server" CssClass="search-status" />
+
+    <asp:Repeater ID="rptBlogs" runat="server">
         <ItemTemplate>
             <a href='<%# Eval("ReadUrl") %>' class="blog-card-link">
                 <section class="blog-card">
