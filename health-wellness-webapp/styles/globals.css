@@ -179,6 +179,29 @@ footer ul {
     background-color: #ffffff;
 }
 
+.search-panel {
+    margin: 20px 0;
+    display: flex;
+    gap: 15px;
+}
+
+.search-box {
+    border: 1px solid #000;
+    border-radius: calc(infinity * 1px);
+    padding: 15px 30px;
+    width: 85%;
+}
+
+.search-button {
+    background-color: var(--accent);
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 15px 30px;
+    border-radius: calc(infinity * 1px);
+    width: 15%;
+}
+
+
 @media screen and (max-width: 1200px) {
     header img {
         margin-left: 25px;
@@ -233,11 +256,31 @@ footer ul {
     main {
         width: 80%;
     }
+
+    .search-box {
+        width: 70%;
+    }
+
+    .search-button {
+        width: 30%;
+    }
 }
 
 /*Mobile Screen*/
 @media screen and (max-width: 600px) {
     main {
         width: 90%;
+    }
+
+    .search-panel {
+        flex-direction: column;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .search-button {
+        width: 100%;
     }
 }

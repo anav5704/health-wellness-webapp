@@ -1,19 +1,25 @@
-﻿<%@ Page Title="Therapist" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Therapists.aspx.vb" Inherits="health_wellness_webapp.Therapists" %>
+﻿<%@ Page Title="Therapists" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Therapists.aspx.vb" Inherits="health_wellness_webapp.Therapists" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>Best Health | Therapist List</title>
+    <title>Best Health | Therapists</title>
     <meta name="description" content="Check therapist details to find the best therapist for you" />
     <meta property="og:title" content="Best Health | Therapists" />
     <meta property="og:description" content="Check therapist details to find the best therapist for you" />
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-    <asp:AccessDataSource ID="adsTherapistList" runat="server" DataFile="~/App_Data/Webapp.accdb" SelectCommand="SELECT Therapist_Id, Therapist_Name, Therapist_Description, Therapist_ImgUrl, Therapist_Price,Therapist_Speciality FROM Therapist"></asp:AccessDataSource>
-
     <h1>Our Therapists</h1>
+
     <p class="subtitle">View therapist details to find which one is best for you, click a therapist card to book</p>
-    <asp:Repeater ID="rptTherapists" runat="server" DataSourceID="adsTherapistList">
+
+    <asp:Panel ID="pnlSearch" runat="server" CssClass="search-panel">
+        <asp:TextBox ID="txtSearch" runat="server" CssClass="search-box" Placeholder="Search therapists by name, specialization or description..."></asp:TextBox>
+        <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="search-button" OnClick="btnSearch_Click" />
+   </asp:Panel>
+
+    <asp:Label ID="lblSearchResult" runat="server" CssClass="search-status" />
+
+    <asp:Repeater ID="rptTherapists" runat="server">
         <ItemTemplate>
             <a href='Booking.aspx?therapistId=<%# Eval("Therapist_Id") %>'>
                 <section class="therapist-card">
