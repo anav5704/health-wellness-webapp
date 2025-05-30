@@ -21,26 +21,26 @@
 
     <asp:Repeater ID="rptBlogs" runat="server">
         <ItemTemplate>
-            <a href='<%# Eval("ReadUrl") %>' class="blog-card-link">
+            <a href='<%# Eval("Blog_ReadUrl") %>' class="blog-card-link">
                 <section class="blog-card">
                     <figure class="blog-image-container">
-                        <img src='<%# Eval("ImageUrl") %>' alt='<%# Eval("BlogTitle") %>' title='<%# Eval("BlogTitle") %>' width="300" height="200" loading="lazy" />
+                        <img src='<%# Eval("Blog_ImageUrl") %>' alt='<%# Eval("Blog_Title") %>' title='<%# Eval("Blog_Title") %>' width="300" height="200" loading="lazy" />
                     </figure>
                     <section class="blog-content">
                         <section class="blog-header">
-                            <h3 class="blog-title"><%# Eval("BlogTitle") %></h3>
+                            <h3 class="blog-title"><%# Eval("Blog_Title") %></h3>
                             <article class="blog-meta">
-                                <cite class="blog-author"><%# Eval("Author") %>,</cite>
-                                <time datetime='<%# Eval("PublishDate", "{0:yyyy-MM-dd}") %>'
+                                <cite class="blog-author"><%# Eval("bLOG_Author") %>,</cite>
+                                <time datetime='<%# Eval("Blog_PublishDate", "{0:yyyy-MM-dd}") %>'
                                     class="blog-date">
-                                    <%# Eval("PublishDate", "{0:MMMM d, yyyy}") %>
+                                    <%# Eval("Blog_PublishDate", "{0:MMMM d, yyyy}") %>
                                 </time>
                             </article>
-                            <p class="blog-excerpt"><%# Eval("Excerpt") %></p>
+                            <p class="blog-excerpt"><%# Eval("Blog_Excerpt") %></p>
                             <ul class="blog-tags">
                                 <ul class="blog-tags">
                                     <%# "<li>" & _
-        String.Join("</li><li>", Eval("Tags").ToString().Split(","c)) &
+        String.Join("</li><li>", Eval("Blog_Tags").ToString().Split(","c)) &
                                                 "</li>" %>
                                 </ul>
                             </ul>

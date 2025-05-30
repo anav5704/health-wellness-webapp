@@ -25,12 +25,12 @@ Public Class Blogs
         Dim cs As String = String.Format(connStr, dbPath)
 
         Using conn As New OleDbConnection(cs)
-            Dim sql As String = "SELECT BlogId, BlogTitle, Author, PublishDate, Excerpt, Tags, ImageUrl, ReadUrl FROM Blog"
+            Dim sql As String = "SELECT Blog_Id, Blog_Title, Blog_Author, Blog_PublishDate, Blog_Excerpt, Blog_Tags, Blog_ImageUrl, Blog_ReadUrl FROM Blog"
 
             Dim hasSearch As Boolean = Not String.IsNullOrEmpty(searchQuery)
 
             If hasSearch Then
-                sql &= " WHERE BlogTitle LIKE ? OR Author LIKE ? OR Excerpt LIKE ? OR Tags LIKE ?"
+                sql &= " WHERE Blog_Title LIKE ? OR Blog_Author LIKE ? OR Blog_Excerpt LIKE ? OR Blog_Tags LIKE ?"
             End If
 
             Using cmd As New OleDbCommand(sql, conn)
