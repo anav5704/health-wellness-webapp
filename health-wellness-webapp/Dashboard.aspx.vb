@@ -9,34 +9,37 @@ Public Class Dashboard
                 pnlMessages.Visible = True
 
                 adsBookings.SelectCommand = "
-                    SELECT 
-                        Booking.Booking_Id, 
-                        Booking.User_ReportPath,
-                        Therapist.Therapist_Name, 
-                        [User].User_Fname & ' ' & [User].User_Lname AS User_Name, 
-                        FORMAT(Booking.Booking_Time, 'MMM dd, yyyy hh:mm') AS Booking_Time 
-                    FROM 
-                        (Booking 
-                        INNER JOIN [Therapist] ON [Booking].Therapist_Id = [Therapist].Therapist_Id)
-                        INNER JOIN [User] ON [Booking].User_Id = [User].User_Id"
+                        SELECT 
+                            B.Booking_Id, 
+                            B.User_ReportPath,
+                            T.Therapist_Name, 
+                            U.User_Fname & ' ' & U.User_Lname AS User_Name, 
+                            FORMAT(S.Booking_Time, 'MMM dd, yyyy hh:mm') AS Booking_Time 
+                        FROM 
+                            (((Booking AS B
+                               INNER JOIN TimeSlot AS S 
+                                 ON B.TimeSlot_Id = S.TimeSlot_Id)
+                              INNER JOIN Therapist AS T 
+                                 ON B.Therapist_Id = T.Therapist_Id)
+                             INNER JOIN [User] AS U 
+                                 ON B.User_Id = U.User_Id)"
+
 
             ElseIf Session("User_ID") IsNot Nothing Then
                 pnlMessages.Visible = False
 
                 adsBookings.SelectCommand = "
-                SELECT 
-                    Booking.Booking_Id, 
-                    Booking.User_ReportPath,
-                    Therapist.Therapist_Name, 
-                    [User].User_Fname & ' ' & [User].User_Lname AS User_Name, 
-                    FORMAT(Booking.Booking_Time, 'MMM dd, yyyy hh:mm') AS Booking_Time 
-                FROM 
-                    (Booking 
-                    INNER JOIN [Therapist] ON [Booking].Therapist_Id = [Therapist].Therapist_Id)
-                    INNER JOIN [User] ON [Booking].User_Id = [User].User_Id 
-                WHERE 
-                    Booking.User_Id = ?"
-
+                  SELECT B.Booking_Id,
+                         B.User_ReportPath,
+                         T.Therapist_Name,
+                         U.User_Fname & ' ' & U.User_Lname AS User_Name,
+                         FORMAT(S.Booking_Time, 'MMM dd, yyyy hh:mm') AS Booking_Time
+                    FROM (((Booking AS B
+                           INNER JOIN TimeSlot AS S ON B.TimeSlot_Id = S.TimeSlot_Id)
+                          INNER JOIN Therapist AS T ON B.Therapist_Id = T.Therapist_Id)
+                         INNER JOIN [User]    AS U ON B.User_Id    = U.User_Id)
+                   WHERE B.User_Id = ?"
+                adsBookings.SelectParameters.Clear()
                 adsBookings.SelectParameters.Add("User_Id", Session("User_ID").ToString())
             Else
                 Response.Redirect("~/Login.aspx")
