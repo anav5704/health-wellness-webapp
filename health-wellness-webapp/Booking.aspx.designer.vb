@@ -41,6 +41,15 @@ Partial Public Class Booking
     Protected WithEvents rptTherapists As Global.System.Web.UI.WebControls.Repeater
 
     '''<summary>
+    '''lblTherapist control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblTherapist As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''ddlTherapists control.
     '''</summary>
     '''<remarks>
@@ -77,6 +86,15 @@ Partial Public Class Booking
     Protected WithEvents adsTimeSlots As Global.System.Web.UI.WebControls.AccessDataSource
 
     '''<summary>
+    '''lblTimeSlot control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblTimeSlot As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''ddlTimeSlots control.
     '''</summary>
     '''<remarks>
@@ -104,6 +122,15 @@ Partial Public Class Booking
     Protected WithEvents adsCheckBooking As Global.System.Web.UI.WebControls.AccessDataSource
 
     '''<summary>
+    '''lblFileUploadInfo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblFileUploadInfo As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''lblFileUpload control.
     '''</summary>
     '''<remarks>
@@ -122,13 +149,13 @@ Partial Public Class Booking
     Protected WithEvents fuReport As Global.System.Web.UI.WebControls.FileUpload
 
     '''<summary>
-    '''lblupload control.
+    '''lblFileUploadError control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblupload As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lblFileUploadError As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''btnConfirm control.

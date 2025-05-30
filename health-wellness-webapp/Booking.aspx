@@ -8,9 +8,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1 class="top-heading">
-        <asp:Label ID="lblBookingType" runat="server" Text=""></asp:Label>
-        Booking</h1>
+    <h1 class="top-heading"><asp:Label ID="lblBookingType" runat="server" Text=""></asp:Label>Booking</h1>
 
     <p class="subtitle">Make an Appointment with a Therapist to Move Toward a Healthier Mentality.</p>
 
@@ -31,11 +29,8 @@
             </asp:Repeater>
         </article>
 
-
-
-
-
-
+        <br />
+        <asp:Label ID="lblTherapist" runat="server" AssociatedControlID="ddlTherapists">Select Ta therapist:</asp:Label>
         <asp:DropDownList ID="ddlTherapists" runat="server" DataSourceID="adsTherapists" DataTextField="Therapist_Name" DataValueField="Therapist_ID" AutoPostBack="False" AppendDataBoundItems="true" CssClass="dropdownlist">
             <asp:ListItem Text="Select a therapist" Value="" />
         </asp:DropDownList>
@@ -44,20 +39,17 @@
         <asp:AccessDataSource ID="adsTherapists" runat="server" DataFile="~/App_Data/Webapp.accdb" SelectCommand="SELECT [Therapist_Name], [Therapist_Id] FROM [Therapist]"></asp:AccessDataSource>
     </section>
 
-
-
     <section class="timeSlot-section">
         <asp:AccessDataSource ID="adsTimeSlots" runat="server" DataFile="~/App_Data/Webapp.accdb" SelectCommand="SELECT Booking_Time FROM TimeSlot ORDER BY Booking_Time"></asp:AccessDataSource>
         <h2 class="booking-title">Time Slot</h2>
         <p>Each session lasts 60 minutes</p>
 
+        <br />
+        <asp:Label ID="lblTimeSlot" runat="server" AssociatedControlID="ddlTimeSlots" CssClass="form-label">Select a time slot:</asp:Label>
         <asp:DropDownList ID="ddlTimeSlots" runat="server" AppendDataBoundItems="true" DataSourceID="adsTimeSlots" DataTextField="Booking_Time" DataValueField="Booking_Time" CssClass="dropdownlist">
             <asp:ListItem Text="Select a time slot" Value="" />
         </asp:DropDownList>
         <asp:RequiredFieldValidator ID="rfvTimeSlot" runat="server" ControlToValidate="ddlTimeSlots" InitialValue="" ErrorMessage="Time slot is required." CssClass="error" Display="Dynamic" />
-
-
-
 
         <asp:AccessDataSource ID="adsCheckBooking" runat="server" DataFile="~/App_Data/Webapp.accdb" SelectCommand="SELECT [Booking_Id] FROM [Booking] WHERE [Therapist_Id] = ? AND [Booking_Time] = ?">
             <SelectParameters>
@@ -69,11 +61,18 @@
 
     <section class="fileUpload-section">
         <h2 class="booking-title">Medical Report</h2>
-        <asp:Label ID="lblFileUpload" runat="server" Value=""></asp:Label>
+        <asp:Label ID="lblFileUploadInfo" runat="server" Value=""></asp:Label>
+
+        <br />
+
+        <asp:Label ID="lblFileUpload" runat="server" AssociatedControlID="fuReport" CssClass="form-label">Select a document:</asp:Label>
         <asp:FileUpload ID="fuReport" runat="server" CssClass="dropdownlist" onchange="checkFileSize(this)" />
-        <asp:Label ID="lblupload" runat="server" CssClass="error"></asp:Label>
+
+        <asp:Label ID="lblFileUploadError" runat="server" CssClass="error"></asp:Label>
+
         <asp:Button ID="btnConfirm" runat="server" Text="" CssClass="primary-button" CausesValidation="true" />
         <asp:Button ID="btnDelete" runat="server" Text="Delete Booking" CssClass="warning-button" CausesValidation="true" />
+
         <asp:Label ID="LblConfirmation" runat="server"></asp:Label>
     </section>
 

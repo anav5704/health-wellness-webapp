@@ -27,14 +27,15 @@ Public Class Booking
             If bookingId IsNot Nothing Then
                 ValidatePermission(bookingId)
                 lblBookingType.Text = "Edit"
-                lblFileUpload.Text = "Editing medical report is disabled due to security"
+                lblFileUploadInfo.Text = "Editing medical report is disabled due to security"
                 btnConfirm.Text = "Update Booking"
                 btnDelete.Visible = True
                 fuReport.Visible = False
+                lblFileUpload.Visible = False
                 LoadBooking(bookingId)
             Else
                 lblBookingType.Text = "New"
-                lblFileUpload.Text = "You can upload an optional PDF medical report"
+                lblFileUploadInfo.Text = "You can upload an optional PDF medical report"
                 btnConfirm.Text = "Confirm Booking"
                 btnDelete.Visible = False
             End If
@@ -53,7 +54,7 @@ Public Class Booking
     End Sub
 
     Protected Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
-        lblupload.Text = ""
+        lblFileUploadError.Text = ""
         LblConfirmation.Text = ""
 
         Dim userId As String = Session("User_ID").ToString()
@@ -77,7 +78,7 @@ Public Class Booking
             fileName = IO.Path.GetFileName(fuReport.FileName)
             Dim ext = IO.Path.GetExtension(fileName).ToLower()
             If ext <> ".pdf" Then
-                lblupload.Text = "Only .pdf files are accepted."
+                lblFileUploadError.Text = "Only .pdf files are accepted."
                 Return
             End If
 
