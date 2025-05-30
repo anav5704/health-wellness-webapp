@@ -49,7 +49,7 @@ Public Class Booking
         If dv.Count > 0 Then
             Dim row As DataRowView = dv(0)
             ddlTherapists.SelectedValue = row("Therapist_Id").ToString()
-            ddlTimeSlots.SelectedValue = row("Booking_Time").ToString()
+            ddlTimeSlots.SelectedValue = row("TimeSlot_Id").ToString()
         End If
     End Sub
 
@@ -60,10 +60,10 @@ Public Class Booking
         Dim userId As String = Session("User_ID").ToString()
         Dim bookingId As String = Request.QueryString("bookingId")
         Dim therapistId As Integer = CInt(ddlTherapists.SelectedValue)
-        Dim slot As String = ddlTimeSlots.SelectedValue
+        Dim slot As Integer = CInt(ddlTimeSlots.SelectedValue)
 
         adsCheckBooking.SelectParameters("Therapist_Id").DefaultValue = therapistId.ToString()
-        adsCheckBooking.SelectParameters("Booking_Time").DefaultValue = slot
+        adsCheckBooking.SelectParameters("TimeSlot_Id").DefaultValue = slot
 
         Dim dv As DataView = CType(adsCheckBooking.Select(DataSourceSelectArguments.Empty), DataView)
         If dv.Count > 0 Then
@@ -92,14 +92,14 @@ Public Class Booking
 
         If bookingId IsNot Nothing Then
             adsBooking.UpdateParameters("Therapist_Id").DefaultValue = therapistId
-            adsBooking.UpdateParameters("Booking_Time").DefaultValue = slot
+            adsBooking.UpdateParameters("TimeSlot_Id").DefaultValue = slot
             adsBooking.UpdateParameters("Booking_Id").DefaultValue = bookingId
 
             adsBooking.Update()
             LblConfirmation.Text = "Booking successfully updated."
         Else
             adsBooking.InsertParameters("Therapist_Id").DefaultValue = therapistId
-            adsBooking.InsertParameters("Booking_Time").DefaultValue = slot
+            adsBooking.InsertParameters("TimeSlot_Id").DefaultValue = slot
             adsBooking.InsertParameters("User_Id").DefaultValue = userId
             adsBooking.InsertParameters("User_ReportPath").DefaultValue = reportPath
 

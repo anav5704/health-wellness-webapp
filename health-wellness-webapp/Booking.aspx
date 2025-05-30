@@ -40,21 +40,21 @@
     </section>
 
     <section class="timeSlot-section">
-        <asp:AccessDataSource ID="adsTimeSlots" runat="server" DataFile="~/App_Data/Webapp.accdb" SelectCommand="SELECT Booking_Time FROM TimeSlot ORDER BY Booking_Time"></asp:AccessDataSource>
+        <asp:AccessDataSource ID="adsTimeSlots" runat="server" DataFile="~/App_Data/Webapp.accdb" SelectCommand="SELECT TimeSlot_Id, Booking_Time FROM TimeSlot ORDER BY Booking_Time"></asp:AccessDataSource>
         <h2 class="booking-title">Time Slot</h2>
         <p>Each session lasts 60 minutes</p>
 
         <br />
         <asp:Label ID="lblTimeSlot" runat="server" AssociatedControlID="ddlTimeSlots" CssClass="form-label">Select a time slot:</asp:Label>
-        <asp:DropDownList ID="ddlTimeSlots" runat="server" AppendDataBoundItems="true" DataSourceID="adsTimeSlots" DataTextField="Booking_Time" DataValueField="Booking_Time" CssClass="dropdownlist">
+        <asp:DropDownList ID="ddlTimeSlots" runat="server" AppendDataBoundItems="true" DataSourceID="adsTimeSlots" DataTextField="Booking_Time" DataValueField="TimeSlot_Id" CssClass="dropdownlist">
             <asp:ListItem Text="Select a time slot" Value="" />
         </asp:DropDownList>
         <asp:RequiredFieldValidator ID="rfvTimeSlot" runat="server" ControlToValidate="ddlTimeSlots" InitialValue="" ErrorMessage="Time slot is required." CssClass="error" Display="Dynamic" />
 
-        <asp:AccessDataSource ID="adsCheckBooking" runat="server" DataFile="~/App_Data/Webapp.accdb" SelectCommand="SELECT [Booking_Id] FROM [Booking] WHERE [Therapist_Id] = ? AND [Booking_Time] = ?">
+        <asp:AccessDataSource ID="adsCheckBooking" runat="server" DataFile="~/App_Data/Webapp.accdb" SelectCommand="SELECT [Booking_Id] FROM [Booking] WHERE [Therapist_Id] AND [TimeSlot_Id] = ?">
             <SelectParameters>
                 <asp:Parameter Name="Therapist_Id" Type="Int32" />
-                <asp:Parameter Name="Booking_Time" Type="String" />
+                <asp:Parameter Name="TimeSlot_Id" Type="Int32" />
             </SelectParameters>
         </asp:AccessDataSource>
     </section>
@@ -78,8 +78,8 @@
 
     <asp:AccessDataSource ID="adsBooking" runat="server" DataFile="~/App_Data/Webapp.accdb"
         SelectCommand="SELECT * FROM [Booking] WHERE [Booking_Id] = ?"
-        InsertCommand="INSERT INTO [Booking] ([User_Id], [Therapist_Id], [Booking_Time],[User_ReportPath]) VALUES (?,?,?,?)"
-        UpdateCommand="UPDATE [Booking] SET [Therapist_Id]=?, [Booking_Time]=? WHERE [Booking_Id]=?"
+        InsertCommand="INSERT INTO [Booking] ([User_Id], [Therapist_Id], [TimeSlot_Id],[User_ReportPath]) VALUES (?,?,?,?)"
+        UpdateCommand="UPDATE [Booking] SET [Therapist_Id]=?, [TimeSlot_Id]=? WHERE [Booking_Id]=?"
         DeleteCommand="DELETE FROM [Booking] WHERE [Booking_Id]=?">
         <SelectParameters>
             <asp:Parameter Name="Booking_Id" Type="Int32" />
@@ -87,12 +87,12 @@
         <InsertParameters>
             <asp:Parameter Name="User_Id" Type="Int32" />
             <asp:Parameter Name="Therapist_Id" Type="Int32" />
-            <asp:Parameter Name="Booking_Time" Type="String" />
+            <asp:Parameter Name="TimeSlot_Id" Type="Int32" />
             <asp:Parameter Name="User_ReportPath" Type="String" />
         </InsertParameters>
         <UpdateParameters>
             <asp:Parameter Name="Therapist_Id" Type="Int32" />
-            <asp:Parameter Name="Booking_Time" Type="String" />
+            <asp:Parameter Name="TimeSlot_Id" Type="Int32" />
             <asp:Parameter Name="Booking_Id" Type="Int32" />
         </UpdateParameters>
         <DeleteParameters>
