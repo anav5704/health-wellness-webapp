@@ -7,7 +7,16 @@
     <meta property="og:description" content="Make a new appointment with a therapist to step forward to better mental health" />
 </asp:Content>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server" Visible="false">
+     <asp:Panel ID="pnlModal" runat="server" CssClass="modal-overlay">
+            <div class="modal-content">
+
+                 <asp:Label ID="lblModalHeader" runat="server" CssClass="modal-header"></asp:Label>
+                 <asp:Label ID="lblModalBody" runat="server" CssClass="modal-body"></asp:Label>
+                 <asp:Button ID="btnCloseModal" runat="server" CssClass="primary-button modal-close" Text="Close"/>
+            </div>
+     </asp:Panel>
+
     <h1 class="top-heading"><asp:Label ID="lblBookingType" runat="server" Text=""></asp:Label>Booking</h1>
 
     <p class="subtitle">Make an Appointment with a Therapist to Move Toward a Healthier Mentality.</p>
@@ -30,7 +39,7 @@
         </article>
 
         <br />
-        <asp:Label ID="lblTherapist" runat="server" AssociatedControlID="ddlTherapists">Select Ta therapist:</asp:Label>
+        <asp:Label ID="lblTherapist" runat="server" AssociatedControlID="ddlTherapists">Select a therapist:</asp:Label>
         <asp:DropDownList ID="ddlTherapists" runat="server" DataSourceID="adsTherapists" DataTextField="Therapist_Name" DataValueField="Therapist_ID" AutoPostBack="False" AppendDataBoundItems="true" CssClass="dropdownlist">
             <asp:ListItem Text="Select a therapist" Value="" />
         </asp:DropDownList>
@@ -51,7 +60,8 @@
         </asp:DropDownList>
         <asp:RequiredFieldValidator ID="rfvTimeSlot" runat="server" ControlToValidate="ddlTimeSlots" InitialValue="" ErrorMessage="Time slot is required." CssClass="error" Display="Dynamic" />
 
-        <asp:AccessDataSource ID="adsCheckBooking" runat="server" DataFile="~/App_Data/Webapp.accdb" SelectCommand="SELECT [Booking_Id] FROM [Booking] WHERE [Therapist_Id] AND [TimeSlot_Id] = ?">
+        <asp:AccessDataSource ID="adsCheckBooking" runat="server" DataFile="~/App_Data/Webapp.accdb"
+            SelectCommand="SELECT [Booking_Id] FROM [Booking] WHERE [Therapist_Id] = ? AND [TimeSlot_Id] = ?">
             <SelectParameters>
                 <asp:Parameter Name="Therapist_Id" Type="Int32" />
                 <asp:Parameter Name="TimeSlot_Id" Type="Int32" />
@@ -72,8 +82,6 @@
 
         <asp:Button ID="btnConfirm" runat="server" Text="" CssClass="primary-button" CausesValidation="true" />
         <asp:Button ID="btnDelete" runat="server" Text="Delete Booking" CssClass="warning-button" CausesValidation="true" />
-
-        <asp:Label ID="LblConfirmation" runat="server"></asp:Label>
     </section>
 
     <asp:AccessDataSource ID="adsBooking" runat="server" DataFile="~/App_Data/Webapp.accdb"

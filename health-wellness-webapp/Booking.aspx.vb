@@ -3,11 +3,31 @@
 Public Class Booking
     Inherits System.Web.UI.Page
 
-    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+    Private Property IsModalVisible As Boolean
+        Get
+            Return If(ViewState("IsModalVisible"), False)
+        End Get
 
+        Set(value As Boolean)
+            ViewState("IsModalVisible") = value
+        End Set
+    End Property
+
+    Private Property IsModalSuccess As Boolean
+        Get
+            Return If(ViewState("IsModalSuccess"), False)
+        End Get
+        Set(value As Boolean)
+            ViewState("IsModalSuccess") = value
+        End Set
+    End Property
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Session("User_ID") Is Nothing Then
             Response.Redirect("Login.aspx?ReturnUrl=" & Server.UrlEncode(Request.RawUrl))
         End If
+
+        pnlModal.Visible = IsModalVisible
 
         Dim bookingId As String = Request.QueryString("bookingId")
 
@@ -53,9 +73,17 @@ Public Class Booking
         End If
     End Sub
 
+    Protected Sub btnCloseModal_Click(sender As Object, e As EventArgs) Handles btnCloseModal.Click
+        IsModalVisible = False
+        pnlModal.Visible = False
+
+        If IsModalSuccess Then
+            Response.Redirect("Dashboard.aspx")
+        End If
+    End Sub
+
     Protected Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
         lblFileUploadError.Text = ""
-        LblConfirmation.Text = ""
 
         Dim userId As String = Session("User_ID").ToString()
         Dim bookingId As String = Request.QueryString("bookingId")
@@ -67,7 +95,8 @@ Public Class Booking
 
         Dim dv As DataView = CType(adsCheckBooking.Select(DataSourceSelectArguments.Empty), DataView)
         If dv.Count > 0 Then
-            LblConfirmation.Text = "Sorry, this time slot is already booked."
+            IsModalVisible = True
+            ShowModal("Booking Error.", "Sorry, this time slot is already booked.", False)
             Return
         End If
 
@@ -90,13 +119,16 @@ Public Class Booking
             fuReport.SaveAs(IO.Path.Combine(saveDir, uniqueName))
         End If
 
+        IsModalVisible = True
+
         If bookingId IsNot Nothing Then
             adsBooking.UpdateParameters("Therapist_Id").DefaultValue = therapistId
             adsBooking.UpdateParameters("TimeSlot_Id").DefaultValue = slot
             adsBooking.UpdateParameters("Booking_Id").DefaultValue = bookingId
 
             adsBooking.Update()
-            LblConfirmation.Text = "Booking successfully updated."
+
+            ShowModal("Booking Updated.", "The booking has been successfully updated.")
         Else
             adsBooking.InsertParameters("Therapist_Id").DefaultValue = therapistId
             adsBooking.InsertParameters("TimeSlot_Id").DefaultValue = slot
@@ -104,7 +136,8 @@ Public Class Booking
             adsBooking.InsertParameters("User_ReportPath").DefaultValue = reportPath
 
             adsBooking.Insert()
-            LblConfirmation.Text = "Session successfully booked."
+
+            ShowModal("Booking Created.", "The booking has been successfully created.")
         End If
     End Sub
 
@@ -126,11 +159,12 @@ Public Class Booking
             End If
         End If
 
-
         adsBooking.DeleteParameters("Booking_Id").DefaultValue = bookingId
         adsBooking.Delete()
 
-        Response.Redirect("Dashboard.aspx")
+        IsModalVisible = True
+
+        ShowModal("Booking Deleted.", "The booking has been successfully deleted.")
     End Sub
 
     Protected Sub ValidatePermission(bookingId As String)
@@ -149,5 +183,12 @@ Public Class Booking
         If currentUserRole <> "Admin" AndAlso bookingOwnerId <> currentUserId Then
             Response.Redirect("Booking.aspx")
         End If
+    End Sub
+
+    Private Sub ShowModal(header As String, body As String, Optional isSuccess As Boolean = True)
+        pnlModal.Visible = True
+        lblModalHeader.Text = header
+        lblModalBody.Text = body
+        IsModalSuccess = isSuccess
     End Sub
 End Class

@@ -14,6 +14,42 @@ Option Explicit On
 Partial Public Class Booking
 
     '''<summary>
+    '''pnlModal control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnlModal As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''lblModalHeader control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblModalHeader As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''lblModalBody control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblModalBody As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''btnCloseModal control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnCloseModal As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
     '''lblBookingType control.
     '''</summary>
     '''<remarks>
@@ -174,15 +210,6 @@ Partial Public Class Booking
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnDelete As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
-    '''LblConfirmation control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents LblConfirmation As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''adsBooking control.
