@@ -2,7 +2,7 @@
 
 A virtual mental health and wellness support platform. [Assignment writeup (98%)](/.github/docs/BSE-Web-Devs.pptx).
 
-[![Demo Video](https://img.youtube.com/vi/AqrkyeUWvJc/0.jpg)](https://www.youtube.com/watch?v=AqrkyeUWvJc)
+[![Demo Video](/.github/docs/best-health.png)](https://www.youtube.com/watch?v=AqrkyeUWvJc)
 
 ## Authors
 
